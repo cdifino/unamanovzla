@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "distrito-capital-ambulatorio-alfonzo-lopez-porras",
+    "name": "Ambulatorio Alfonzo López Porras",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.528521,
+    "lng": -66.98055
+  },
+  {
+    "id": "distrito-capital-ambulatorio-de-la-gran-parada",
+    "name": "Ambulatorio de La Gran Parada",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.429335,
+    "lng": -67.009951
+  },
+  {
+    "id": "distrito-capital-ambulatorio-domingo-luciani",
+    "name": "Ambulatorio Domingo Luciani",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.521033,
+    "lng": -66.911583
+  },
+  {
+    "id": "distrito-capital-ambulatorio-leopoldo-aguerrevere",
+    "name": "Ambulatorio Leopoldo Aguerrevere",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.460105,
+    "lng": -66.984892
+  },
+  {
+    "id": "distrito-capital-ambulatorio-monsenor-de-castro",
+    "name": "Ambulatorio Monseñor de Castro",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.498312,
+    "lng": -66.917124
+  },
+  {
+    "id": "distrito-capital-ambulatorio-pedro-gonzalez-rincones",
+    "name": "Ambulatorio Pedro González Rincones",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.529567,
+    "lng": -66.946545
+  },
+  {
+    "id": "distrito-capital-centro-clinico-quirurgico-virgen-milagrosa",
+    "name": "Centro Clínico Quirúrgico Virgen Milagrosa",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.51619,
+    "lng": -66.944173
+  },
+  {
+    "id": "distrito-capital-centro-de-atencion-ambulatoria",
+    "name": "Centro de atencion ambulatoria",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.269475,
+    "lng": -57.581327
+  },
+  {
+    "id": "distrito-capital-centro-de-medicina-fisica-y-rehabilitacion-ips",
+    "name": "CENTRO DE MEDICINA FISICA Y REHABILITACION IPS",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.258307,
+    "lng": -57.584293
+  },
+  {
+    "id": "distrito-capital-centro-de-salud-club-de-leones",
+    "name": "Centro de Salud - Club de Leónes",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.310025,
+    "lng": -57.625051
+  },
+  {
+    "id": "distrito-capital-centro-medico-bautista",
+    "name": "Centro Médico Bautista",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.299331,
+    "lng": -57.578643
+  },
+  {
+    "id": "distrito-capital-centro-medico-la-costa",
+    "name": "Centro Médico La Costa",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.273,
+    "lng": -57.607224
+  },
+  {
+    "id": "distrito-capital-centro-medico-loira",
+    "name": "Centro Médico Loira",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.481186,
+    "lng": -66.943778
+  },
+  {
+    "id": "distrito-capital-centro-medico-maitei",
+    "name": "Centro Médico Maitei",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.24158,
+    "lng": -57.543723
+  },
+  {
+    "id": "distrito-capital-centro-nacional-de-control-de-adicciones",
+    "name": "Centro Nacional de Control de Adicciones",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.280607,
+    "lng": -57.592977
+  },
+  {
+    "id": "distrito-capital-centro-nacional-de-prevencion-y-tratamiento-de-adicciones-cenptra",
+    "name": "Centro Nacional de Prevención y Tratamiento de Adicciones (CENPTRA)",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.27874,
+    "lng": -57.592484
+  },
+  {
+    "id": "distrito-capital-centro-nefrologico-con-salud",
+    "name": "Centro Nefrológico con + Salud",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.509581,
+    "lng": -66.906708
+  },
+  {
+    "id": "distrito-capital-centro-oftalmologico",
+    "name": "Centro Oftalmologico",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.277149,
+    "lng": -57.599917
+  },
+  {
+    "id": "distrito-capital-clinica-cetro-s-a",
+    "name": "Clínica CETRO S.A",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.297739,
+    "lng": -57.609062
+  },
+  {
+    "id": "distrito-capital-clinica-de-mastologia",
+    "name": "Clínica de Mastología",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.29507,
+    "lng": -57.607311
+  },
+  {
+    "id": "distrito-capital-clinica-de-mastologia-2",
+    "name": "Clínica de Mastología",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.295651,
+    "lng": -57.607462
+  },
+  {
+    "id": "distrito-capital-clinica-de-mastologia-3",
+    "name": "Clínica de Mastología",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.295924,
+    "lng": -57.607532
+  },
+  {
+    "id": "distrito-capital-clinica-del-ips-12-de-junio",
+    "name": "Clinica del IPS 12 de Junio",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.326115,
+    "lng": -57.624862
+  },
+  {
+    "id": "distrito-capital-clinica-dispensario-padre-machado",
+    "name": "Clínica Dispensario Padre Machado",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.470868,
+    "lng": -66.953509
+  },
+  {
+    "id": "distrito-capital-clinica-ima",
+    "name": "Clínica IMA",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.299345,
+    "lng": -57.608228
+  },
+  {
+    "id": "distrito-capital-clinica-mendez-gimon",
+    "name": "Clínica Méndez Gimón",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.504202,
+    "lng": -66.881934
+  },
+  {
+    "id": "distrito-capital-clinica-periferica-nanawa",
+    "name": "CLINICA PERIFERICA NANAWA",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.25826,
+    "lng": -57.585745
+  },
+  {
+    "id": "distrito-capital-clinica-popular-el-valle",
+    "name": "Clínica Popular El Valle",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.460769,
+    "lng": -66.912743
+  },
+  {
+    "id": "distrito-capital-complejo-hospital-de-la-policia-nacional-doctor-rigoberto-caballero",
+    "name": "complejo hospital de la Policia Nacional doctor Rigoberto Caballero",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.293092,
+    "lng": -57.602977
+  },
+  {
+    "id": "distrito-capital-direccion-general-de-sanidad-policia-nacional-paraguay",
+    "name": "Direccion General de Sanidad (Policia Nacional - Paraguay)",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.292926,
+    "lng": -57.602993
+  },
+  {
+    "id": "distrito-capital-distrito-sanitario-n-1",
+    "name": "Distrito Sanitario N° 1",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.515962,
+    "lng": -66.917473
+  },
+  {
+    "id": "distrito-capital-distrito-sanitario-n-3",
+    "name": "Distrito Sanitario N° 3",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.496983,
+    "lng": -66.928038
+  },
+  {
+    "id": "distrito-capital-distrito-sanitario-n-4",
+    "name": "Distrito Sanitario N° 4",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.459659,
+    "lng": -66.913948
+  },
+  {
+    "id": "distrito-capital-electroneuro",
+    "name": "Electroneuro",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.286522,
+    "lng": -57.62699
+  },
+  {
+    "id": "distrito-capital-fundacor",
+    "name": "Fundacor",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.288769,
+    "lng": -57.59893
+  },
+  {
+    "id": "distrito-capital-hospital-cardiologico-infantil-latinoamericano",
+    "name": "Hospital Cardiológico Infantil Latinoamericano",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.467549,
+    "lng": -66.972544
+  },
+  {
+    "id": "distrito-capital-hospital-central-de-policia-rigoberto-caballero",
+    "name": "Hospital Central de Policía Rigoberto Caballero",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.293133,
+    "lng": -57.60301
+  },
+  {
+    "id": "distrito-capital-hospital-central-del-instituto-de-prevision-social-paraguay",
+    "name": "Hospital Central del Instituto de Prevision Social - Paraguay",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.272146,
+    "lng": -57.580433
+  },
+  {
+    "id": "distrito-capital-hospital-de-barrio-obrero",
+    "name": "Hospital de Barrio Obrero",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.299437,
+    "lng": -57.644562
+  },
+  {
+    "id": "distrito-capital-hospital-de-clinicas",
+    "name": "Hospital de Clinicas",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.280095,
+    "lng": -57.652441
+  },
+  {
+    "id": "distrito-capital-hospital-de-loma-pyta",
+    "name": "hospital de loma pyta",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.241486,
+    "lng": -57.5443
+  },
+  {
+    "id": "distrito-capital-hospital-de-ninos-j-m-de-los-rios",
+    "name": "Hospital de Niños J.M. de Los Ríos",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.506963,
+    "lng": -66.899604
+  },
+  {
+    "id": "distrito-capital-hospital-de-trauma-prof-dr-manuel-giagni",
+    "name": "Hospital de Trauma Prof. Dr. Manuel Giagni",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.300565,
+    "lng": -57.612667
+  },
+  {
+    "id": "distrito-capital-hospital-del-quemado",
+    "name": "Hospital del Quemado",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.29285,
+    "lng": -57.627467
+  },
+  {
+    "id": "distrito-capital-hospital-dr-francisco-a-risquez",
+    "name": "Hospital Dr. Francisco A. Risquéz",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.516127,
+    "lng": -66.905469
+  },
+  {
+    "id": "distrito-capital-hospital-dr-jose-gregorio-hernandez",
+    "name": "Hospital Dr. José Gregorio Hernández",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.516128,
+    "lng": -66.954909
+  },
+  {
+    "id": "distrito-capital-hospital-geriatrico",
+    "name": "Hospital Geriátrico",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.257944,
+    "lng": -57.585167
+  },
+  {
+    "id": "distrito-capital-hospital-jesus-yerena",
+    "name": "Hospital Jesús Yerena",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.524182,
+    "lng": -66.930122
+  },
+  {
+    "id": "distrito-capital-hospital-jose-ignacio-baldo",
+    "name": "Hospital José Ignacio Baldó",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.483677,
+    "lng": -66.972906
+  },
+  {
+    "id": "distrito-capital-hospital-jose-maria-vargas",
+    "name": "Hospital José María Vargas",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.516448,
+    "lng": -66.911439
+  },
+  {
+    "id": "distrito-capital-hospital-materno-infantil-del-valle",
+    "name": "Hospital Materno Infantil del Valle",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.460425,
+    "lng": -66.914229
+  },
+  {
+    "id": "distrito-capital-hospital-materno-infantil-dr-pastor-oropeza",
+    "name": "Hospital Materno Infantil Dr. Pastor Oropeza",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.437563,
+    "lng": -66.990272
+  },
+  {
+    "id": "distrito-capital-hospital-materno-infantil-san-pablo",
+    "name": "Hospital Materno Infantil San Pablo",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.319858,
+    "lng": -57.577663
+  },
+  {
+    "id": "distrito-capital-hospital-materno-infantil-santisima-trinidad",
+    "name": "Hospital Materno Infantil Santisima Trinidad",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.260941,
+    "lng": -57.575966
+  },
+  {
+    "id": "distrito-capital-hospital-militar-dr-carlos-arvelo",
+    "name": "Hospital Militar Dr. Carlos Arvelo",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.498533,
+    "lng": -66.93905
+  },
+  {
+    "id": "distrito-capital-hospital-militar-vicente-salias-sanoja",
+    "name": "Hospital Militar Vicente Sálias Sanoja",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.454365,
+    "lng": -66.905523
+  },
+  {
+    "id": "distrito-capital-hospital-neuropsquiatrico-de-asuncion",
+    "name": "Hospital Neuropsquiátrico de Asunción",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.280699,
+    "lng": -57.591972
+  },
+  {
+    "id": "distrito-capital-hospital-oncologico-dr-luis-razetti",
+    "name": "Hospital Oncológico Dr. Luis Razetti",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.519624,
+    "lng": -66.907922
+  },
+  {
+    "id": "distrito-capital-hospital-oncologico-padre-machado",
+    "name": "Hospital Oncológico Padre Machado",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.477814,
+    "lng": -66.918024
+  },
+  {
+    "id": "distrito-capital-hospital-ortopedico-infantil",
+    "name": "Hospital Ortopédico Infantil",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.505364,
+    "lng": -66.891858
+  },
+  {
+    "id": "distrito-capital-hospital-pediatrico-julio-criollo-vivas",
+    "name": "Hospital Pediátrico Julio Criollo Vivas",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.477091,
+    "lng": -66.917822
+  },
+  {
+    "id": "distrito-capital-hospital-perez-carreno",
+    "name": "Hospital Pérez Carreño",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.480294,
+    "lng": -66.953177
+  },
+  {
+    "id": "distrito-capital-hospital-periferico-de-coche",
+    "name": "Hospital Periférico de Coche",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.441116,
+    "lng": -66.92649
+  },
+  {
+    "id": "distrito-capital-hospital-psiquiatrico-de-caracas",
+    "name": "Hospital Psiquiátrico de Caracas",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.523415,
+    "lng": -66.930181
+  },
+  {
+    "id": "distrito-capital-hospital-reina-sofia",
+    "name": "Hospital Reina Sofia",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.284021,
+    "lng": -57.622267
+  },
+  {
+    "id": "distrito-capital-hospital-san-lucas",
+    "name": "Hospital San Lucas",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.308143,
+    "lng": -57.598284
+  },
+  {
+    "id": "distrito-capital-hospital-san-martin",
+    "name": "Hospital San Martin",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.320216,
+    "lng": -57.593363
+  },
+  {
+    "id": "distrito-capital-hospital-universitario-de-caracas",
+    "name": "Hospital Universitario de Caracas",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.490469,
+    "lng": -66.894057
+  },
+  {
+    "id": "distrito-capital-hospital-universitario-ntra-sra-de-la-asuncion",
+    "name": "Hospital Universitario Ntra. Sra. de la Asunción",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.292037,
+    "lng": -57.561985
+  },
+  {
+    "id": "distrito-capital-inat-instituto-nacional-de-ablacion-y-transplante",
+    "name": "INAT - Instituto Nacional de Ablación y Transplante",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.269383,
+    "lng": -57.58496
+  },
+  {
+    "id": "distrito-capital-instituto-de-medicina-tropical",
+    "name": "Instituto de Medicina Tropical",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.277593,
+    "lng": -57.592652
+  },
+  {
+    "id": "distrito-capital-instituto-de-prevision-social-i-p-s",
+    "name": "Instituto de Previsión Social (I.P.S.)",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.27102,
+    "lng": -57.580035
+  },
+  {
+    "id": "distrito-capital-instituto-nacional-de-geriatria",
+    "name": "Instituto Nacional de Geriatría",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.435116,
+    "lng": -66.991066
+  },
+  {
+    "id": "distrito-capital-ipn",
+    "name": "IPN",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.289137,
+    "lng": -57.626957
+  },
+  {
+    "id": "distrito-capital-ips",
+    "name": "IPS",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.272142,
+    "lng": -57.580463
+  },
+  {
+    "id": "distrito-capital-ivss-ambulatorio-de-caricuao",
+    "name": "IVSS Ambulatorio de Caricuao",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.433095,
+    "lng": -66.962801
+  },
+  {
+    "id": "distrito-capital-ivss-ambulatorio-dr-armando-castillo-plaza",
+    "name": "IVSS Ambulatorio Dr. Armando Castillo Plaza",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.465595,
+    "lng": -66.980422
+  },
+  {
+    "id": "distrito-capital-ivss-ambulatorio-dr-dilio-sequera-peraza",
+    "name": "IVSS Ambulatorio Dr. Dilio Sequera Peraza",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.505212,
+    "lng": -66.894388
+  },
+  {
+    "id": "distrito-capital-ivss-ambulatorio-pedro-arreaza",
+    "name": "IVSS Ambulatorio Pedro Arreaza",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.513992,
+    "lng": -66.932938
+  },
+  {
+    "id": "distrito-capital-ivss-centro-ambulatorio-dr-julio-iribarren-borges",
+    "name": "IVSS Centro Ambulatorio Dr. Julio Iribarren Borges",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.507678,
+    "lng": -66.957224
+  },
+  {
+    "id": "distrito-capital-ivss-centro-nacional-de-rehabilitacion-dr-alejandro-rhode",
+    "name": "IVSS Centro Nacional de Rehabilitación Dr. Alejandro Rhode",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.481134,
+    "lng": -66.952048
+  },
+  {
+    "id": "distrito-capital-ivss-especialidades-medicas-horacio-almeida",
+    "name": "IVSS Especialidades Médicas Horacio Almeida",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.511152,
+    "lng": -66.914419
+  },
+  {
+    "id": "distrito-capital-ivss-hospital-dr-ricardo-baquero-gonzalez",
+    "name": "IVSS Hospital Dr. Ricardo Baquero González",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.513365,
+    "lng": -66.94249
+  },
+  {
+    "id": "distrito-capital-ivss-hospital-pediatrico-dr-elias-toro",
+    "name": "IVSS Hospital Pediátrico Dr. Elías Toro",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.505754,
+    "lng": -66.946957
+  },
+  {
+    "id": "distrito-capital-maternidad-concepcion-palacios",
+    "name": "Maternidad Concepción Palacios",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.49523,
+    "lng": -66.931515
+  },
+  {
+    "id": "distrito-capital-maternidad-herrera-vega",
+    "name": "Maternidad Herrera Vega",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.485916,
+    "lng": -66.975746
+  },
+  {
+    "id": "distrito-capital-maternidad-santa-ana",
+    "name": "Maternidad Santa Ana",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.51531,
+    "lng": -66.903154
+  },
+  {
+    "id": "distrito-capital-medicis",
+    "name": "Medicis",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.314273,
+    "lng": -57.630148
+  },
+  {
+    "id": "distrito-capital-modulo-de-la-hacienda",
+    "name": "Módulo de La Hacienda",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.435772,
+    "lng": -66.958792
+  },
+  {
+    "id": "distrito-capital-modulo-de-la-ud-4",
+    "name": "Módulo de la UD-4",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.428403,
+    "lng": -66.976209
+  },
+  {
+    "id": "distrito-capital-modulo-de-la-ud-6",
+    "name": "Módulo de la UD-6",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.435381,
+    "lng": -66.960779
+  },
+  {
+    "id": "distrito-capital-modulo-de-las-adjuntas",
+    "name": "Módulo de Las Adjuntas",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.425954,
+    "lng": -67.014861
+  },
+  {
+    "id": "distrito-capital-modulo-de-montalban-iii",
+    "name": "Módulo de Montalbán III",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.471268,
+    "lng": -66.963245
+  },
+  {
+    "id": "distrito-capital-modulo-de-simon-rodriguez",
+    "name": "Módulo de Simón Rodríguez",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.50976,
+    "lng": -66.888626
+  },
+  {
+    "id": "distrito-capital-modulo-de-ud-1",
+    "name": "Módulo de UD-1",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.43158,
+    "lng": -66.989887
+  },
+  {
+    "id": "distrito-capital-modulo-jose-miranda",
+    "name": "Módulo José Miranda",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.467241,
+    "lng": -66.977447
+  },
+  {
+    "id": "distrito-capital-predio-del-hospital-del-barrio-san-pablo",
+    "name": "Predio del Hospital del Barrio San Pablo",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.320013,
+    "lng": -57.578109
+  },
+  {
+    "id": "distrito-capital-prof-dr-victor-canata",
+    "name": "Prof. Dr. Victor Canata",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.29992,
+    "lng": -57.608575
+  },
+  {
+    "id": "distrito-capital-puesto-de-salud-virgen-de-fatima",
+    "name": "PUESTO DE SALUD VIRGEN DE FATIMA",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.256896,
+    "lng": -57.591284
+  },
+  {
+    "id": "distrito-capital-samaritano",
+    "name": "Samaritano",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.326056,
+    "lng": -57.598241
+  },
+  {
+    "id": "distrito-capital-sanatorio-americano",
+    "name": "Sanatorio Americano",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.286054,
+    "lng": -57.615283
+  },
+  {
+    "id": "distrito-capital-sanatorio-italiano",
+    "name": "Sanatorio Italiano",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.288171,
+    "lng": -57.597617
+  },
+  {
+    "id": "distrito-capital-sanatorio-migone",
+    "name": "Sanatorio Migone",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.288248,
+    "lng": -57.621918
+  },
+  {
+    "id": "distrito-capital-sanatorio-profesor-doctor-juan-max-boettner",
+    "name": "Sanatorio Profesor Doctor Juan Max Boettner",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.274884,
+    "lng": -57.592041
+  },
+  {
+    "id": "distrito-capital-sanatorio-san-lucas",
+    "name": "Sanatorio San Lucas",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.308448,
+    "lng": -57.598943
+  },
+  {
+    "id": "distrito-capital-sanatorio-san-lucas-2",
+    "name": "Sanatorio San Lucas",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.308258,
+    "lng": -57.599047
+  },
+  {
+    "id": "distrito-capital-sanatorio-san-marcos",
+    "name": "Sanatorio San Marcos",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.294145,
+    "lng": -57.623833
+  },
+  {
+    "id": "distrito-capital-sanatorio-santa-barbara",
+    "name": "Sanatorio santa Barbara",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.258321,
+    "lng": -57.580974
+  },
+  {
+    "id": "distrito-capital-sanatorio-santa-barbara-2",
+    "name": "SANATORIO SANTA BARBARA",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.258414,
+    "lng": -57.580902
+  },
+  {
+    "id": "distrito-capital-santa-barbaba",
+    "name": "SANTA BARBABA",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.258429,
+    "lng": -57.581031
+  },
+  {
+    "id": "distrito-capital-santa-barbara",
+    "name": "Santa Bárbara",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.256594,
+    "lng": -57.581262
+  },
+  {
+    "id": "distrito-capital-unidad-sanitaria-del-sur",
+    "name": "Unidad Sanitaria del Sur",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": 10.475839,
+    "lng": -66.917467
+  },
+  {
+    "id": "distrito-capital-usf-san-alfonso",
+    "name": "USF San Alfonso",
+    "kind": "hospital",
+    "state": "Distrito Capital",
+    "lat": -25.30725,
+    "lng": -57.647607
+  },
+  {
+    "id": "la-guaira-ambulatorio-guaicamacuto",
+    "name": "Ambulatorio Guaicamacuto",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.604914,
+    "lng": -66.900894
+  },
+  {
+    "id": "la-guaira-ambulatorio-jacinto-plaza",
+    "name": "Ambulatorio Jacinto Plaza",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.588685,
+    "lng": -67.058316
+  },
+  {
+    "id": "la-guaira-ambulatorio-la-guaira-la-sanidad",
+    "name": "Ambulatorio La Guaira \"La Sanidad\"",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.601943,
+    "lng": -66.930639
+  },
+  {
+    "id": "la-guaira-ambulatorio-pedro-cova",
+    "name": "Ambulatorio Pedro Cova",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.584203,
+    "lng": -67.071363
+  },
+  {
+    "id": "la-guaira-cdi",
+    "name": "CDI",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.534168,
+    "lng": -67.03501
+  },
+  {
+    "id": "la-guaira-cdi-la-atlantida",
+    "name": "CDI La Atlántida",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.606934,
+    "lng": -67.036668
+  },
+  {
+    "id": "la-guaira-centro-de-diagnostico-integral",
+    "name": "Centro de Diagnóstico Integral",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.598108,
+    "lng": -66.971666
+  },
+  {
+    "id": "la-guaira-centro-integral-de-salud",
+    "name": "Centro Integral de Salud",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.609409,
+    "lng": -66.885369
+  },
+  {
+    "id": "la-guaira-centro-oftalmologico-de-vargas",
+    "name": "Centro Oftalmológico de Vargas",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.599069,
+    "lng": -66.983858
+  },
+  {
+    "id": "la-guaira-hospital-de-anare",
+    "name": "Hospital de Anare",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.623048,
+    "lng": -66.652532
+  },
+  {
+    "id": "la-guaira-hospital-de-emergencias-de-naiguata",
+    "name": "Hospital de Emergencias de Naiguatá",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.621608,
+    "lng": -66.738476
+  },
+  {
+    "id": "la-guaira-hospital-de-ninos-excepcionales-el-nino-y-el-mar",
+    "name": "Hospital de Niños Excepcionales El Niño y El Mar",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.606555,
+    "lng": -67.035298
+  },
+  {
+    "id": "la-guaira-hospital-dr-alfredo-machado",
+    "name": "Hospital Dr. Alfredo Machado",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.600196,
+    "lng": -67.038724
+  },
+  {
+    "id": "la-guaira-hospital-dr-jose-maria-espana",
+    "name": "Hospital Dr. José María España",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.619854,
+    "lng": -66.383325
+  },
+  {
+    "id": "la-guaira-hospital-dr-rafael-medina-jimenez-periferico-de-pariata",
+    "name": "Hospital Dr. Rafael Medina Jiménez Periférico de Pariata",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.596892,
+    "lng": -66.96113
+  },
+  {
+    "id": "la-guaira-hospital-martin-vega",
+    "name": "Hospital Martín Vega",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.588108,
+    "lng": -67.016456
+  },
+  {
+    "id": "la-guaira-hospital-materno-infantil-ana-teresa-de-jesus-ponce",
+    "name": "Hospital Materno Infantil Ana Teresa de Jesús Ponce",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.606088,
+    "lng": -66.891306
+  },
+  {
+    "id": "la-guaira-hospital-naval-dr-raul-perdomo-hurtado",
+    "name": "Hospital Naval Dr. Raúl Perdomo Hurtado",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.601162,
+    "lng": -67.029265
+  },
+  {
+    "id": "la-guaira-hospital-san-jose",
+    "name": "Hospital San José",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.595893,
+    "lng": -66.957148
+  },
+  {
+    "id": "la-guaira-ivss-hospital-jose-maria-vargas",
+    "name": "IVSS Hospital José María Vargas",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.602884,
+    "lng": -66.921697
+  },
+  {
+    "id": "la-guaira-modulo",
+    "name": "Módulo",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.598584,
+    "lng": -66.948867
+  },
+  {
+    "id": "la-guaira-modulo-de-guaracarumbo",
+    "name": "Módulo de Guaracarumbo",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.596803,
+    "lng": -67.013737
+  },
+  {
+    "id": "la-guaira-modulo-de-la-aduana-aerea",
+    "name": "Módulo de la Aduana Aérea",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.597759,
+    "lng": -66.985451
+  },
+  {
+    "id": "la-guaira-sala-de-rehabilitacion-integral-naiguata-sri",
+    "name": "Sala De Rehabilitación Integral Naiguatá (SRI)",
+    "kind": "hospital",
+    "state": "La Guaira",
+    "lat": 10.621371,
+    "lng": -66.733759
+  },
+  {
+    "id": "miranda-ambulatorio",
+    "name": "Ambulatorio",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.347617,
+    "lng": -67.047163
+  },
+  {
+    "id": "miranda-ambulatorio-2",
+    "name": "Ambulatorio",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.606369,
+    "lng": -66.172669
+  },
+  {
+    "id": "miranda-ambulatorio-de-bello-campo",
+    "name": "Ambulatorio de Bello Campo",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.492413,
+    "lng": -66.85051
+  },
+  {
+    "id": "miranda-ambulatorio-de-el-hatillo",
+    "name": "Ambulatorio de El Hatillo",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.421048,
+    "lng": -66.824952
+  },
+  {
+    "id": "miranda-ambulatorio-dr-francisco-risquez",
+    "name": "Ambulatorio Dr. Francisco Risquez",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.342718,
+    "lng": -67.044854
+  },
+  {
+    "id": "miranda-ambulatorio-dr-jose-gregorio-hernandez",
+    "name": "Ambulatorio Dr. José Gregorio Hernández",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.304164,
+    "lng": -67.034965
+  },
+  {
+    "id": "miranda-ambulatorio-dr-jose-maria-vargas",
+    "name": "Ambulatorio Dr. José María Vargas",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.451003,
+    "lng": -66.862249
+  },
+  {
+    "id": "miranda-ambulatorio-luis-martin-estaba",
+    "name": "Ambulatorio Luis Martin Estaba",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.351741,
+    "lng": -67.000637
+  },
+  {
+    "id": "miranda-ambulatorio-maria-isabel-rodriguez",
+    "name": "Ambulatorio María Isabel Rodríguez",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.348233,
+    "lng": -66.993194
+  },
+  {
+    "id": "miranda-ambulatorio-militar-la-rosaleda",
+    "name": "Ambulatorio Militar La Rosaleda",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.365192,
+    "lng": -66.984436
+  },
+  {
+    "id": "miranda-ambulatorio-montana-alta",
+    "name": "Ambulatorio Montaña Alta",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.359341,
+    "lng": -67.006825
+  },
+  {
+    "id": "miranda-ambulatorio-urbano-tipo-ii-dr-francisco-perozo",
+    "name": "Ambulatorio Urbano Tipo II Dr. Francisco Perozo",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.433955,
+    "lng": -66.875028
+  },
+  {
+    "id": "miranda-c-d-i-maturin",
+    "name": "C.D.I. Maturín",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.403353,
+    "lng": -66.161931
+  },
+  {
+    "id": "miranda-caritas",
+    "name": "Caritas",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.373627,
+    "lng": -66.948617
+  },
+  {
+    "id": "miranda-cdi-cartanal",
+    "name": "cdi cartanal",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.269072,
+    "lng": -66.706537
+  },
+  {
+    "id": "miranda-cdi-de-valle-arriba",
+    "name": "CDI de Valle Arriba",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.472043,
+    "lng": -66.532626
+  },
+  {
+    "id": "miranda-cdi-william-lara",
+    "name": "CDI William Lara",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.485085,
+    "lng": -66.739667
+  },
+  {
+    "id": "miranda-centro-de-diagnostico-integral-cdi",
+    "name": "Centro de Diagnóstico Integral CDI",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.173858,
+    "lng": -66.891389
+  },
+  {
+    "id": "miranda-centro-de-diagnostico-integral-complejo-de-salud-argelia-laya",
+    "name": "Centro de diagnostico integral Complejo de Salud Argelia Laya",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.47222,
+    "lng": -66.617125
+  },
+  {
+    "id": "miranda-centro-de-diagnostico-integral-san-jose",
+    "name": "Centro De Diagnostico Integral San José",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.455552,
+    "lng": -66.625057
+  },
+  {
+    "id": "miranda-centro-medico-docente-el-paso",
+    "name": "Centro Medico Docente el Paso",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.349717,
+    "lng": -67.05017
+  },
+  {
+    "id": "miranda-centro-medico-docente-la-trinidad",
+    "name": "Centro Médico Docente La Trinidad",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.431104,
+    "lng": -66.85547
+  },
+  {
+    "id": "miranda-clinica-avila",
+    "name": "Clínica Ávila",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.504112,
+    "lng": -66.849985
+  },
+  {
+    "id": "miranda-clinica-leopoldo-aguerrevere",
+    "name": "Clínica Leopoldo Aguerrevere",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.449771,
+    "lng": -66.870426
+  },
+  {
+    "id": "miranda-clinica-popular-tipo-1-dr-carlos-diez-del-ciervo",
+    "name": "Clínica Popular tipo 1 \"Dr. Carlos Diez del Ciervo\"",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.496004,
+    "lng": -66.855385
+  },
+  {
+    "id": "miranda-consultorio-el-manguito-iii",
+    "name": "Consultorio El Manguito III",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.272214,
+    "lng": -66.732786
+  },
+  {
+    "id": "miranda-dispensario-la-rosaleda",
+    "name": "Dispensario La Rosaleda",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.365277,
+    "lng": -66.976371
+  },
+  {
+    "id": "miranda-dispensario-local",
+    "name": "Dispensario Local",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.149596,
+    "lng": -66.900094
+  },
+  {
+    "id": "miranda-dispensario-rosario-milano",
+    "name": "Dispensario Rosario Milano",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.375836,
+    "lng": -66.954797
+  },
+  {
+    "id": "miranda-distrito-sanitario-n-7",
+    "name": "Distrito Sanitario N° 7",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.490103,
+    "lng": -66.808824
+  },
+  {
+    "id": "miranda-hospital-domingo-luciani",
+    "name": "Hospital Domingo Luciani",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.471288,
+    "lng": -66.810421
+  },
+  {
+    "id": "miranda-hospital-dr-francisco-r-garcia",
+    "name": "Hospital Dr. Francisco R. García",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.468075,
+    "lng": -66.6246
+  },
+  {
+    "id": "miranda-hospital-dr-osio",
+    "name": "Hospital Dr. Osío",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.164021,
+    "lng": -66.891972
+  },
+  {
+    "id": "miranda-hospital-general-de-higuerote",
+    "name": "Hospital General de Higuerote",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.474286,
+    "lng": -66.1079
+  },
+  {
+    "id": "miranda-hospital-general-eugenio-d-bellard",
+    "name": "Hospital general Eugenio D'Bellard",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.477938,
+    "lng": -66.539416
+  },
+  {
+    "id": "miranda-hospital-materno-infantil-del-este-joel-valen",
+    "name": "Hospital Materno Infantil del Este \"Joel Valen\"",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.480875,
+    "lng": -66.806093
+  },
+  {
+    "id": "miranda-hospital-perez-de-leon",
+    "name": "Hospital Pérez de León",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.47774,
+    "lng": -66.809833
+  },
+  {
+    "id": "miranda-hospital-rural-ernesto-regener",
+    "name": "Hospital Rural Ernesto Regener",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.314249,
+    "lng": -65.979587
+  },
+  {
+    "id": "miranda-hospital-san-juan-de-dios",
+    "name": "Hospital San Juan de Dios",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.467734,
+    "lng": -66.865115
+  },
+  {
+    "id": "miranda-hospital-victorino-santaella",
+    "name": "Hospital Victorino Santaella",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.354096,
+    "lng": -67.036711
+  },
+  {
+    "id": "miranda-hospital-viejo-de-guatire",
+    "name": "Hospital Viejo de Guatire",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.479714,
+    "lng": -66.549507
+  },
+  {
+    "id": "miranda-ivss-centro-ambulatorio-jose-gonzalez-navarro",
+    "name": "IVSS Centro Ambulatorio \"José Gonzalez Navarro\"",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.437197,
+    "lng": -66.863323
+  },
+  {
+    "id": "miranda-ivss-hospital-dr-luis-salazar-dominguez",
+    "name": "IVSS Hospital Dr. Luis Salazar Domínguez",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.47008,
+    "lng": -66.611251
+  },
+  {
+    "id": "miranda-ivss-los-dos-caminos",
+    "name": "IVSS Los Dos Caminos",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.496758,
+    "lng": -66.830488
+  },
+  {
+    "id": "miranda-ivss-los-ruices",
+    "name": "IVSS Los Ruices",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.482176,
+    "lng": -66.8301
+  },
+  {
+    "id": "miranda-materno-infantil-de-carrizal",
+    "name": "Materno Infantil de Carrizal",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.347367,
+    "lng": -66.996775
+  },
+  {
+    "id": "miranda-modulo",
+    "name": "Módulo",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.343264,
+    "lng": -66.952657
+  },
+  {
+    "id": "miranda-modulo-2",
+    "name": "Módulo",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.462966,
+    "lng": -66.612599
+  },
+  {
+    "id": "miranda-modulo-acevedo",
+    "name": "Módulo Acevedo",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.299181,
+    "lng": -66.381007
+  },
+  {
+    "id": "miranda-modulo-c-d-i-los-dos-caminos",
+    "name": "Módulo C.D.I. Los Dos Caminos",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.495735,
+    "lng": -66.835163
+  },
+  {
+    "id": "miranda-modulo-de-carrizal",
+    "name": "Módulo de Carrizal",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.346863,
+    "lng": -66.98669
+  },
+  {
+    "id": "miranda-modulo-de-la-california-sur",
+    "name": "Módulo de La California Sur",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.47613,
+    "lng": -66.821897
+  },
+  {
+    "id": "miranda-modulo-de-la-carlota",
+    "name": "Módulo de La Carlota",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.49252,
+    "lng": -66.834179
+  },
+  {
+    "id": "miranda-modulo-de-la-trinidad",
+    "name": "Módulo de La Trinidad",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.434151,
+    "lng": -66.875055
+  },
+  {
+    "id": "miranda-modulo-de-los-salias",
+    "name": "Módulo de Los Salias",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.373681,
+    "lng": -66.968067
+  },
+  {
+    "id": "miranda-modulo-de-petare",
+    "name": "Módulo de Petare",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.4789,
+    "lng": -66.812837
+  },
+  {
+    "id": "miranda-modulo-de-piedra-azul",
+    "name": "Módulo de Piedra Azul",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.431058,
+    "lng": -66.875165
+  },
+  {
+    "id": "miranda-modulo-de-rio-de-janeiro",
+    "name": "Módulo de Río de Janeiro",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.475336,
+    "lng": -66.810117
+  },
+  {
+    "id": "miranda-modulo-panamericana",
+    "name": "Módulo Panamericana",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.330197,
+    "lng": -67.041579
+  },
+  {
+    "id": "miranda-modulo-salvador-allende",
+    "name": "Módulo Salvador Allende",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.481673,
+    "lng": -66.85172
+  },
+  {
+    "id": "miranda-pronto-socorro-gobernacion-edo-miranda",
+    "name": "Pronto Socorro Gobernacion Edo Miranda",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.350957,
+    "lng": -67.039574
+  },
+  {
+    "id": "miranda-sanidad",
+    "name": "Sanidad",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.343149,
+    "lng": -67.043033
+  },
+  {
+    "id": "miranda-urologico-san-roman",
+    "name": "Urológico San Román",
+    "kind": "hospital",
+    "state": "Miranda",
+    "lat": 10.472103,
+    "lng": -66.855766
+  }
+]

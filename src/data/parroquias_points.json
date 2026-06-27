@@ -1,0 +1,920 @@
+[
+  {
+    "id": "la-guaira-parroquia-caraballeda",
+    "name": "Parroquia Caraballeda",
+    "kind": "parroquia",
+    "state": "La Guaira",
+    "municipio": "Municipio Vargas",
+    "lat": 10.583003,
+    "lng": -66.828885
+  },
+  {
+    "id": "la-guaira-parroquia-carayaca",
+    "name": "Parroquia Carayaca",
+    "kind": "parroquia",
+    "state": "La Guaira",
+    "municipio": "Municipio Vargas",
+    "lat": 10.497842,
+    "lng": -67.231474
+  },
+  {
+    "id": "la-guaira-parroquia-carlos-soublette",
+    "name": "Parroquia Carlos Soublette",
+    "kind": "parroquia",
+    "state": "La Guaira",
+    "municipio": "Municipio Vargas",
+    "lat": 10.57894,
+    "lng": -66.969831
+  },
+  {
+    "id": "la-guaira-parroquia-caruao",
+    "name": "Parroquia Caruao",
+    "kind": "parroquia",
+    "state": "La Guaira",
+    "municipio": "Municipio Vargas",
+    "lat": 10.586094,
+    "lng": -66.430661
+  },
+  {
+    "id": "la-guaira-parroquia-catia-la-mar",
+    "name": "Parroquia Catia La Mar",
+    "kind": "parroquia",
+    "state": "La Guaira",
+    "municipio": "Municipio Vargas",
+    "lat": 10.579161,
+    "lng": -67.055276
+  },
+  {
+    "id": "la-guaira-parroquia-el-junko",
+    "name": "Parroquia El Junko",
+    "kind": "parroquia",
+    "state": "La Guaira",
+    "municipio": "Municipio Vargas",
+    "lat": 10.482244,
+    "lng": -67.079343
+  },
+  {
+    "id": "la-guaira-parroquia-la-guaira",
+    "name": "Parroquia La Guaira",
+    "kind": "parroquia",
+    "state": "La Guaira",
+    "municipio": "Municipio Vargas",
+    "lat": 10.592553,
+    "lng": -66.925706
+  },
+  {
+    "id": "la-guaira-parroquia-macuto",
+    "name": "Parroquia Macuto",
+    "kind": "parroquia",
+    "state": "La Guaira",
+    "municipio": "Municipio Vargas",
+    "lat": 10.581818,
+    "lng": -66.885231
+  },
+  {
+    "id": "la-guaira-parroquia-maiquetia",
+    "name": "Parroquia Maiquetía",
+    "kind": "parroquia",
+    "state": "La Guaira",
+    "municipio": "Municipio Vargas",
+    "lat": 10.572333,
+    "lng": -66.944851
+  },
+  {
+    "id": "la-guaira-parroquia-naiguata",
+    "name": "Parroquia Naiguatá",
+    "kind": "parroquia",
+    "state": "La Guaira",
+    "municipio": "Municipio Vargas",
+    "lat": 10.58828,
+    "lng": -66.66742
+  },
+  {
+    "id": "la-guaira-parroquia-urimare",
+    "name": "Parroquia Urimare",
+    "kind": "parroquia",
+    "state": "La Guaira",
+    "municipio": "Municipio Vargas",
+    "lat": 10.594899,
+    "lng": -66.996748
+  },
+  {
+    "id": "distrito-capital-parroquia-macarao",
+    "name": "Parroquia Macarao",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.423355,
+    "lng": -67.071707
+  },
+  {
+    "id": "distrito-capital-parroquia-el-junquito",
+    "name": "Parroquia El Junquito",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.494549,
+    "lng": -67.026631
+  },
+  {
+    "id": "distrito-capital-parroquia-antimano",
+    "name": "Parroquia Antímano",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.463486,
+    "lng": -66.994427
+  },
+  {
+    "id": "distrito-capital-parroquia-caricuao",
+    "name": "Parroquia Caricuao",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.430078,
+    "lng": -66.981981
+  },
+  {
+    "id": "distrito-capital-parroquia-coche",
+    "name": "Parroquia Coche",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.433434,
+    "lng": -66.933025
+  },
+  {
+    "id": "distrito-capital-parroquia-el-paraiso",
+    "name": "Parroquia El Paraíso",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.485988,
+    "lng": -66.945907
+  },
+  {
+    "id": "distrito-capital-parroquia-el-valle",
+    "name": "Parroquia El Valle",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.444998,
+    "lng": -66.909313
+  },
+  {
+    "id": "distrito-capital-parroquia-la-vega",
+    "name": "Parroquia La Vega",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.461365,
+    "lng": -66.951983
+  },
+  {
+    "id": "distrito-capital-parroquia-23-de-enero",
+    "name": "Parroquia 23 de Enero",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.507154,
+    "lng": -66.934265
+  },
+  {
+    "id": "distrito-capital-parroquia-sucre",
+    "name": "Parroquia Sucre",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.530047,
+    "lng": -66.975846
+  },
+  {
+    "id": "distrito-capital-parroquia-el-recreo",
+    "name": "Parroquia El Recreo",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.515739,
+    "lng": -66.878721
+  },
+  {
+    "id": "distrito-capital-parroquia-altagracia",
+    "name": "Parroquia Altagracia",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.526494,
+    "lng": -66.913714
+  },
+  {
+    "id": "distrito-capital-parroquia-la-candelaria",
+    "name": "Parroquia La Candelaria",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.505401,
+    "lng": -66.901482
+  },
+  {
+    "id": "distrito-capital-parroquia-catedral",
+    "name": "Parroquia Catedral",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.50577,
+    "lng": -66.916396
+  },
+  {
+    "id": "distrito-capital-parroquia-la-pastora",
+    "name": "Parroquia La Pastora",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.531461,
+    "lng": -66.923691
+  },
+  {
+    "id": "distrito-capital-parroquia-san-agustin",
+    "name": "Parroquia San Agustín",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.4958,
+    "lng": -66.904492
+  },
+  {
+    "id": "distrito-capital-parroquia-san-bernardino",
+    "name": "Parroquia San Bernardino",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.529952,
+    "lng": -66.898921
+  },
+  {
+    "id": "distrito-capital-parroquia-san-jose",
+    "name": "Parroquia San José",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.52781,
+    "lng": -66.908624
+  },
+  {
+    "id": "distrito-capital-parroquia-san-juan",
+    "name": "Parroquia San Juan",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.498158,
+    "lng": -66.932281
+  },
+  {
+    "id": "distrito-capital-parroquia-santa-rosalia",
+    "name": "Parroquia Santa Rosalia",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.479396,
+    "lng": -66.917906
+  },
+  {
+    "id": "distrito-capital-parroquia-santa-teresa",
+    "name": "Parroquia Santa Teresa",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.497375,
+    "lng": -66.917047
+  },
+  {
+    "id": "miranda-parroquia-leoncio-martinez",
+    "name": "Parroquia Leoncio Martínez",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Sucre",
+    "lat": 10.516874,
+    "lng": -66.825266
+  },
+  {
+    "id": "miranda-parroquia-bolivar",
+    "name": "Parroquia Bolívar",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Zamora",
+    "lat": 10.472965,
+    "lng": -66.416159
+  },
+  {
+    "id": "miranda-parroquia-caucaguita",
+    "name": "Parroquia Caucagüita",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Sucre",
+    "lat": 10.493624,
+    "lng": -66.73732
+  },
+  {
+    "id": "miranda-parroquia-guarenas",
+    "name": "Parroquia Guarenas",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Plaza",
+    "lat": 10.474497,
+    "lng": -66.651478
+  },
+  {
+    "id": "miranda-parroquia-guatire",
+    "name": "Parroquia Guatire",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Zamora",
+    "lat": 10.45851,
+    "lng": -66.528138
+  },
+  {
+    "id": "miranda-parroquia-higuerote",
+    "name": "Parroquia Higuerote",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Brión",
+    "lat": 10.487892,
+    "lng": -66.090112
+  },
+  {
+    "id": "miranda-parroquia-curiepe",
+    "name": "Parroquia Curiepe",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Brión",
+    "lat": 10.486102,
+    "lng": -66.17913
+  },
+  {
+    "id": "miranda-parroquia-capaya",
+    "name": "Parroquia Capaya",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Acevedo",
+    "lat": 10.454841,
+    "lng": -66.291213
+  },
+  {
+    "id": "miranda-parroquia-el-cafe",
+    "name": "Parroquia El Café",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Acevedo",
+    "lat": 10.396941,
+    "lng": -66.266572
+  },
+  {
+    "id": "miranda-parroquia-tacarigua-de-brion",
+    "name": "Parroquia Tacarigua de Brión",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Brión",
+    "lat": 10.408452,
+    "lng": -66.180854
+  },
+  {
+    "id": "miranda-parroquia-el-jarillo",
+    "name": "Parroquia El Jarillo",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Guaicaipuro",
+    "lat": 10.38685,
+    "lng": -67.178174
+  },
+  {
+    "id": "miranda-parroquia-san-pedro",
+    "name": "Parroquia San Pedro",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Guaicaipuro",
+    "lat": 10.353052,
+    "lng": -67.127872
+  },
+  {
+    "id": "miranda-parroquia-los-teques",
+    "name": "Parroquia Los Teques",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Guaicaipuro",
+    "lat": 10.32776,
+    "lng": -67.06067
+  },
+  {
+    "id": "miranda-parroquia-cecilio-acosta",
+    "name": "Parroquia Cecilio Acosta",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Guaicaipuro",
+    "lat": 10.326206,
+    "lng": -66.928606
+  },
+  {
+    "id": "miranda-san-antonio-de-los-altos",
+    "name": "San Antonio de Los Altos",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Los Salias",
+    "lat": 10.385575,
+    "lng": -66.943769
+  },
+  {
+    "id": "miranda-parroquia-filas-de-mariche",
+    "name": "Parroquia Filas de Mariche",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Sucre",
+    "lat": 10.423389,
+    "lng": -66.728346
+  },
+  {
+    "id": "miranda-parroquia-altagracia",
+    "name": "Parroquia Altagracia",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Guaicaipuro",
+    "lat": 10.121475,
+    "lng": -67.061034
+  },
+  {
+    "id": "miranda-parroquia-paracotos",
+    "name": "Parroquia Paracotos",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Guaicaipuro",
+    "lat": 10.262432,
+    "lng": -66.959077
+  },
+  {
+    "id": "miranda-parroquia-tacata",
+    "name": "Parroquia Tácata",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Guaicaipuro",
+    "lat": 10.197424,
+    "lng": -67.03309
+  },
+  {
+    "id": "miranda-parroquia-las-brisas",
+    "name": "Parroquia Las Brisas",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Cristóbal Rojas",
+    "lat": 10.309672,
+    "lng": -66.820537
+  },
+  {
+    "id": "miranda-parroquia-santa-lucia",
+    "name": "Parroquia Santa Lucía",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Paz Castillo",
+    "lat": 10.349082,
+    "lng": -66.664025
+  },
+  {
+    "id": "miranda-parroquia-arevalo-gonzalez",
+    "name": "Parroquia Arévalo González",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Acevedo",
+    "lat": 10.247353,
+    "lng": -66.17964
+  },
+  {
+    "id": "miranda-parroquia-caucagua",
+    "name": "Parroquia Caucagua",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Acevedo",
+    "lat": 10.30348,
+    "lng": -66.423676
+  },
+  {
+    "id": "miranda-parroquia-mamporal",
+    "name": "Parroquia Mamporal",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Buroz",
+    "lat": 10.333716,
+    "lng": -66.122405
+  },
+  {
+    "id": "miranda-parroquia-marizapa",
+    "name": "Parroquia Marizapa",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Acevedo",
+    "lat": 10.269545,
+    "lng": -66.338262
+  },
+  {
+    "id": "miranda-parroquia-charallave",
+    "name": "Parroquia Charallave",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Cristóbal Rojas",
+    "lat": 10.243019,
+    "lng": -66.836913
+  },
+  {
+    "id": "miranda-parroquia-cua",
+    "name": "Parroquia Cúa",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Urdaneta",
+    "lat": 10.181144,
+    "lng": -66.91979
+  },
+  {
+    "id": "miranda-parroquia-nueva-cua",
+    "name": "Parroquia Nueva Cúa",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Urdaneta",
+    "lat": 10.118418,
+    "lng": -66.876711
+  },
+  {
+    "id": "miranda-parroquia-paparo",
+    "name": "Parroquia Paparo",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Páez",
+    "lat": 10.366199,
+    "lng": -65.989636
+  },
+  {
+    "id": "miranda-parroquia-san-jose",
+    "name": "Parroquia San José",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Andrés Bello",
+    "lat": 10.307274,
+    "lng": -66.023262
+  },
+  {
+    "id": "miranda-parroquia-ocumare",
+    "name": "Parroquia Ocumare",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Lander",
+    "lat": 10.081137,
+    "lng": -66.785076
+  },
+  {
+    "id": "miranda-parroquia-santa-barbara",
+    "name": "Parroquia Santa Bárbara",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Lander",
+    "lat": 10.143649,
+    "lng": -66.819552
+  },
+  {
+    "id": "miranda-parroquia-cartanal",
+    "name": "Parroquia Cartanal",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Independencia",
+    "lat": 10.257502,
+    "lng": -66.709051
+  },
+  {
+    "id": "miranda-parroquia-san-antonio",
+    "name": "Parroquia San Antonio",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Bolívar",
+    "lat": 10.219011,
+    "lng": -66.740157
+  },
+  {
+    "id": "miranda-parroquia-san-francisco",
+    "name": "Parroquia San Francisco",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Bolívar",
+    "lat": 10.164159,
+    "lng": -66.737325
+  },
+  {
+    "id": "miranda-parroquia-la-democracia",
+    "name": "Parroquia La Democracia",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Lander",
+    "lat": 10.028916,
+    "lng": -66.6396
+  },
+  {
+    "id": "miranda-parroquia-santa-teresa",
+    "name": "Parroquia Santa Teresa",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Independencia",
+    "lat": 10.177411,
+    "lng": -66.60798
+  },
+  {
+    "id": "miranda-parroquia-araguita",
+    "name": "Parroquia Aragüita",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Acevedo",
+    "lat": 10.137796,
+    "lng": -66.467825
+  },
+  {
+    "id": "miranda-parroquia-cumbo",
+    "name": "Parroquia Cumbo",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Andrés Bello",
+    "lat": 10.235292,
+    "lng": -66.058911
+  },
+  {
+    "id": "miranda-parroquia-panaquire",
+    "name": "Parroquia Panaquire",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Acevedo",
+    "lat": 10.161253,
+    "lng": -66.159901
+  },
+  {
+    "id": "miranda-parroquia-ribas",
+    "name": "Parroquia Ribas",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Acevedo",
+    "lat": 10.088708,
+    "lng": -66.275455
+  },
+  {
+    "id": "miranda-parroquia-cupira",
+    "name": "Parroquia Cúpira",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Pedro Gual",
+    "lat": 10.112519,
+    "lng": -65.66195
+  },
+  {
+    "id": "miranda-parroquia-el-guapo",
+    "name": "Parroquia El Guapo",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Páez",
+    "lat": 10.063233,
+    "lng": -65.993577
+  },
+  {
+    "id": "miranda-parroquia-machurucuto",
+    "name": "Parroquia Machurucuto",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Pedro Gual",
+    "lat": 10.204581,
+    "lng": -65.667034
+  },
+  {
+    "id": "miranda-parroquia-san-fernando",
+    "name": "Parroquia San Fernando",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Páez",
+    "lat": 10.210186,
+    "lng": -65.923194
+  },
+  {
+    "id": "miranda-parroquia-rio-chico",
+    "name": "Parroquia Río Chico",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Páez",
+    "lat": 10.302618,
+    "lng": -65.965402
+  },
+  {
+    "id": "miranda-parroquia-tacarigua-de-la-laguna",
+    "name": "Parroquia Tacarigua de La Laguna",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Páez",
+    "lat": 10.259021,
+    "lng": -65.828152
+  },
+  {
+    "id": "miranda-parroquia-el-hatillo",
+    "name": "Parroquia El Hatillo",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio El Hatillo",
+    "lat": 10.402517,
+    "lng": -66.789505
+  },
+  {
+    "id": "distrito-capital-parroquia-san-pedro",
+    "name": "Parroquia San Pedro",
+    "kind": "parroquia",
+    "state": "Distrito Capital",
+    "municipio": "Municipio Libertador",
+    "lat": 10.483668,
+    "lng": -66.892957
+  },
+  {
+    "id": "miranda-parroquia-carrizal",
+    "name": "Parroquia Carrizal",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Carrizal",
+    "lat": 10.351424,
+    "lng": -66.99733
+  },
+  {
+    "id": "miranda-parroquia-chacao",
+    "name": "Parroquia Chacao",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Chacao",
+    "lat": 10.515229,
+    "lng": -66.854177
+  },
+  {
+    "id": "miranda-parroquia-la-dolorita",
+    "name": "Parroquia La Dolorita",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Sucre",
+    "lat": 10.46173,
+    "lng": -66.775185
+  },
+  {
+    "id": "miranda-parroquia-nuestra-senora-del-rosario",
+    "name": "Parroquia Nuestra Señora del Rosario",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Baruta",
+    "lat": 10.402292,
+    "lng": -66.857338
+  },
+  {
+    "id": "miranda-parroquia-las-minas",
+    "name": "Parroquia Las Minas",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Baruta",
+    "lat": 10.454055,
+    "lng": -66.861185
+  },
+  {
+    "id": "miranda-parroquia-el-cafetal",
+    "name": "Parroquia El Cafetal",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Baruta",
+    "lat": 10.468758,
+    "lng": -66.840158
+  },
+  {
+    "id": "miranda-parroquia-petare",
+    "name": "Parroquia Petare",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Sucre",
+    "lat": 10.501624,
+    "lng": -66.788557
+  },
+  {
+    "id": "miranda-parroquia-birongo",
+    "name": "Parroquia Birongo",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Brión",
+    "lat": 10.501623,
+    "lng": -66.25772
+  },
+  {
+    "id": "miranda-parroquia-chirimena",
+    "name": "Parroquia Chirimena",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Brión",
+    "lat": 10.594,
+    "lng": -66.229996
+  },
+  {
+    "id": "miranda-parroquia-corozal",
+    "name": "Parroquia Corozal",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Páez",
+    "lat": 10.225767,
+    "lng": -66.015565
+  },
+  {
+    "id": "miranda-parroquia-guarabe",
+    "name": "Parroquia Guarabe",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Pedro Gual",
+    "lat": 10.003682,
+    "lng": -65.768474
+  },
+  {
+    "id": "miranda-parroquia-yaguapa",
+    "name": "Parroquia Yaguapa",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Acevedo",
+    "lat": 10.346656,
+    "lng": -66.307525
+  },
+  {
+    "id": "miranda-parroquia-soapire",
+    "name": "Parroquia Soapire",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Paz Castillo",
+    "lat": 10.292976,
+    "lng": -66.736352
+  },
+  {
+    "id": "miranda-parroquia-santa-rita",
+    "name": "Parroquia Santa Rita",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Paz Castillo",
+    "lat": 10.267461,
+    "lng": -66.576016
+  },
+  {
+    "id": "miranda-parroquia-siquire",
+    "name": "Parroquia Siquire",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Paz Castillo",
+    "lat": 10.338321,
+    "lng": -66.565718
+  },
+  {
+    "id": "miranda-parroquia-la-cabrera",
+    "name": "Parroquia La Cabrera",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Lander",
+    "lat": 10.185121,
+    "lng": -66.806129
+  },
+  {
+    "id": "miranda-parroquia-la-mata",
+    "name": "Parroquia La Mata",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Lander",
+    "lat": 10.176224,
+    "lng": -66.838271
+  },
+  {
+    "id": "miranda-parroquia-las-mercedes",
+    "name": "Parroquia Las Mercedes",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Urdaneta",
+    "lat": 10.151551,
+    "lng": -66.854799
+  },
+  {
+    "id": "miranda-parroquia-tarma",
+    "name": "Parroquia Tarma",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Urdaneta",
+    "lat": 10.07984,
+    "lng": -66.923486
+  },
+  {
+    "id": "miranda-parroquia-jabillal",
+    "name": "Parroquia Jabillal",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Guaicaipuro",
+    "lat": 10.274066,
+    "lng": -67.105646
+  },
+  {
+    "id": "miranda-parroquia-guaremal",
+    "name": "Parroquia Guaremal",
+    "kind": "parroquia",
+    "state": "Miranda",
+    "municipio": "Municipio Guaicaipuro",
+    "lat": 10.295342,
+    "lng": -67.021277
+  }
+]

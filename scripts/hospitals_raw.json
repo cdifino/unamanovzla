@@ -1,0 +1,5675 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-26T21:41:30Z",
+    "timestamp_areas_base": "2026-05-12T07:36:16Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 1148587225,
+      "lat": 10.4259542,
+      "lon": -67.0148607,
+      "tags": {
+        "access": "yes",
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Real de las Adjuntas",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Módulo de Las Adjuntas",
+        "opening_hours": "00:01-24:00",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1212712915,
+      "lat": 10.3652769,
+      "lon": -66.9763715,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Dispensario La Rosaleda"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1212712935,
+      "lat": 10.3736272,
+      "lon": -66.9486166,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "clinic",
+        "name": "Caritas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1768940223,
+      "lat": 10.2991807,
+      "lon": -66.3810073,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Módulo Acevedo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1850525015,
+      "lat": -25.3081426,
+      "lon": -57.598284,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital San Lucas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2385689354,
+      "lat": 10.4357717,
+      "lon": -66.9587921,
+      "tags": {
+        "access": "yes",
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Av. Principal de La Hacienda",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Módulo de La Hacienda",
+        "opening_hours": "00:01-24:00",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2388925479,
+      "lat": 10.4983118,
+      "lon": -66.9171244,
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1010",
+        "addr:street": "Av. Oeste 14",
+        "amenity": "hospital",
+        "building": "yes",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Ambulatorio Monseñor de Castro",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2452332911,
+      "lat": 10.5161898,
+      "lon": -66.9441731,
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1030",
+        "addr:street": "El Comercio",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Centro Clínico Quirúrgico Virgen Milagrosa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2498778567,
+      "lat": 10.4924125,
+      "lon": -66.8505105,
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1060",
+        "addr:street": "Av. Santa Ana",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "doctor",
+        "name": "Ambulatorio de Bello Campo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2621387266,
+      "lat": 10.4789,
+      "lon": -66.812837,
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1071",
+        "addr:street": "Av. Francisco de Miranda",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Módulo de Petare",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2747265957,
+      "lat": 10.6001961,
+      "lon": -67.0387244,
+      "tags": {
+        "addr:city": "Catia La Mar",
+        "addr:postcode": "1162",
+        "addr:street": "Avenida El Ejército",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Hospital Dr. Alfredo Machado"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2795655243,
+      "lat": 10.4816732,
+      "lon": -66.8517197,
+      "tags": {
+        "addr:street": "Av. La Guairita",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Módulo Salvador Allende",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3121547137,
+      "lat": 10.5968026,
+      "lon": -67.0137374,
+      "tags": {
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Módulo de Guaracarumbo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3132435686,
+      "lat": 10.5886849,
+      "lon": -67.058316,
+      "tags": {
+        "addr:country": "VE",
+        "addr:place": "Mamo",
+        "addr:state": "Vargas",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Ambulatorio Jacinto Plaza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3418010178,
+      "lat": 10.4925198,
+      "lon": -66.8341786,
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1071",
+        "addr:street": "Av. A de La Carlota",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Módulo de La Carlota",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3583767394,
+      "lat": 10.3736808,
+      "lon": -66.9680669,
+      "tags": {
+        "amenity": "hospital",
+        "emergency": "no",
+        "level": "2",
+        "name": "Módulo de Los Salias",
+        "phone": "+582123724053",
+        "website": "http://www.centrodiagnostico.com.ve/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3878534272,
+      "lat": 10.3497173,
+      "lon": -67.0501704,
+      "tags": {
+        "addr:street": "Calle Guaicaipuro",
+        "amenity": "hospital",
+        "name": "Centro Medico Docente el Paso",
+        "phone": "+582127005000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3984356506,
+      "lat": -25.2929259,
+      "lon": -57.602993,
+      "tags": {
+        "addr:city": "Asunción, Paraguay",
+        "addr:housenumber": "1806",
+        "addr:street": "mariscal Francisco Solano López",
+        "addr:street_1": "Juscelino Kubitschek",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Direccion General de Sanidad (Policia Nacional - Paraguay)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4063989714,
+      "lat": 10.1640211,
+      "lon": -66.8919719,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital Dr. Osío"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4083284931,
+      "lat": 10.5842026,
+      "lon": -67.0713628,
+      "tags": {
+        "addr:city": "Vista al Mar",
+        "addr:street": "Av. Principal de Vista al Mar",
+        "amenity": "hospital",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "name": "Ambulatorio Pedro Cova"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4218482189,
+      "lat": -25.2891371,
+      "lon": -57.6269569,
+      "tags": {
+        "addr:city": "Asuncion",
+        "addr:housenumber": "1043",
+        "addr:postcode": "595",
+        "addr:street": "Félix de Azara",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics",
+        "name": "IPN"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4379977863,
+      "lat": 10.3476167,
+      "lon": -67.0471634,
+      "tags": {
+        "addr:city": "Los Teques",
+        "addr:housenumber": "Prolongación",
+        "addr:street": "Calle Ayacucho",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Ambulatorio",
+        "opening_hours": "Mo-Su 05:30-23:00",
+        "operator": "Alcaldía del Municipio Guaicaipuro",
+        "platforms": "2",
+        "public_transport": "stop_position",
+        "subway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4398215459,
+      "lat": -25.2565945,
+      "lon": -57.5812621,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Santa Bárbara",
+        "source": "TALLER URBANO - GRUPO 8"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4472516707,
+      "lat": -25.2865217,
+      "lon": -57.6269895,
+      "tags": {
+        "addr:housenumber": "922",
+        "addr:postcode": "595",
+        "addr:street": "mariscal José Félix Estigarribia",
+        "amenity": "hospital",
+        "email": "emg.py@hotmail.com",
+        "healthcare": "hospital",
+        "name": "Electroneuro",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "phone": "59521448833",
+        "source": "Reconocimiento cartográfico 2016 por KG."
+      }
+    },
+    {
+      "type": "node",
+      "id": 4571639193,
+      "lat": -25.3084483,
+      "lon": -57.5989427,
+      "tags": {
+        "addr:street": "Teniente Ayala",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sanatorio San Lucas",
+        "name:es": "Sanatorio San Lucas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4712587444,
+      "lat": 10.3432635,
+      "lon": -66.952657,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Módulo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4860763702,
+      "lat": -25.2806074,
+      "lon": -57.5929768,
+      "tags": {
+        "addr:city": "Asunción",
+        "addr:housenumber": "1255",
+        "addr:street": "Avenida Venezuela",
+        "amenity": "hospital",
+        "name": "Centro Nacional de Control de Adicciones",
+        "operator": "MSPyBS",
+        "phone": "+595 21 298 352"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4882505921,
+      "lat": 10.3431492,
+      "lon": -67.0430331,
+      "tags": {
+        "addr:city": "Los Teques",
+        "addr:postcode": "1201",
+        "addr:street": "Calle Roscio Norte",
+        "amenity": "hospital",
+        "name": "Sanidad",
+        "name:es": "Sanidad Los Teques"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4951248995,
+      "lat": -25.2721419,
+      "lon": -57.5804628,
+      "tags": {
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "IPS"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4985012921,
+      "lat": 10.3427178,
+      "lon": -67.0448538,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Ambulatorio Dr. Francisco Risquez",
+        "name:es": "Ambulatorio Dr. Francisco Risquez"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5412852923,
+      "lat": 10.4510029,
+      "lon": -66.8622489,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Ambulatorio Dr. José María Vargas",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5602994621,
+      "lat": -25.3198577,
+      "lon": -57.5776634,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare:speciality": "childcare",
+        "name": "Hospital Materno Infantil San Pablo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5966999785,
+      "lat": -25.2941447,
+      "lon": -57.6238326,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sanatorio San Marcos"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6150068886,
+      "lat": -25.2414863,
+      "lon": -57.5443003,
+      "tags": {
+        "addr:street": "Ruta Transchaco",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "hospital de loma pyta"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6493094503,
+      "lat": 10.3517412,
+      "lon": -67.000637,
+      "tags": {
+        "addr:city": "Carrizal",
+        "addr:street": "Calle Ppal. Jose Manuel Alvarez",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "levels": "2",
+        "name": "Ambulatorio Luis Martin Estaba"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7862906705,
+      "lat": -25.3202158,
+      "lon": -57.5933629,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Hospital San Martin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8479425205,
+      "lat": 10.5159622,
+      "lon": -66.9174725,
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:full": "dos Pilitas a Portillo, La Pastora",
+        "addr:housename": "Edificio Sanitario",
+        "addr:postcode": "1010",
+        "addr:street": "Av. Oeste 13",
+        "air_conditioning": "yes",
+        "alt_name": "Sanidad",
+        "amenity": "hospital",
+        "capacity": "50",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "healthcare:speciality": "vaccination",
+        "internet_access": "no",
+        "name": "Distrito Sanitario N° 1",
+        "opening_hours": "Mo-Fr 06:00-15:00; Jan 01,Apr 19,May 01,Jun 24,Jul 05,Jul 24,Oct 12,Dec 24,Dec 25,Dec 31 off",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "public",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-8621446",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1985",
+        "website": "http://www.mpps.gob.ve/",
+        "wheelchair": "yes",
+        "wikipedia": "es:Distritos Sanitarios de Venezuela"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8479430226,
+      "lat": 10.4969833,
+      "lon": -66.9280377,
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:full": "De Cruz de la Vega a Palo Grande. Número 236",
+        "addr:housename": "Edificio Sanitario",
+        "addr:housenumber": "306",
+        "addr:postcode": "1020",
+        "addr:street": "Av. San Martín",
+        "air_conditioning": "yes",
+        "alt_name": "Sanidad",
+        "amenity": "hospital",
+        "capacity": "50",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "healthcare:speciality": "vaccination",
+        "internet_access": "no",
+        "name": "Distrito Sanitario N° 3",
+        "opening_hours": "Mo-Fr 06:00-15:00; Jan 01,Apr 19,May 01,Jun 24,Jul 05,Jul 24,Oct 12,Dec 24,Dec 25,Dec 31 off",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "public",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-4154679",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1985",
+        "website": "http://www.mpps.gob.ve/",
+        "wheelchair": "yes",
+        "wikipedia": "es:Distritos Sanitarios de Venezuela"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8479593597,
+      "lat": 10.459659,
+      "lon": -66.9139481,
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:full": "Avenida Principal de Los Jardines de El Valle. Calle 4",
+        "addr:housename": "Edificio Sanitario",
+        "addr:postcode": "1040",
+        "addr:street": "Real de los Jardines del Valle",
+        "air_conditioning": "yes",
+        "alt_name": "Sanidad",
+        "amenity": "hospital",
+        "capacity": "50",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "healthcare:speciality": "vaccination",
+        "internet_access": "no",
+        "name": "Distrito Sanitario N° 4",
+        "opening_hours": "Mo-Fr 06:00-15:00; Jan 01,Apr 19,May 01,Jun 24,Jul 05,Jul 24,Oct 12,Dec 24,Dec 25,Dec 31 off",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "public",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-4152348",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1985",
+        "website": "http://www.mpps.gob.ve/",
+        "wheelchair": "yes",
+        "wikipedia": "es:Distritos Sanitarios de Venezuela"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8479699805,
+      "lat": 10.4901031,
+      "lon": -66.8088242,
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:full": "Calle 5 con 11. Edificio Anibrun, piso 3. Detrás de Pollo Arturo’s",
+        "addr:housename": "Edificio Anibru",
+        "addr:postcode": "1073",
+        "addr:street": "Calle 11 de La Urbina",
+        "air_conditioning": "yes",
+        "alt_name": "Sanidad",
+        "amenity": "hospital",
+        "capacity": "50",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "healthcare:speciality": "speciality=vaccination",
+        "internet_access": "no",
+        "name": "Distrito Sanitario N° 7",
+        "opening_hours": "Mo-Fr 06:00-15:00; Jan 01,Apr 19,May 01,Jun 24,Jul 05,Jul 24,Oct 12,Dec 24,Dec 25,Dec 31 off",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "public",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-2411217",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1985",
+        "website": "http://www.mpps.gob.ve/",
+        "wheelchair": "yes",
+        "wikipedia": "es:Distritos Sanitarios de Venezuela"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8569703232,
+      "lat": -25.2693831,
+      "lon": -57.5849602,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "INAT - Instituto Nacional de Ablación y Transplante"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8569716066,
+      "lat": -25.2582602,
+      "lon": -57.5857453,
+      "tags": {
+        "addr:street": "Avenida General José Gervasio Artigas Arnal",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "CLINICA PERIFERICA NANAWA",
+        "source": "tallerurbano1_uca_2021"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8569716067,
+      "lat": -25.258307,
+      "lon": -57.5842927,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "CENTRO DE MEDICINA FISICA Y REHABILITACION IPS",
+        "source": "TALLER URBANO - GRUPO 8"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8573368826,
+      "lat": -25.2999198,
+      "lon": -57.6085754,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Prof. Dr. Victor Canata",
+        "source": "TallerUrbano1_UCA_2021"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8573368827,
+      "lat": -25.297739,
+      "lon": -57.6090621,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Clínica CETRO S.A",
+        "source": "TallerUrbano1_UCA_2021"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8826325552,
+      "lat": 10.6063692,
+      "lon": -66.1726686,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Ambulatorio"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8873560304,
+      "lat": 10.529567,
+      "lon": -66.9465449,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Ambulatorio Pedro González Rincones"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9695158412,
+      "lat": 10.2722144,
+      "lon": -66.7327863,
+      "tags": {
+        "addr:street": "Av La Conquista",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Consultorio El Manguito III",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9846431627,
+      "lat": -25.2415801,
+      "lon": -57.5437235,
+      "tags": {
+        "addr:street": "Ruta Transchaco",
+        "amenity": "hospital",
+        "description": "Centro médico Maitei Hospital privado que cuenta con varias especialidades",
+        "name": "Centro Médico Maitei",
+        "opening_hours": "Mo-Sa 07:00-21:00",
+        "phone": "(021) 299 014",
+        "website": "https://instagram.com/centromedicomaitei?igshid=YmMyMTA2M2Y="
+      }
+    },
+    {
+      "type": "node",
+      "id": 9902381174,
+      "lat": -25.292037,
+      "lon": -57.5619849,
+      "tags": {
+        "addr:city": "Ycuá Satí",
+        "addr:postcode": "001409",
+        "addr:street": "Doctor Eusebio Lillo Robles",
+        "amenity": "hospital",
+        "email": "info@hospitaluniversitario.edu.py",
+        "healthcare": "hospital",
+        "name": "Hospital Universitario Ntra. Sra. de la Asunción",
+        "website": "https://www.hospitaluniversitario.edu.py/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9983470718,
+      "lat": -25.2583206,
+      "lon": -57.580974,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Sanatorio santa Barbara"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9986105288,
+      "lat": 10.2690715,
+      "lon": -66.7065366,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "cdi cartanal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10801925105,
+      "lat": 10.4850847,
+      "lon": -66.739667,
+      "tags": {
+        "amenity": "hospital",
+        "name": "CDI William Lara"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10951503492,
+      "lat": 10.5981081,
+      "lon": -66.9716662,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Centro de Diagnóstico Integral"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10951503503,
+      "lat": 10.5990693,
+      "lon": -66.9838585,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Centro Oftalmológico de Vargas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10969826433,
+      "lat": 10.6049139,
+      "lon": -66.9008943,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Ambulatorio Guaicamacuto"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10992880021,
+      "lat": 10.6213706,
+      "lon": -66.7337589,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sala De Rehabilitación Integral Naiguatá (SRI)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10992880061,
+      "lat": 10.6216081,
+      "lon": -66.7384762,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital de Emergencias de Naiguatá"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11463053569,
+      "lat": -25.2787401,
+      "lon": -57.5924844,
+      "tags": {
+        "addr:housenumber": "1140",
+        "addr:street": "Avenida Venezuela",
+        "amenity": "hospital",
+        "name": "Centro Nacional de Prevención y Tratamiento de Adicciones (CENPTRA)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11662240169,
+      "lat": 10.3041636,
+      "lon": -67.0349654,
+      "tags": {
+        "addr:postcode": "1201",
+        "addr:street": "Calle principal de guaremal sector el Dispensario",
+        "amenity": "hospital",
+        "name": "Ambulatorio Dr. José Gregorio Hernández",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12222548751,
+      "lat": 10.5210329,
+      "lon": -66.9115828,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Ambulatorio Domingo Luciani"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13523260624,
+      "lat": 10.4963763,
+      "lon": -66.8728331,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13743258705,
+      "lat": -25.2931334,
+      "lon": -57.6030096,
+      "tags": {
+        "addr:city": "Asunción, Paraguay",
+        "addr:housenumber": "1806",
+        "addr:street": "Avenida Mariscal Francisco Solano López",
+        "amenity": "hospital",
+        "ele": "4",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Hospital Central de Policía Rigoberto Caballero",
+        "operator": "Policia Nacional del Paraguay",
+        "website": "https://hcprc.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29288693,
+      "center": {
+        "lat": -25.2710202,
+        "lon": -57.5800348
+      },
+      "nodes": [
+        322078228,
+        4041034645,
+        7202087796,
+        7202087803,
+        7202087802,
+        7202087794,
+        322078231,
+        7202087814,
+        7202087815,
+        7202087816,
+        7202087817,
+        7202087818,
+        7202087819,
+        7202087822,
+        7202087821,
+        7202087820,
+        4041034635,
+        7202087836,
+        4041034636,
+        7202087830,
+        7202087829,
+        4808420828,
+        2779897934,
+        2779897941,
+        2779897935,
+        2779897940,
+        2779897933,
+        7202087841,
+        7202087840,
+        7202087839,
+        2779897928,
+        7202087838,
+        7202087704,
+        7202087692,
+        7202087837,
+        7202087842,
+        7202087843,
+        7202087845,
+        7202087844,
+        7202087789,
+        7202087791,
+        321713270,
+        7202087790,
+        7202087846,
+        7202087693,
+        322078228
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Instituto de Previsión Social (I.P.S.)",
+        "short_name": "IPS"
+      }
+    },
+    {
+      "type": "way",
+      "id": 103930078,
+      "center": {
+        "lat": 10.1738581,
+        "lon": -66.8913886
+      },
+      "nodes": [
+        1199596624,
+        1199596629,
+        1199596630,
+        1199596626,
+        1199596624
+      ],
+      "tags": {
+        "addr:street": "Av. Monseñor Pellín",
+        "amenity": "hospital",
+        "name": "Centro de Diagnóstico Integral CDI"
+      }
+    },
+    {
+      "type": "way",
+      "id": 114219148,
+      "center": {
+        "lat": 10.4742856,
+        "lon": -66.1079
+      },
+      "nodes": [
+        1294114904,
+        1294114673,
+        1294114665,
+        1294114653,
+        13290023104,
+        13290023103,
+        1294114667,
+        1294114904
+      ],
+      "tags": {
+        "addr:city": "Higuerote",
+        "addr:postcode": "1231",
+        "addr:street": "Avenida Universidad",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital General de Higuerote"
+      }
+    },
+    {
+      "type": "way",
+      "id": 119878172,
+      "center": {
+        "lat": 10.4957346,
+        "lon": -66.8351633
+      },
+      "nodes": [
+        1345447008,
+        1345447006,
+        1345446987,
+        1345446994,
+        1345447000,
+        1345447008
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1071",
+        "addr:street": "Av. Rómulo Gallegos",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general;internal;community;physiatry",
+        "name": "Módulo C.D.I. Los Dos Caminos",
+        "operator:type": "public",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 131015991,
+      "center": {
+        "lat": -25.2882483,
+        "lon": -57.6219176
+      },
+      "nodes": [
+        1442618917,
+        1442618915,
+        1442618868,
+        1442618889,
+        1442618917
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sanatorio Migone"
+      }
+    },
+    {
+      "type": "way",
+      "id": 153854047,
+      "center": {
+        "lat": 10.4821757,
+        "lon": -66.8300996
+      },
+      "nodes": [
+        1664832565,
+        1664832582,
+        1664832557,
+        1664832499,
+        1664832565
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1071",
+        "addr:street": "Adriana Johanna",
+        "amenity": "hospital",
+        "building": "hospital",
+        "building:levels": "2",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "IVSS Los Ruices",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q6047563",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 168277930,
+      "center": {
+        "lat": 10.4497713,
+        "lon": -66.8704257
+      },
+      "nodes": [
+        1795617374,
+        11907241998,
+        1795617336,
+        1795617342,
+        11907241999,
+        1795617367,
+        11907241996,
+        11907241997,
+        1795617374
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1080",
+        "addr:street": "Av. Río Manapire",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general;gynaecology;emergency;paediatrics;cardiology;surgery;maternity;vaccination",
+        "name": "Clínica Leopoldo Aguerrevere",
+        "opening_hours": "24/7",
+        "operator:type": "private",
+        "phone": "+58-212-9072222",
+        "website": "https://leopoldoaguerrevere.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 179958526,
+      "center": {
+        "lat": 10.4677342,
+        "lon": -66.8651148
+      },
+      "nodes": [
+        1904086650,
+        1904086662,
+        1904086682,
+        8542169820,
+        1904086649,
+        1904086652,
+        8542169821,
+        8542169822,
+        8542169823,
+        1904086644,
+        1904086659,
+        1904086647,
+        1904086655,
+        1904086686,
+        1904086687,
+        1904086679,
+        1904086677,
+        1904086658,
+        1904086656,
+        1904086666,
+        1904086672,
+        1904086673,
+        1904086683,
+        1904086650
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1080",
+        "addr:street": "Calle C Colinas de Valle Arriba",
+        "air_conditioning": "yes",
+        "amenity": "hospital",
+        "capacity": "150",
+        "contact:facebook": "https://www.facebook.com/Hospital-San-Juan-de-Dios-1461319730754453/?fref=ts",
+        "contact:twitter": "https://twitter.com/rriidios",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipMBVtLIYFRQQxv3eAjytvtPHlXpJybneEzpqWMM=w408-h309-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital San Juan de Dios",
+        "old_name": "Hogar Clínica Nuestra Señora de Guadalupe",
+        "opening_hours": "Mo-Su 06:00-18:00",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "religious",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-9070811",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1970",
+        "website": "http://www.hospitalsanjuandedios.org.ve/",
+        "wheelchair": "yes",
+        "wikidata": "Q16576133",
+        "wikipedia": "es:Hospital San Juan de Dios (Caracas)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 180356896,
+      "center": {
+        "lat": 10.4721027,
+        "lon": -66.8557664
+      },
+      "nodes": [
+        1907983586,
+        7264196764,
+        7264196761,
+        7264196763,
+        11436650805,
+        7264196762,
+        1907983568,
+        1907983594,
+        1907983563,
+        1907983572,
+        1907983567,
+        1907983596,
+        1907983591,
+        1907983562,
+        11595733987,
+        7264196765,
+        1907983586
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1060",
+        "addr:street": "Urape",
+        "alt_name": "Instituto de Clínicas y Urología Tamanaco",
+        "amenity": "hospital",
+        "building": "hospital",
+        "building:levels": "10",
+        "building:levels:underground": "2",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "internet_access": "wlan",
+        "name": "Urológico San Román",
+        "operator": "Urológico San Román C.A",
+        "operator:type": "private",
+        "phone": "+58-212-9990111",
+        "website": "http://www.urologico.com/web/default.php",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 181929447,
+      "center": {
+        "lat": 10.4293353,
+        "lon": -67.0099513
+      },
+      "nodes": [
+        1922684810,
+        1922684814,
+        1922684815,
+        1922684816,
+        1922684809,
+        1922684811,
+        1922684813,
+        1922684812,
+        1922684810
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Carretera: Caracas - Los Teques",
+        "amenity": "hospital",
+        "building": "yes",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Ambulatorio de La Gran Parada",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 201618325,
+      "center": {
+        "lat": 10.6198542,
+        "lon": -66.3833251
+      },
+      "nodes": [
+        2116452509,
+        12582576274,
+        2116452537,
+        2116452567,
+        11975911897,
+        11975911898,
+        11975911899,
+        11975911900,
+        11975911905,
+        11975911903,
+        11975911904,
+        11975911902,
+        11975911901,
+        2116452551,
+        2116452509
+      ],
+      "tags": {
+        "addr:postcode": "1168",
+        "amenity": "hospital",
+        "building": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital Dr. José María España"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206772967,
+      "center": {
+        "lat": 10.4712676,
+        "lon": -66.963245
+      },
+      "nodes": [
+        2168128609,
+        2168128586,
+        2168128629,
+        2168128593,
+        2168128609
+      ],
+      "tags": {
+        "access": "yes",
+        "addr:city": "Caracas",
+        "addr:postcode": "1020",
+        "addr:street": "Calle 7 de Montalbán",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "fee": "no",
+        "healthcare": "hospital",
+        "name": "Módulo de Montalbán III",
+        "opening_hours": "00:01-24:00",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 207774215,
+      "center": {
+        "lat": 10.4708681,
+        "lon": -66.9535089
+      },
+      "nodes": [
+        2180276043,
+        2793615583,
+        2793615592,
+        2793615590,
+        2523539244,
+        2180276042,
+        2793622440,
+        2793622442,
+        2523539110,
+        3009592159,
+        3009592190,
+        2180276035,
+        3011686771,
+        3011686772,
+        8584512538,
+        2180276040,
+        2180276032,
+        2180276043
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:district": "Municipio Libertador",
+        "addr:postcode": "1020",
+        "addr:state": "Distrito Capital",
+        "addr:street": "Avenida Teherán",
+        "addr:subdistrict": "Montalban",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Clínica Dispensario Padre Machado",
+        "opening_hours": "Mo-Fr 06:00-21:00",
+        "phone": "+58 212-4429025",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208457166,
+      "center": {
+        "lat": 10.4811864,
+        "lon": -66.9437777
+      },
+      "nodes": [
+        2187525073,
+        2187525057,
+        2187525041,
+        2997838838,
+        8455033138,
+        2997838836,
+        2187525046,
+        2187525073
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:full": "Av. Loira, Centro Médico Loira, PB, El Paraíso, Caracas",
+        "addr:postcode": "1020",
+        "addr:street": "Av. Loira",
+        "air_conditioning": "yes",
+        "amenity": "hospital",
+        "building": "hospital",
+        "building:levels": "16",
+        "capacity": "100",
+        "contact:facebook": "https://facebook.com/Centro-M%C3%A9dico-Loira-108808040563540/",
+        "contact:instagram": "https://www.instagram.com/centromedicoloira/",
+        "currency:BsF": "yes",
+        "currency:EUR": "yes",
+        "currency:USD": "yes",
+        "currency:others": "no",
+        "email": "info@centromedicoloira.com",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "allergology;anaesthetics;biochemistry;cardiology;dermatology;endocrinology;physiatry;gastroenterology;general;gynaecology;intensive;internal;nephrology;neurology;pulmonology;ophthalmology;oncology;orthopaedics;otolaryngology;paediatrics;surgery;trauma",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPdT1kzTIeZcCVqBq93si9lzfZNh_RI_esfUbn4=w408-h271-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Centro Médico Loira",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "operator": "Centro Médico Loira, C.A",
+        "operator:type": "private",
+        "payment:american_express": "yes",
+        "payment:cash": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:transferencia": "yes",
+        "payment:visa": "yes",
+        "payment:wire_transfer": "yes",
+        "phone": "+58-212-4052111",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1985",
+        "website": "http://cmloira.com.ve/",
+        "wheelchair": "yes",
+        "wikipedia": "es:Centro Médico Loira"
+      }
+    },
+    {
+      "type": "way",
+      "id": 214827895,
+      "center": {
+        "lat": 10.480294,
+        "lon": -66.9531774
+      },
+      "nodes": [
+        2242988616,
+        9868690799,
+        9868690804,
+        2242988648,
+        2242988642,
+        9868690805,
+        2791505934,
+        2242988700,
+        3000682159,
+        3257484526,
+        2242988604,
+        2242988622,
+        3000682158,
+        2242988613,
+        3000682157,
+        9868690800,
+        9868690807,
+        9868690806,
+        2242988691,
+        3000682156,
+        9868690801,
+        9868690802,
+        2242988610,
+        2242988663,
+        2242988639,
+        2242988681,
+        2242988616
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Comercio",
+        "air_conditioning": "yes",
+        "amenity": "hospital",
+        "capacity": "300",
+        "emergency": "yes",
+        "fax": "+58-212-4727797",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPcSnsAlB49PWrsHlEnQ-itJ3JrAK7vrzldU9zL=w408-h306-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Pérez Carreño",
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q6047563",
+        "phone": "+58-212-4728471",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1940",
+        "website": "http://www.ivss.gov.ve/Centros-de-Salud-Estado-Distrito-Federal",
+        "wheelchair": "yes",
+        "wikidata": "Q16942042",
+        "wikipedia": "es:Hospital Dr. Miguel Pérez Carreño"
+      }
+    },
+    {
+      "type": "way",
+      "id": 216676107,
+      "center": {
+        "lat": 10.4985332,
+        "lon": -66.9390503
+      },
+      "nodes": [
+        2260684941,
+        2260684942,
+        8502357836,
+        8502357818,
+        8502357819,
+        8502357837,
+        8502357832,
+        8502357839,
+        8502357831,
+        8502357828,
+        8502354807,
+        8502357830,
+        8502357824,
+        8502357829,
+        8502357834,
+        8502357822,
+        8502354804,
+        8502357825,
+        8502354809,
+        8502354805,
+        8502354813,
+        8502357838,
+        8502354812,
+        8502354816,
+        8502357823,
+        8502354814,
+        8502354806,
+        8502357817,
+        8502354808,
+        8502354811,
+        8502354815,
+        8502357827,
+        8502357820,
+        8502357821,
+        8502357826,
+        8502354810,
+        2260684909,
+        8502357833,
+        8502357835,
+        2260684941
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1020",
+        "addr:street": "Av. José Ángel Lamas",
+        "air_conditioning": "yes",
+        "alt_name": "Hospital Militar de Caracas",
+        "amenity": "hospital",
+        "capacity": "250",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Hospital_Cl%C3%ADnico_Militar_de_Caracas.jpg/250px-Hospital_Cl%C3%ADnico_Militar_de_Caracas.jpg",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Militar Dr. Carlos Arvelo",
+        "opening_hours": "Mo-Su 06:30-18:30",
+        "operator": "Ministerio de la Defensa",
+        "operator:type": "public",
+        "phone": "+58-212-4061111",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1957",
+        "website": "http://hmcarlosarvelo.mil.ve/",
+        "wheelchair": "yes",
+        "wikidata": "Q16576090",
+        "wikipedia": "es:Hospital Militar Dr. Carlos Arvelo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 216686973,
+      "center": {
+        "lat": 10.4952295,
+        "lon": -66.9315153
+      },
+      "nodes": [
+        2260785522,
+        2260785520,
+        2260785499,
+        9187261817,
+        2260785531,
+        2260785502,
+        3059830629,
+        2260785500,
+        2260785529,
+        3059830628,
+        2260785519,
+        2260785522
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1020",
+        "addr:street": "Av. San Martín",
+        "air_conditioning": "yes",
+        "amenity": "hospital",
+        "capacity": "120",
+        "email": "maternidadconcepcionpalacios@gmail.com",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics;gynaecology;paediatric_surgery;maternity",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNxukaHrJkpZ_SCsb37Wr2G9Hb0-mGMExxUSY7T=w408-h306-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "layer": "-1",
+        "name": "Maternidad Concepción Palacios",
+        "opening_hours": "00:01-24:00",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "public",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-4518419",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1938",
+        "website": "https://hospitales.mpps.gob.ve/distrito_capital/maternidad_concepcion_palacios/",
+        "wheelchair": "yes",
+        "wikidata": "Q16605358",
+        "wikipedia": "es:Maternidad Concepción Palacios"
+      }
+    },
+    {
+      "type": "way",
+      "id": 220266714,
+      "center": {
+        "lat": 10.4375628,
+        "lon": -66.9902722
+      },
+      "nodes": [
+        2293958631,
+        2293958644,
+        2293958609,
+        3043428308,
+        2845336021,
+        2293958638,
+        2906703232,
+        2906703233,
+        2906703235,
+        2906703234,
+        2906703236,
+        2293958631
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Bulevar de Ruíz Pineda",
+        "air_conditioning": "yes",
+        "amenity": "hospital",
+        "capacity": "200",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics;gynaecology;paediatric_surgery;maternity",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNxukaHrJkpZ_SCsb37Wr2G9Hb0-mGMExxUSY7T=w408-h306-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Materno Infantil Dr. Pastor Oropeza",
+        "opening_hours": "Mo-Su 06:00-18:00",
+        "operator": "Ministerio de Salud",
+        "operator:type": "public",
+        "phone": "+58-212-4314763",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1938",
+        "wheelchair": "yes",
+        "wikipedia": "es:Hospital Materno Infantil Dr. Pastor Oropeza"
+      }
+    },
+    {
+      "type": "way",
+      "id": 220371082,
+      "center": {
+        "lat": 10.5057543,
+        "lon": -66.9469574
+      },
+      "nodes": [
+        9221337033,
+        9221337032,
+        9221337031,
+        9221337030,
+        9159468180,
+        9221337029,
+        9221324283,
+        9221337028,
+        9221337027,
+        9221337026,
+        9221337025,
+        2294988715,
+        9221337024,
+        2294988690,
+        9221337023,
+        9221337022,
+        9221337021,
+        2294988818,
+        9221337020,
+        9221337019,
+        2294988694,
+        9221324288,
+        9221339184,
+        2294988857,
+        2294988792,
+        9221337033
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:country": "VE",
+        "addr:district": "Municipio Libertador",
+        "addr:state": "Distrito Capital",
+        "addr:street": "Calle Colombia",
+        "addr:suburb": "Catia",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics",
+        "name": "IVSS Hospital Pediátrico Dr. Elías Toro",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "government",
+        "operator:wikidata": "Q9008775",
+        "operator:wikipedia": "es:Instituto Venezolano de los Seguros Sociales",
+        "wikidata": "Q109746686"
+      }
+    },
+    {
+      "type": "way",
+      "id": 220514832,
+      "center": {
+        "lat": 10.5133646,
+        "lon": -66.94249
+      },
+      "nodes": [
+        2296279320,
+        2296279326,
+        2296279321,
+        2296279325,
+        3586482868,
+        3586482866,
+        2296279328,
+        11592511929,
+        2296279320
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1030",
+        "addr:street": "El Cristo",
+        "alt_name": "Periférico del Oeste",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "IVSS Hospital Dr. Ricardo Baquero González",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:wikidata": "Q6047563"
+      }
+    },
+    {
+      "type": "way",
+      "id": 220598788,
+      "center": {
+        "lat": 10.4675487,
+        "lon": -66.9725441
+      },
+      "nodes": [
+        2297011416,
+        2297011387,
+        2297011423,
+        2297011395,
+        2853262455,
+        2297011421,
+        2297011394,
+        2297011392,
+        2297011419,
+        2297011357,
+        2977980442,
+        2297011408,
+        2297011416
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1020",
+        "addr:street": "Av. Teherán",
+        "air_conditioning": "yes",
+        "amenity": "hospital",
+        "capacity": "200",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "healthcare:speciality": "cardiology;cardiac_surgery",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNxukaHrJkpZ_SCsb37Wr2G9Hb0-mGMExxUSY7T=w408-h306-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Cardiológico Infantil Latinoamericano",
+        "opening_hours": "Mo-Fr 07:00-18:00",
+        "operator": "Ministerio de Salud",
+        "operator:type": "public",
+        "phone": "+58-212-4075040",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "2006",
+        "website": "http://www.cardiologicoinfantil.gob.ve/",
+        "wheelchair": "yes",
+        "wikidata": "Q16493408",
+        "wikipedia": "es:Hospital Cardiológico Infantil Latinoamericano"
+      }
+    },
+    {
+      "type": "way",
+      "id": 220794684,
+      "center": {
+        "lat": 10.5139924,
+        "lon": -66.9329381
+      },
+      "nodes": [
+        2298830770,
+        2298830746,
+        2298830711,
+        2298830782,
+        2298830770
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1030",
+        "addr:street": "Av. Sucre",
+        "alt_name": "Clínica Popular de Catia",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "IVSS Ambulatorio Pedro Arreaza",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q6047563"
+      }
+    },
+    {
+      "type": "way",
+      "id": 222570043,
+      "center": {
+        "lat": 10.5164476,
+        "lon": -66.9114389
+      },
+      "nodes": [
+        2315272453,
+        8760771988,
+        2315272440,
+        7198173277,
+        7198173278,
+        2315272486,
+        2315272455,
+        2315272490,
+        11436843387,
+        2315272460,
+        2315272484,
+        6785940579,
+        6785940580,
+        2315272423,
+        2315272499,
+        2315272453
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1010",
+        "addr:street": "Av. Norte",
+        "air_conditioning": "yes",
+        "amenity": "hospital",
+        "capacity": "300",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipOo-CqyFXNw7xZCpz1yvTYVQ_lRby_6BnG_OXpN=w408-h306-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital José María Vargas",
+        "opening_hours": "00:01-24:00",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "public",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-8649145",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1891",
+        "website": "http://hospitalvargas.blogspot.com/",
+        "wheelchair": "yes",
+        "wikidata": "Q16576021",
+        "wikipedia": "es:Hospital Dr. José María Vargas de Caracas"
+      }
+    },
+    {
+      "type": "way",
+      "id": 227364374,
+      "center": {
+        "lat": 10.5161274,
+        "lon": -66.9054695
+      },
+      "nodes": [
+        2360614545,
+        2360614566,
+        2360614551,
+        2360614547,
+        2360614545
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1010",
+        "addr:street": "calle cotiza",
+        "amenity": "hospital",
+        "building": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "ophthalmology",
+        "name": "Hospital Dr. Francisco A. Risquéz"
+      }
+    },
+    {
+      "type": "way",
+      "id": 227368305,
+      "center": {
+        "lat": 10.5069625,
+        "lon": -66.899604
+      },
+      "nodes": [
+        12049814571,
+        2360656377,
+        2360656386,
+        11596814071,
+        2360656371,
+        2360656359,
+        2360656392,
+        2360656365,
+        2360656395,
+        3010342234,
+        3010341552,
+        2360656404,
+        12049814571
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1010",
+        "addr:street": "Av. Vollmer",
+        "air_conditioning": "yes",
+        "alt_name": "Hospital Municipal de Niños de Caracas",
+        "amenity": "hospital",
+        "capacity": "150",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics;gynaecology;paediatric_surgery",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipMtn7e7A6OP99T183nuR6L5WDe0P1ULu2XFXW0_=w408-h544-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital de Niños J.M. de Los Ríos",
+        "official_name": "Hospital de Niños José Manuel de los Ríos",
+        "opening_hours": "00:01-24:00",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "government",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-5743511",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1937",
+        "website": "https://hospitales.mpps.gob.ve/distrito_capital/maternidad_concepcion_palacios/",
+        "wheelchair": "yes",
+        "wikidata": "Q16576187",
+        "wikipedia": "es:Hospital de Niños J. M. de los Ríos"
+      }
+    },
+    {
+      "type": "way",
+      "id": 227683189,
+      "center": {
+        "lat": 10.4778138,
+        "lon": -66.9180238
+      },
+      "nodes": [
+        2363281537,
+        8541832499,
+        2363281550,
+        2363281525,
+        2363281542,
+        8541832495,
+        2363281537
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1040",
+        "addr:street": "Av. Calvo Lairet",
+        "air_conditioning": "yes",
+        "alt_name": "Hospital Padre Machado",
+        "amenity": "hospital",
+        "capacity": "150",
+        "email": "hospitaloncologicopadremachadoi@gmail.com",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "healthcare:speciality": "oncology",
+        "image": "https://pbs.twimg.com/media/EW5AewAWkAIfTeA.jpg",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Oncológico Padre Machado",
+        "opening_hours": "Mo-Su 06:00-18:00",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q6047563",
+        "phone": "+58-212-6312312",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1959",
+        "website": "http://www.ivss.gov.ve/Centros-de-Salud-Estado-Distrito-Federal",
+        "wheelchair": "yes",
+        "wikidata": "Q16576107",
+        "wikipedia": "es:Hospital Oncológico Padre Machado"
+      }
+    },
+    {
+      "type": "way",
+      "id": 227732033,
+      "center": {
+        "lat": 10.4607685,
+        "lon": -66.9127427
+      },
+      "nodes": [
+        2363870993,
+        2363871066,
+        2363871027,
+        8479593596,
+        2363871000,
+        2363870993
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1040",
+        "addr:street": "Real de los Jardines del Valle",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Clínica Popular El Valle",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 227859363,
+      "center": {
+        "lat": 10.4604246,
+        "lon": -66.9142287
+      },
+      "nodes": [
+        2363871001,
+        2364940795,
+        2364940796,
+        2363871062,
+        2363871001
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1040",
+        "addr:street": "Av. Intercomunal de El Valle",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Hospital Materno Infantil del Valle",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 228913258,
+      "center": {
+        "lat": 10.4712884,
+        "lon": -66.8104205
+      },
+      "nodes": [
+        2375654032,
+        2375654044,
+        2375654009,
+        2375654022,
+        2375654031,
+        6793730592,
+        6793730658,
+        6793730657,
+        6793730659,
+        6793730660,
+        2375654026,
+        6793730661,
+        8522797609,
+        8522797610,
+        2375654027,
+        8522797611,
+        6793730662,
+        8522797612,
+        2375654023,
+        8522797613,
+        8522797614,
+        8522797615,
+        6793730663,
+        6793730664,
+        2375654029,
+        7292233709,
+        2375654030,
+        6793727482,
+        6793727481,
+        2375654032
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1073",
+        "addr:street": "Domingo Luciani",
+        "air_conditioning": "yes",
+        "alt_name": "Hospital General del Este",
+        "amenity": "hospital",
+        "capacity": "350",
+        "contact:twitter": "https://twitter.com/hosp_d_luciani?lang=ar",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNIu4cJKpuavDepJLZPLgIO10eGCoZYxebOnCrq=w408-h306-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Domingo Luciani",
+        "opening_hours": "Mo-Su 06:30-18:30",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q6047563",
+        "phone": "+58-212-2056511",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1987",
+        "website": "http://www.ivss.gov.ve/contenido/localizacion-centros-de-salud-ivss:estado-Miranda",
+        "wheelchair": "yes",
+        "wikidata": "Q16493411",
+        "wikipedia": "es:Hospital Dr. Domingo Luciani"
+      }
+    },
+    {
+      "type": "way",
+      "id": 229952187,
+      "center": {
+        "lat": 10.4330954,
+        "lon": -66.9628011
+      },
+      "nodes": [
+        2384914764,
+        2384914758,
+        2384914987,
+        2384914944,
+        2907364399,
+        2384914764
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Av. Principal de La Hacienda",
+        "alt_name": "Clínica Popular de Caricuao",
+        "amenity": "hospital",
+        "building": "hospital",
+        "emergency": "yes",
+        "fax": "+58-212-4325318",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "IVSS Ambulatorio de Caricuao",
+        "opening_hours": "01:00-24:00",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:type": "public",
+        "phone": "+58-212-4323793",
+        "website": "http://www.ivss.gov.ve/Centros-de-Salud-Estado-Distrito-Federal-2",
+        "wheelchair": "yes",
+        "wikipedia": "es:Instituto Venezolano de los Seguros Sociales"
+      }
+    },
+    {
+      "type": "way",
+      "id": 230267317,
+      "center": {
+        "lat": 10.4351157,
+        "lon": -66.9910655
+      },
+      "nodes": [
+        2387904948,
+        2387904941,
+        2387905047,
+        2387905044,
+        2387904964,
+        2387904940,
+        2387904948
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Av. Alejandro Carrasquel",
+        "amenity": "hospital",
+        "emergency": "no",
+        "name": "Instituto Nacional de Geriatría",
+        "operator:type": "public",
+        "phone": "+58-212-7611819"
+      }
+    },
+    {
+      "type": "way",
+      "id": 233333001,
+      "center": {
+        "lat": 10.5042022,
+        "lon": -66.8819341
+      },
+      "nodes": [
+        2417288014,
+        2417288017,
+        2417288023,
+        2417288021,
+        2417288018,
+        2417288014
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1050",
+        "addr:street": "Av. Andrés Bello",
+        "amenity": "hospital",
+        "building": "yes",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Clínica Méndez Gimón"
+      }
+    },
+    {
+      "type": "way",
+      "id": 237313308,
+      "center": {
+        "lat": 10.4311041,
+        "lon": -66.85547
+      },
+      "nodes": [
+        2452340874,
+        2452340875,
+        13946718234,
+        2452340876,
+        2452340877,
+        2452340878,
+        2452340879,
+        2452340880,
+        2452340881,
+        2452340882,
+        2452340883,
+        2452340884,
+        2452340885,
+        2452340887,
+        2452340888,
+        2452340889,
+        13946718235,
+        2452340874
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1080",
+        "addr:street": "Avenida Principal de El Hatillo",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Centro Médico Docente La Trinidad",
+        "operator:type": "private",
+        "short_name": "CMDLT",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 238675351,
+      "center": {
+        "lat": 10.5053642,
+        "lon": -66.8918576
+      },
+      "nodes": [
+        2464748307,
+        2464748330,
+        2464748326,
+        4658737187,
+        4658743389,
+        2464748307
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:full": "Av. Andrés Bello, Sector Guaicaipuro, Caracas 1050",
+        "addr:postcode": "1050",
+        "addr:street": "Av. Andrés Bello",
+        "air_conditioning": "yes",
+        "amenity": "hospital",
+        "capacity": "120",
+        "contact:facebook": "https://www.facebook.com/hospitalortopedicoinfantil/",
+        "contact:instagram": "https://www.instagram.com/ortopedicovzla/",
+        "contact:twitter": "https://twitter.com/ortopedicovzla",
+        "contact:whatsapp": "+58-412-3171472",
+        "contact:youtube": "https://www.youtube.com/user/fparalisisinfantil",
+        "currency:BsF": "yes",
+        "currency:EUR": "yes",
+        "currency:USD": "yes",
+        "currency:others": "no",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics;orthopaedics;paediatric_surgery;physiatry",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipOszauv3ABO2iuBVFoYavgO-w3fdD9MxL22bhhB=w408-h550-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Ortopédico Infantil",
+        "old_name": "Hospital Antipoliomielítico de Caracas",
+        "opening_hours": "Mo-Fr 07:00-17:00",
+        "operator": "Fundación Hospital Ortopédico Infantil",
+        "operator:type": "private_non_profit",
+        "payment:american_express": "yes",
+        "payment:cash": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:transferencia": "yes",
+        "payment:visa": "yes",
+        "payment:wire_transfer": "yes",
+        "phone": "+58-212-5094411",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1945",
+        "website": "https://www.hospitalortopedicoinfantil.com/",
+        "wheelchair": "yes",
+        "wikidata": "Q16576110",
+        "wikipedia": "es:Hospital Ortopédico Infantil"
+      }
+    },
+    {
+      "type": "way",
+      "id": 242381322,
+      "center": {
+        "lat": 10.4960043,
+        "lon": -66.8553854
+      },
+      "nodes": [
+        2498643782,
+        2498643783,
+        2983919153,
+        2983919152,
+        2983919151,
+        2983919150,
+        2498643779,
+        2983919157,
+        2983919156,
+        2498643777,
+        2498643776,
+        2498643782
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1060",
+        "addr:street": "Santa Teresa de Jesús",
+        "alt_name": "IVSS Chacao",
+        "amenity": "hospital",
+        "building": "yes",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Clínica Popular tipo 1 \"Dr. Carlos Diez del Ciervo\"",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "government",
+        "operator:wikidata": "Q9008775",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 247045050,
+      "center": {
+        "lat": 10.4967578,
+        "lon": -66.8304883
+      },
+      "nodes": [
+        2539852274,
+        2539852316,
+        2539852271,
+        2539852264,
+        2539852282,
+        11109003912,
+        2539852274
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1071",
+        "addr:street": "El Carmen",
+        "amenity": "hospital",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "IVSS Los Dos Caminos",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "government",
+        "operator:wikidata": "Q9008775",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 248448809,
+      "center": {
+        "lat": 10.5977588,
+        "lon": -66.985451
+      },
+      "nodes": [
+        2552458917,
+        2552458922,
+        2552458920,
+        2552458921,
+        2552458914,
+        2552458911,
+        2552458895,
+        2552458890,
+        2552458900,
+        2552458896,
+        2552458889,
+        2552458886,
+        2552458901,
+        2552458905,
+        2552458917
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "building": "yes",
+        "healthcare": "hospital",
+        "name": "Módulo de la Aduana Aérea"
+      }
+    },
+    {
+      "type": "way",
+      "id": 257975369,
+      "center": {
+        "lat": 10.4761299,
+        "lon": -66.8218971
+      },
+      "nodes": [
+        2634127714,
+        2634127700,
+        2634127719,
+        2634127709,
+        2634127714
+      ],
+      "tags": {
+        "access": "yes",
+        "addr:city": "Caracas",
+        "addr:postcode": "1071",
+        "addr:street": "Av. Ginebra",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Módulo de La California Sur",
+        "operator:type": "public",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 269631171,
+      "center": {
+        "lat": 10.595893,
+        "lon": -66.9571481
+      },
+      "nodes": [
+        2747956033,
+        13968845951,
+        3827820585,
+        13968845950,
+        2747956034,
+        13968845949,
+        2747956035,
+        2747956036,
+        2747956033
+      ],
+      "tags": {
+        "addr:city": "Maiquetía",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Hospital San José",
+        "phone": "+58-212-3034451"
+      }
+    },
+    {
+      "type": "way",
+      "id": 269634199,
+      "center": {
+        "lat": 10.6028841,
+        "lon": -66.9216969
+      },
+      "nodes": [
+        2747979063,
+        2747979066,
+        13966667374,
+        13966656126,
+        13966656135,
+        13966656125,
+        2747979068,
+        2747979071,
+        2747979063
+      ],
+      "tags": {
+        "addr:city": "La Guaira",
+        "addr:street": "Av. Carlos Soublette",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "IVSS Hospital José María Vargas",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "government",
+        "operator:wikidata": "Q9008775",
+        "phone": "+58 212-3316555"
+      }
+    },
+    {
+      "type": "way",
+      "id": 273085229,
+      "center": {
+        "lat": -25.2721459,
+        "lon": -57.5804328
+      },
+      "nodes": [
+        2779852868,
+        2779852855,
+        2779852749,
+        2779852750,
+        7107902265,
+        2779852748,
+        2779852873,
+        2779852897,
+        2779852868
+      ],
+      "tags": {
+        "alt_name": "Hospital Central IPS",
+        "amenity": "hospital",
+        "building": "yes",
+        "building:use": "hospital",
+        "name": "Hospital Central del Instituto de Prevision Social - Paraguay",
+        "source": "cidi",
+        "source_2": "arqmodpy"
+      }
+    },
+    {
+      "type": "way",
+      "id": 273089463,
+      "center": {
+        "lat": 10.4655951,
+        "lon": -66.9804218
+      },
+      "nodes": [
+        3195829549,
+        2779873250,
+        2779873244,
+        3195829548,
+        2779873245,
+        3195829547,
+        4658671231,
+        4658671232,
+        3195829549
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Av. Intercomunal de Antímano",
+        "amenity": "hospital",
+        "building": "yes",
+        "emergency": "yes",
+        "fax": "+58-212-4729441",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "IVSS Ambulatorio Dr. Armando Castillo Plaza",
+        "opening_hours": "06:00-18:00",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q6047563",
+        "phone": "+58-212-4722834",
+        "website": "http://www.ivss.gov.ve/Centros-de-Salud-Estado-Distrito-Federal-2",
+        "wheelchair": "limited",
+        "wikipedia": "es:Instituto Venezolano de los Seguros Sociales"
+      }
+    },
+    {
+      "type": "way",
+      "id": 273111302,
+      "center": {
+        "lat": -25.2775933,
+        "lon": -57.5926524
+      },
+      "nodes": [
+        2779991430,
+        2779991431,
+        2779991424,
+        2779991423,
+        2779991430
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "name": "Instituto de Medicina Tropical"
+      }
+    },
+    {
+      "type": "way",
+      "id": 273111305,
+      "center": {
+        "lat": -25.2806987,
+        "lon": -57.5919716
+      },
+      "nodes": [
+        2779991424,
+        2779991431,
+        2779991425,
+        2779991426,
+        2779991427,
+        13468288790,
+        13468288791,
+        13468288789,
+        13468288788,
+        13468288787,
+        13468288786,
+        2779991422,
+        7211867205,
+        7211867204,
+        2779991424
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital Neuropsquiátrico de Asunción"
+      }
+    },
+    {
+      "type": "way",
+      "id": 273112325,
+      "center": {
+        "lat": -25.2748837,
+        "lon": -57.5920409
+      },
+      "nodes": [
+        2779998593,
+        2814304049,
+        2779998591,
+        7211867202,
+        7211867201,
+        2779998587,
+        2779998589,
+        2779998593
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "name": "Sanatorio Profesor Doctor Juan Max Boettner"
+      }
+    },
+    {
+      "type": "way",
+      "id": 273200724,
+      "center": {
+        "lat": 10.4672413,
+        "lon": -66.9774471
+      },
+      "nodes": [
+        2780763795,
+        2780763812,
+        2780763786,
+        2780763794,
+        3119883785,
+        2780763811,
+        2780763795
+      ],
+      "tags": {
+        "access": "yes",
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Av. Intercomunal de Antímano",
+        "amenity": "hospital",
+        "building": "yes",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Módulo José Miranda",
+        "opening_hours": "00:01-24:00",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 274364972,
+      "center": {
+        "lat": -25.2994372,
+        "lon": -57.6445617
+      },
+      "nodes": [
+        2791062560,
+        2791062559,
+        2791062557,
+        2791062558,
+        2791062560
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital de Barrio Obrero"
+      }
+    },
+    {
+      "type": "way",
+      "id": 274467226,
+      "center": {
+        "lat": 10.330197,
+        "lon": -67.0415795
+      },
+      "nodes": [
+        2791823411,
+        2791823408,
+        2791823410,
+        2791823409,
+        2791823411
+      ],
+      "tags": {
+        "addr:city": "Los Teques",
+        "addr:postcode": "1201",
+        "addr:street": "Av. Bertorelli",
+        "amenity": "hospital",
+        "building": "yes",
+        "emergency": "yes",
+        "name": "Módulo Panamericana"
+      }
+    },
+    {
+      "type": "way",
+      "id": 274469649,
+      "center": {
+        "lat": 10.4310581,
+        "lon": -66.8751653
+      },
+      "nodes": [
+        2791846695,
+        2791846696,
+        2791846692,
+        2791846694,
+        2791846693,
+        2791846695
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1080",
+        "addr:street": "Ricaurte",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "clinic",
+        "healthcare:speciality": "general",
+        "name": "Módulo de Piedra Azul",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 274786036,
+      "center": {
+        "lat": -25.2881709,
+        "lon": -57.5976175
+      },
+      "nodes": [
+        2794540423,
+        2794540429,
+        2794540408,
+        6996958272,
+        6996958270,
+        2794540409,
+        6996958271,
+        7212519885,
+        2794540423
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sanatorio Italiano"
+      }
+    },
+    {
+      "type": "way",
+      "id": 276166844,
+      "center": {
+        "lat": -25.3072496,
+        "lon": -57.6476071
+      },
+      "nodes": [
+        2807915033,
+        7411767777,
+        7411767778,
+        2807915034,
+        2807915035,
+        2807915032,
+        2807915027,
+        7411767771,
+        7411767772,
+        2807915030,
+        2807915028,
+        2807915033
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "name": "USF San Alfonso"
+      }
+    },
+    {
+      "type": "way",
+      "id": 276175493,
+      "center": {
+        "lat": -25.3142735,
+        "lon": -57.6301476
+      },
+      "nodes": [
+        2807979549,
+        2807979545,
+        2807979542,
+        2807979540,
+        2807979544,
+        2807979550,
+        2807979549
+      ],
+      "tags": {
+        "addr:street": "José Félix Bogado",
+        "amenity": "hospital",
+        "building": "yes",
+        "building:use": "hospital",
+        "name": "Medicis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 276186496,
+      "center": {
+        "lat": -25.3005647,
+        "lon": -57.6126671
+      },
+      "nodes": [
+        2808091657,
+        11448323289,
+        11124166765,
+        11135209390,
+        11135209391,
+        11454998271,
+        11135209392,
+        11135209389,
+        2808091658,
+        7797510759,
+        11448323242,
+        7797510761,
+        2808091661,
+        11124166797,
+        11449637125,
+        11124166800,
+        11489403761,
+        11124166796,
+        2808091660,
+        11124166762,
+        11132335033,
+        11124172048,
+        11489403760,
+        4612591032,
+        4612591035,
+        4612591038,
+        4612591047,
+        4612591039,
+        4612591048,
+        2808091659,
+        11124166760,
+        11124166779,
+        11124166761,
+        11124166766,
+        11124172007,
+        11124172010,
+        11544799966,
+        7797510766,
+        2808091657
+      ],
+      "tags": {
+        "addr:street": "Avenida General Máximo Santos",
+        "alt_name": "Centro de Emergencias Médicas (CEM)",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital de Trauma Prof. Dr. Manuel Giagni",
+        "source": "Reconocimiento cartográfico 2016 por KG",
+        "wikidata": "Q5761645",
+        "wikipedia": "es:Hospital del Trauma Prof. Dr. Manuel Giani"
+      }
+    },
+    {
+      "type": "way",
+      "id": 276205134,
+      "center": {
+        "lat": -25.3100249,
+        "lon": -57.6250505
+      },
+      "nodes": [
+        2808273114,
+        2808273113,
+        2808273118,
+        2808273111,
+        2808273109,
+        2808273114
+      ],
+      "tags": {
+        "addr:street": "Campo Vía",
+        "amenity": "hospital",
+        "name": "Centro de Salud - Club de Leónes",
+        "source": "Reconocimiento cartográfico 2016 por KG."
+      }
+    },
+    {
+      "type": "way",
+      "id": 276497210,
+      "center": {
+        "lat": -25.2993307,
+        "lon": -57.5786431
+      },
+      "nodes": [
+        2810964902,
+        2810964906,
+        2810964907,
+        2810964919,
+        6572997048,
+        2810964902
+      ],
+      "tags": {
+        "addr:street": "República Argentina",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Centro Médico Bautista"
+      }
+    },
+    {
+      "type": "way",
+      "id": 276858293,
+      "center": {
+        "lat": -25.2763452,
+        "lon": -57.5925795
+      },
+      "nodes": [
+        2814304049,
+        2779991430,
+        2779991423,
+        7965404915,
+        2779998591,
+        2814304049
+      ],
+      "tags": {
+        "amenity": "hospital"
+      }
+    },
+    {
+      "type": "way",
+      "id": 277013050,
+      "center": {
+        "lat": -25.2797119,
+        "lon": -57.6555944
+      },
+      "nodes": [
+        2815672424,
+        7243640890,
+        2815672422,
+        2815672421,
+        12688361523,
+        2815672423,
+        7243640892,
+        7243640891,
+        2815672424
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital"
+      }
+    },
+    {
+      "type": "way",
+      "id": 277057559,
+      "center": {
+        "lat": -25.2579439,
+        "lon": -57.5851672
+      },
+      "nodes": [
+        2816043468,
+        2816043470,
+        2816043473,
+        2816043472,
+        2816043469,
+        7146752583,
+        6384005421,
+        7146752573,
+        2816043471,
+        7866636394,
+        2816043468
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital Geriátrico"
+      }
+    },
+    {
+      "type": "way",
+      "id": 277760510,
+      "center": {
+        "lat": -25.2800954,
+        "lon": -57.6524413
+      },
+      "nodes": [
+        2822217790,
+        2822217789,
+        2822217788,
+        2822217787,
+        2822217790
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital de Clinicas",
+        "name:es": "Ex Hospital de Clinicas",
+        "wikidata": "Q5903023",
+        "wikipedia": "es:Hospital de Clínicas (Paraguay)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 278130022,
+      "center": {
+        "lat": 10.4777403,
+        "lon": -66.8098326
+      },
+      "nodes": [
+        2825538585,
+        2825538576,
+        2827149805,
+        9036922501,
+        2827149804,
+        9036922498,
+        7154384301,
+        9036922497,
+        7154384308,
+        9036922500,
+        7154384307,
+        9036922499,
+        8640902710,
+        8640902709,
+        7154384302,
+        7154384306,
+        2825538580,
+        5920137619,
+        2825538587,
+        2825538573,
+        2825538579,
+        2825538577,
+        2825538583,
+        2825538571,
+        2825538585
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1073",
+        "addr:street": "Av. Francisco de Miranda",
+        "air_conditioning": "yes",
+        "alt_name": "Hospital Ana Francisca Pérez de León",
+        "amenity": "hospital",
+        "capacity": "250",
+        "contact:twitter": "https://twitter.com/hospafpl2?lang=eu",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipP6fke0id331q6ONijqODJ9sEuwGqh_rAARe1Ai=w408-h306-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Pérez de León",
+        "opening_hours": "Mo-Su 06:30-18:30",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q6047563",
+        "phone": "+58-212-2381105",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1938",
+        "wheelchair": "yes",
+        "wikidata": "Q16605358",
+        "wikipedia": "es:Hospital Ana Francisca Pérez de León"
+      }
+    },
+    {
+      "type": "way",
+      "id": 278142131,
+      "center": {
+        "lat": 10.4808754,
+        "lon": -66.8060926
+      },
+      "nodes": [
+        2825657325,
+        6634702602,
+        2825657328,
+        2825657329,
+        2825657330,
+        2825657331,
+        2825657332,
+        2825657333,
+        6082776644,
+        2825657334,
+        2825657335,
+        8522727108,
+        8522727107,
+        2825657336,
+        2825657325
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1073",
+        "addr:street": "Av. Principal de La Urbina",
+        "air_conditioning": "yes",
+        "amenity": "hospital",
+        "capacity": "120",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics;gynaecology;paediatric_surgery;maternity",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipOszauv3ABO2iuBVFoYavgO-w3fdD9MxL22bhhB=w408-h550-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Materno Infantil del Este \"Joel Valen\"",
+        "old_name": "Hospital Materno Infantil de Petare",
+        "opening_hours": "Mo-Su 07:00-17:00",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "public",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-2435155",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1985",
+        "wheelchair": "yes",
+        "wikipedia": "es:Hospital Materno Infantil Del Este Joel Valen"
+      }
+    },
+    {
+      "type": "way",
+      "id": 280418939,
+      "center": {
+        "lat": 10.4284025,
+        "lon": -66.9762087
+      },
+      "nodes": [
+        2845363436,
+        2845363437,
+        2845363438,
+        2845363439,
+        2845363436
+      ],
+      "tags": {
+        "access": "yes",
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Calle 2 de la UD-4",
+        "amenity": "hospital",
+        "building": "yes",
+        "fee": "no",
+        "healthcare": "hospital",
+        "name": "Módulo de la UD-4",
+        "opening_hours": "00:01-24:00",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 280534489,
+      "center": {
+        "lat": 10.6065554,
+        "lon": -67.0352985
+      },
+      "nodes": [
+        2846360692,
+        11303817265,
+        2846360694,
+        2846360695,
+        2846360696,
+        2846360697,
+        2846360698,
+        2846360692
+      ],
+      "tags": {
+        "addr:city": "Catia La Mar",
+        "addr:suburb": "Las Colinas",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital de Niños Excepcionales El Niño y El Mar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 286808820,
+      "center": {
+        "lat": 10.4353808,
+        "lon": -66.9607792
+      },
+      "nodes": [
+        2904801534,
+        2904801529,
+        2904801530,
+        2907384362,
+        2904801533,
+        2904801534
+      ],
+      "tags": {
+        "access": "yes",
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Av. Principal de La Haciendita",
+        "amenity": "hospital",
+        "building": "yes",
+        "fee": "no",
+        "healthcare": "hospital",
+        "name": "Módulo de la UD-6",
+        "opening_hours": "00:01-24:00",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 291269166,
+      "center": {
+        "lat": 10.6069341,
+        "lon": -67.0366681
+      },
+      "nodes": [
+        2946924820,
+        2946924839,
+        2946924674,
+        2946924905,
+        2946924821,
+        11303794328,
+        2946925317,
+        2946924820
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "CDI La Atlántida"
+      }
+    },
+    {
+      "type": "way",
+      "id": 296256328,
+      "center": {
+        "lat": 10.460105,
+        "lon": -66.9848919
+      },
+      "nodes": [
+        3000561765,
+        3000561766,
+        3000561767,
+        3000561768,
+        3000561765
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Guzmán Blanco",
+        "amenity": "hospital",
+        "building": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Ambulatorio Leopoldo Aguerrevere",
+        "opening_hours": "08:00-16:00",
+        "operator:type": "public",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 296739688,
+      "center": {
+        "lat": 10.4811343,
+        "lon": -66.9520477
+      },
+      "nodes": [
+        3005482406,
+        3005482407,
+        3005482408,
+        3005482409,
+        3005482410,
+        3005482411,
+        3005482414,
+        3005482415,
+        3005482416,
+        3005482417,
+        3005482406
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Hospital Pérez Carreño",
+        "amenity": "hospital",
+        "building": "yes",
+        "building:levels": "5",
+        "fax": "+58-212- 4721577",
+        "healthcare": "hospital",
+        "name": "IVSS Centro Nacional de Rehabilitación Dr. Alejandro Rhode",
+        "opening_hours": "Mo-Fr 07:00-16:00",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:wikidata": "Q6047563",
+        "phone": "+58-212-4722176",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 297755255,
+      "center": {
+        "lat": 10.5234149,
+        "lon": -66.9301814
+      },
+      "nodes": [
+        3016574447,
+        3016574448,
+        3016574449,
+        3016574450,
+        3016574451,
+        3016574452,
+        3016574454,
+        3016574455,
+        3016574456,
+        11590218944,
+        11590218945,
+        3016574447
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1030",
+        "addr:street": "Av. Principal de Manicomio",
+        "air_conditioning": "yes",
+        "amenity": "hospital",
+        "capacity": "150",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "psychiatric",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPfZL3AQxDOGA1mEpsmi37cvnYvZwnfndfWW1EC=w408-h306-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Psiquiátrico de Caracas",
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "public",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-8608430",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1980",
+        "website": "http://www.ivss.gov.ve/Centros-de-Salud-Estado-Distrito-Federal",
+        "wheelchair": "yes",
+        "wikipedia": "es:Hospital Psiquiátrico de Caracas"
+      }
+    },
+    {
+      "type": "way",
+      "id": 306847205,
+      "center": {
+        "lat": 10.6011621,
+        "lon": -67.0292647
+      },
+      "nodes": [
+        3118549410,
+        3118549409,
+        3118549414,
+        3118549416,
+        3118549411,
+        3118549410
+      ],
+      "tags": {
+        "alt_name": "CANES",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Hospital Naval Dr. Raúl Perdomo Hurtado"
+      }
+    },
+    {
+      "type": "way",
+      "id": 313027190,
+      "center": {
+        "lat": 10.5968922,
+        "lon": -66.9611305
+      },
+      "nodes": [
+        3189471275,
+        3189471276,
+        2747956032,
+        3189471278,
+        13969222336,
+        3189471275
+      ],
+      "tags": {
+        "addr:city": "Pariata",
+        "alt_name": "Hospital Periférico de Pariata",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital Dr. Rafael Medina Jiménez Periférico de Pariata"
+      }
+    },
+    {
+      "type": "way",
+      "id": 315650949,
+      "center": {
+        "lat": 10.4700801,
+        "lon": -66.6112511
+      },
+      "nodes": [
+        3217826050,
+        3217826051,
+        3217826052,
+        3217826053,
+        3217826054,
+        3217826055,
+        3217826056,
+        3217826057,
+        3217826058,
+        8760631075,
+        3217826050
+      ],
+      "tags": {
+        "addr:city": "Guarenas",
+        "addr:housenumber": "2",
+        "addr:postcode": "1220",
+        "addr:street": "Calle Francisco Rafael Garcia",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "IVSS Hospital Dr. Luis Salazar Domínguez",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:wikidata": "Q6047563",
+        "phone": "+58 212 3629860"
+      }
+    },
+    {
+      "type": "way",
+      "id": 330363993,
+      "center": {
+        "lat": 10.3758355,
+        "lon": -66.9547967
+      },
+      "nodes": [
+        3373280707,
+        3373280350,
+        3373280011,
+        3373280035,
+        3373280707
+      ],
+      "tags": {
+        "addr:city": "San Antonio de Los Altos",
+        "addr:postcode": "1204",
+        "addr:street": "Av. Francisco Salias",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Dispensario Rosario Milano"
+      }
+    },
+    {
+      "type": "way",
+      "id": 330442095,
+      "center": {
+        "lat": 10.3482331,
+        "lon": -66.993194
+      },
+      "nodes": [
+        3374023791,
+        3374015271,
+        3374021793,
+        3374023875,
+        3374023791
+      ],
+      "tags": {
+        "addr:street": "Carretera: Carrizal - San Diego",
+        "amenity": "hospital",
+        "name": "Ambulatorio María Isabel Rodríguez"
+      }
+    },
+    {
+      "type": "way",
+      "id": 330452530,
+      "center": {
+        "lat": 10.3468635,
+        "lon": -66.9866902
+      },
+      "nodes": [
+        3374175695,
+        3374175696,
+        3374175697,
+        3374175698,
+        3374175695
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "name": "Módulo de Carrizal"
+      }
+    },
+    {
+      "type": "way",
+      "id": 362991127,
+      "center": {
+        "lat": 10.475336,
+        "lon": -66.8101165
+      },
+      "nodes": [
+        3672077574,
+        5920165937,
+        3672077575,
+        3672077577,
+        3672077574
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1073",
+        "addr:street": "Distribuidor: El Llanito",
+        "amenity": "hospital",
+        "building": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Módulo de Río de Janeiro",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 365357628,
+      "center": {
+        "lat": -25.2860543,
+        "lon": -57.6152826
+      },
+      "nodes": [
+        3693709160,
+        3693709161,
+        3693709162,
+        11288554663,
+        11288554700,
+        11288554698,
+        3693709163,
+        3693709160
+      ],
+      "tags": {
+        "addr:housenumber": "935",
+        "addr:street": "Avenida España",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sanatorio Americano",
+        "source": "Reconocimiento cartográfico de campo 2016 por KG",
+        "website": "https://www.doctosalud.com.py/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 369900904,
+      "center": {
+        "lat": 10.3142492,
+        "lon": -65.979587
+      },
+      "nodes": [
+        3736377552,
+        3736377555,
+        3736377554,
+        3736377553,
+        3736377557,
+        3736377552
+      ],
+      "tags": {
+        "addr:city": "Río Chico",
+        "addr:postcode": "1236",
+        "addr:street": "Avenida Rafael Arévalo González",
+        "amenity": "hospital",
+        "area": "yes",
+        "healthcare": "hospital",
+        "name": "Hospital Rural Ernesto Regener"
+      }
+    },
+    {
+      "type": "way",
+      "id": 379181223,
+      "center": {
+        "lat": -25.2609411,
+        "lon": -57.5759664
+      },
+      "nodes": [
+        3825188864,
+        3825188865,
+        3825188866,
+        3825188867,
+        3825188864
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital Materno Infantil Santisima Trinidad",
+        "source": "TALLER URBANO - GRUPO 8"
+      }
+    },
+    {
+      "type": "way",
+      "id": 391070462,
+      "center": {
+        "lat": 10.4543647,
+        "lon": -66.9055225
+      },
+      "nodes": [
+        3942322720,
+        3942322743,
+        3942322731,
+        3942322739,
+        3942322721,
+        3942322738,
+        3942322740,
+        3942322736,
+        3942322735,
+        3942322733,
+        3942322724,
+        3942322737,
+        3942322720
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1090",
+        "addr:street": "Av. Las Escuelas",
+        "amenity": "hospital",
+        "building": "hospital",
+        "building:levels": "4",
+        "healthcare": "hospital",
+        "healthcare:speciality": "emergency",
+        "name": "Hospital Militar Vicente Sálias Sanoja",
+        "opening_hours": "24/7",
+        "operator": "Ministerio de La Defensa"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395602799,
+      "center": {
+        "lat": -25.2930916,
+        "lon": -57.6029767
+      },
+      "nodes": [
+        3984356478,
+        5283973091,
+        5283973090,
+        5283973089,
+        3984356479,
+        3984356495,
+        3984356480,
+        6996958276,
+        3984372231,
+        3984356481,
+        3984356478
+      ],
+      "tags": {
+        "addr:city": "Asunción, Paraguay",
+        "addr:housenumber": "1806",
+        "addr:street": "mariscal Francisco Solano López",
+        "addr:street_1": "Juscelino Kubitschek",
+        "amenity": "hospital",
+        "area": "yes",
+        "healthcare": "hospital",
+        "name": "complejo hospital de la Policia Nacional doctor Rigoberto Caballero"
+      }
+    },
+    {
+      "type": "way",
+      "id": 398272806,
+      "center": {
+        "lat": 10.5985845,
+        "lon": -66.9488666
+      },
+      "nodes": [
+        4010399813,
+        4010399814,
+        4010399815,
+        4010399816,
+        4010399813
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Módulo"
+      }
+    },
+    {
+      "type": "way",
+      "id": 398286158,
+      "center": {
+        "lat": 10.6019432,
+        "lon": -66.9306388
+      },
+      "nodes": [
+        4010530371,
+        4010530372,
+        4010530373,
+        4010530374,
+        4010530371
+      ],
+      "tags": {
+        "alt_name": "Sanidad de Vargas",
+        "amenity": "hospital",
+        "building": "hospital",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "name": "Ambulatorio La Guaira \"La Sanidad\""
+      }
+    },
+    {
+      "type": "way",
+      "id": 398402263,
+      "center": {
+        "lat": 10.4629663,
+        "lon": -66.6125986
+      },
+      "nodes": [
+        1628608910,
+        4011634355,
+        4011652232,
+        4011634357,
+        1628608910
+      ],
+      "tags": {
+        "addr:city": "Guarenas",
+        "addr:postcode": "1220",
+        "addr:street": "Av Principal de Ruiz Pineda",
+        "amenity": "hospital",
+        "building": "hospital",
+        "emergency": "yes",
+        "name": "Módulo",
+        "operator": "Barrio Adentro",
+        "source:geometry": "Maxar (2021)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 401890900,
+      "center": {
+        "lat": 10.6094094,
+        "lon": -66.8853686
+      },
+      "nodes": [
+        4042983358,
+        4042983359,
+        4042983360,
+        4042983361,
+        4042983358
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "name": "Centro Integral de Salud",
+        "operator": "Alcaldia del Municipio Vargas",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 406605595,
+      "center": {
+        "lat": 10.4315802,
+        "lon": -66.9898866
+      },
+      "nodes": [
+        4086591431,
+        4086591434,
+        4086591438,
+        4086591443,
+        4086591446,
+        4086591431
+      ],
+      "tags": {
+        "access": "yes",
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Av. Alejandro Carrasquel",
+        "amenity": "hospital",
+        "building": "yes",
+        "building:levels": "1",
+        "fee": "no",
+        "healthcare": "hospital",
+        "name": "Módulo de UD-1",
+        "opening_hours": "00:01-24:00",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 419130764,
+      "center": {
+        "lat": 10.6060884,
+        "lon": -66.8913061
+      },
+      "nodes": [
+        4192702417,
+        5769551308,
+        5769551307,
+        4192702418,
+        4192702419,
+        4192702420,
+        4192702421,
+        4192702422,
+        4192702417
+      ],
+      "tags": {
+        "addr:city": "Macuto",
+        "addr:street": "Calle San Bartolomé",
+        "alt_name": "Maternidad de Macuto",
+        "amenity": "hospital",
+        "building": "hospital",
+        "building:levels": "2",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "mother_child",
+        "name": "Hospital Materno Infantil Ana Teresa de Jesús Ponce",
+        "operator": "Gobernación de Vargas",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 423873889,
+      "center": {
+        "lat": 10.51531,
+        "lon": -66.9031544
+      },
+      "nodes": [
+        4233915098,
+        4233915110,
+        4233915105,
+        4233915111,
+        4233915114,
+        4233915099,
+        4233915091,
+        4233915092,
+        4233915094,
+        4233915090,
+        4233915102,
+        4233915097,
+        4233915096,
+        4233915095,
+        4233915112,
+        4233915109,
+        4233915115,
+        4233915103,
+        4233915106,
+        4233915098
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1010",
+        "addr:street": "Av. Anauco",
+        "amenity": "hospital",
+        "building": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics;gynaecology;paediatric_surgery;maternity",
+        "name": "Maternidad Santa Ana",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q6047563",
+        "phone": "+58-212-5518924",
+        "wikidata": "Q16605361",
+        "wikipedia": "es:Maternidad Santa Ana"
+      }
+    },
+    {
+      "type": "way",
+      "id": 428354730,
+      "center": {
+        "lat": 10.4371966,
+        "lon": -66.8633228
+      },
+      "nodes": [
+        4274690734,
+        4274690735,
+        4274690736,
+        4274690737,
+        4274690738,
+        4274690739,
+        4274690734
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1080",
+        "amenity": "hospital",
+        "building": "hospital",
+        "building:levels": "5",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "level": "4",
+        "name": "IVSS Centro Ambulatorio \"José Gonzalez Navarro\"",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q6047563"
+      }
+    },
+    {
+      "type": "way",
+      "id": 429288065,
+      "center": {
+        "lat": 10.3593412,
+        "lon": -67.0068248
+      },
+      "nodes": [
+        3371873584,
+        3371873585,
+        4284079501,
+        3371873586,
+        3371873587,
+        3371873584
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "name": "Ambulatorio Montaña Alta"
+      }
+    },
+    {
+      "type": "way",
+      "id": 431206165,
+      "center": {
+        "lat": 10.434151,
+        "lon": -66.8750545
+      },
+      "nodes": [
+        4304512301,
+        4304512302,
+        4304512303,
+        4304512304,
+        4304512301
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1080",
+        "addr:street": "Negro Primero",
+        "alt_name": "Ambulatorio Urbano Tipo II Dr. Francisco Perozo",
+        "amenity": "hospital",
+        "building": "yes",
+        "building:levels": "4",
+        "healthcare": "clinic",
+        "healthcare:speciality": "general",
+        "name": "Módulo de La Trinidad",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 431206166,
+      "center": {
+        "lat": 10.4339551,
+        "lon": -66.8750279
+      },
+      "nodes": [
+        4304512296,
+        4304512302,
+        4304512303,
+        4304512295,
+        4304512296
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1080",
+        "addr:street": "Negro Primero",
+        "amenity": "hospital",
+        "building": "yes",
+        "building:levels": "4",
+        "healthcare": "clinic",
+        "name": "Ambulatorio Urbano Tipo II Dr. Francisco Perozo",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 432826467,
+      "center": {
+        "lat": 10.5881081,
+        "lon": -67.0164558
+      },
+      "nodes": [
+        4317780538,
+        4317780539,
+        4317780540,
+        4317780541,
+        4317780542,
+        4317780543,
+        4317780544,
+        4317780545,
+        4317780546,
+        4317780538
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "emergency": "no",
+        "name": "Hospital Martín Vega"
+      }
+    },
+    {
+      "type": "way",
+      "id": 433740888,
+      "center": {
+        "lat": 10.4836768,
+        "lon": -66.972906
+      },
+      "nodes": [
+        4322575038,
+        4322575039,
+        4322575043,
+        4322575045,
+        4322575052,
+        4322575067,
+        4322583525,
+        4322575072,
+        4322575073,
+        4322575071,
+        4322575069,
+        4322575064,
+        4322575061,
+        4322575058,
+        4322575056,
+        4322575059,
+        4322583523,
+        4322575062,
+        4322575065,
+        4322575066,
+        4322575068,
+        4322575070,
+        4322575063,
+        5139580777,
+        4322575060,
+        4322575057,
+        4322575055,
+        4322575053,
+        4322575054,
+        4322575051,
+        4322575050,
+        4322575049,
+        4322575048,
+        4322575047,
+        4322575046,
+        4322575044,
+        4322575042,
+        4322575041,
+        4322575040,
+        4322575038
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1000",
+        "addr:street": "Av. Principal del Algodonal",
+        "air_conditioning": "yes",
+        "alt_name": "Hospital de El Algodonal",
+        "amenity": "hospital",
+        "capacity": "300",
+        "email": "alialgodonal@gmail.com",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics;gynaecology;paediatric_surgery;psychiatric;maternity",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPwc_49oqIxGcBZcYlQgzVCj3H708lpTFSlORQp=w408-h544-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital José Ignacio Baldó",
+        "opening_hours": "Mo-Su 06:00-17:00",
+        "operator": "Ministerio de Salud",
+        "operator:type": "public",
+        "phone": "+58-212-4727797",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1940",
+        "website": "https://hospitales.mpps.gob.ve/distrito_capital/hospital_jose_ignacio_baldo_algodonal/",
+        "wheelchair": "yes",
+        "wikidata": "Q16576051",
+        "wikipedia": "es:Hospital General Dr. José Ignacio Baldó"
+      }
+    },
+    {
+      "type": "way",
+      "id": 459891258,
+      "center": {
+        "lat": -25.3260556,
+        "lon": -57.5982408
+      },
+      "nodes": [
+        4556158920,
+        4556158921,
+        4556158922,
+        4556158923,
+        4556158920
+      ],
+      "tags": {
+        "addr:street": "Avenida Doctor Fernando de la Mora",
+        "amenity": "hospital",
+        "building": "yes",
+        "name": "Samaritano",
+        "source": "Reconocimiento cartográfico de campo 2016 por KG"
+      }
+    },
+    {
+      "type": "way",
+      "id": 460587515,
+      "center": {
+        "lat": -25.3082576,
+        "lon": -57.5990465
+      },
+      "nodes": [
+        4562158236,
+        4562158237,
+        4562158238,
+        4562158239,
+        4562158240,
+        4562158236
+      ],
+      "tags": {
+        "addr:street": "Avenida Eusebio Ayala",
+        "amenity": "hospital",
+        "building": "yes",
+        "healthcare": "hospital",
+        "name": "Sanatorio San Lucas",
+        "source": "Reconocimiento cartográfico de campo 2016 por KG"
+      }
+    },
+    {
+      "type": "way",
+      "id": 460980724,
+      "center": {
+        "lat": -25.2771486,
+        "lon": -57.5999166
+      },
+      "nodes": [
+        4565475113,
+        4565475114,
+        4565475115,
+        4565475116,
+        4565475113
+      ],
+      "tags": {
+        "addr:street": "Avenida Brasilia",
+        "amenity": "hospital",
+        "building": "yes",
+        "name": "Centro Oftalmologico",
+        "source": "Reconocimiento cartográfico de campo 2016 por KG"
+      }
+    },
+    {
+      "type": "way",
+      "id": 482850227,
+      "center": {
+        "lat": 10.3473673,
+        "lon": -66.9967754
+      },
+      "nodes": [
+        4756357033,
+        4756357034,
+        4756357035,
+        4756357036,
+        4756357037,
+        4756357038,
+        4756357078,
+        4756357039,
+        4756357040,
+        4756357041,
+        4756357042,
+        4756357043,
+        4756357044,
+        4756357045,
+        4756357046,
+        4756357047,
+        4756357048,
+        4756357049,
+        4756357050,
+        4756357051,
+        4756357052,
+        4756357053,
+        4756357054,
+        4756357055,
+        4756357056,
+        4756357057,
+        4756357058,
+        4756357059,
+        4756357060,
+        4756357061,
+        4756357062,
+        4756357063,
+        4756357064,
+        4756357065,
+        4756357066,
+        4756357067,
+        4756357033
+      ],
+      "tags": {
+        "addr:city": "Parroquia Carrizal",
+        "addr:postcode": "1203",
+        "addr:street": "Carretera Carrizal -San Diego - San Jose",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Materno Infantil de Carrizal"
+      }
+    },
+    {
+      "type": "way",
+      "id": 515890295,
+      "center": {
+        "lat": -25.2730005,
+        "lon": -57.6072238
+      },
+      "nodes": [
+        3379574025,
+        5037175833,
+        5037163681,
+        7776599190,
+        7776599191,
+        7776599192,
+        7836148928,
+        7776599193,
+        5037175834,
+        3379574028,
+        3379574025
+      ],
+      "tags": {
+        "alt_name": "Sanatorio La Costa",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Centro Médico La Costa"
+      }
+    },
+    {
+      "type": "way",
+      "id": 528988457,
+      "center": {
+        "lat": 10.4859159,
+        "lon": -66.9757464
+      },
+      "nodes": [
+        5139580753,
+        5139580754,
+        5139580755,
+        5139580756,
+        5139580757,
+        5139580758,
+        5139580759,
+        5139580760,
+        5139580761,
+        5139580762,
+        5139580763,
+        5139580764,
+        5139580765,
+        5139580766,
+        5139580767,
+        5139580768,
+        5139580769,
+        5139580770,
+        5139580771,
+        5139580772,
+        5139580773,
+        5139580774,
+        5139580775,
+        5139580776,
+        5139580753
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:street": "Calle Hospital José I. Baldó",
+        "amenity": "hospital",
+        "building": "hospital",
+        "building:levels": "3",
+        "name": "Maternidad Herrera Vega"
+      }
+    },
+    {
+      "type": "way",
+      "id": 531821213,
+      "center": {
+        "lat": 10.3651923,
+        "lon": -66.984436
+      },
+      "nodes": [
+        5161891460,
+        5161891472,
+        5161891471,
+        5161891461,
+        5161891462,
+        5161891463,
+        5161891464,
+        5161891465,
+        5161891466,
+        5161891467,
+        5161891468,
+        5161891469,
+        5161891460
+      ],
+      "tags": {
+        "addr:street": "Calle El Cafe",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Ambulatorio Militar La Rosaleda"
+      }
+    },
+    {
+      "type": "way",
+      "id": 533529948,
+      "center": {
+        "lat": 10.3509567,
+        "lon": -67.0395738
+      },
+      "nodes": [
+        5175961184,
+        5175961185,
+        5175961186,
+        5175961187,
+        5175961188,
+        5175961189,
+        5175961190,
+        5175961191,
+        5175961192,
+        5175961193,
+        5175961194,
+        5175961184
+      ],
+      "tags": {
+        "addr:city": "Los Teques",
+        "addr:postcode": "1201",
+        "addr:street": "Avenida Jorge Losch",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Pronto Socorro Gobernacion Edo Miranda"
+      }
+    },
+    {
+      "type": "way",
+      "id": 611324247,
+      "center": {
+        "lat": -25.2840207,
+        "lon": -57.6222669
+      },
+      "nodes": [
+        5788192591,
+        7157385653,
+        5788192640,
+        5788192641,
+        6996520337,
+        5788192593,
+        5788192594,
+        5788192595,
+        6996520336,
+        5788192591
+      ],
+      "tags": {
+        "addr:street": "Manuel Gondra Pereira",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "maternity",
+        "name": "Hospital Reina Sofia",
+        "opening_hours": "Mo-Fr 06:00-16:00",
+        "operator": "Cruz Roja Paraguaya",
+        "phone": "02204900",
+        "website": "https://www.cruzroja.org.py/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 627019730,
+      "center": {
+        "lat": -25.3261148,
+        "lon": -57.6248624
+      },
+      "nodes": [
+        5919262566,
+        5919262567,
+        5919262568,
+        5919262569,
+        5919262566
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Clinica del IPS 12 de Junio"
+      }
+    },
+    {
+      "type": "way",
+      "id": 647935018,
+      "center": {
+        "lat": -25.2928503,
+        "lon": -57.6274673
+      },
+      "nodes": [
+        6083983458,
+        6083983459,
+        6083983460,
+        6083983457,
+        6083983458
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "building": "yes",
+        "building:levels": "1",
+        "healthcare": "hospital",
+        "height": "3",
+        "historic:status": "Good",
+        "name": "Hospital del Quemado",
+        "source": "cidi;esri;2018"
+      }
+    },
+    {
+      "type": "way",
+      "id": 648261824,
+      "center": {
+        "lat": 10.4680751,
+        "lon": -66.6245996
+      },
+      "nodes": [
+        6086408006,
+        6086408007,
+        6086408008,
+        6086408009,
+        5928979285,
+        11206818654,
+        6086408011,
+        6086408012,
+        6086408013,
+        6086408006
+      ],
+      "tags": {
+        "addr:city": "Guarenas",
+        "alt_name": "Hospitalito de Guarenas",
+        "amenity": "hospital",
+        "name": "Hospital Dr. Francisco R. García"
+      }
+    },
+    {
+      "type": "way",
+      "id": 661060612,
+      "center": {
+        "lat": -25.2794402,
+        "lon": -57.6460137
+      },
+      "nodes": [
+        6189005070,
+        6189005071,
+        6189005072,
+        6189005073,
+        6189005074,
+        6189005075,
+        6189005076,
+        6189005077,
+        6189005078,
+        6189005079,
+        6189005080,
+        6189005081,
+        6189005082,
+        6189005083,
+        6189005084,
+        6189005385,
+        6189005386,
+        6189005387,
+        6189005388,
+        7194021441,
+        7194021442,
+        6189005389,
+        6189005390,
+        6189005070
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital"
+      }
+    },
+    {
+      "type": "way",
+      "id": 661148420,
+      "center": {
+        "lat": -25.2945053,
+        "lon": -57.6251396
+      },
+      "nodes": [
+        5879865618,
+        6190396209,
+        6031148351,
+        6031148352,
+        6031148353,
+        6123730657,
+        6189799480,
+        6190396203,
+        6190396206,
+        6190396205,
+        6190396207,
+        6190396208,
+        5879868018,
+        5879865618
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital"
+      }
+    },
+    {
+      "type": "way",
+      "id": 757288023,
+      "center": {
+        "lat": -25.3200133,
+        "lon": -57.5781086
+      },
+      "nodes": [
+        7072026251,
+        7072032289,
+        7072032286,
+        7072032287,
+        12737602452,
+        7072026252,
+        7072026253,
+        7072026254,
+        7072032290,
+        7975160314,
+        7072032288,
+        7072026251
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Predio del Hospital del Barrio San Pablo",
+        "operator": "Ministerio de Salud Publica y Bienestar Social",
+        "studio": "TFG"
+      }
+    },
+    {
+      "type": "way",
+      "id": 759703326,
+      "center": {
+        "lat": 10.5341684,
+        "lon": -67.0350099
+      },
+      "nodes": [
+        7096732338,
+        9141504848,
+        9141504849,
+        7096732339,
+        7096732340,
+        7096732341,
+        9141504851,
+        9141504850,
+        7096732338
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "building": "hospital",
+        "name": "CDI"
+      }
+    },
+    {
+      "type": "way",
+      "id": 760823264,
+      "center": {
+        "lat": -25.2694755,
+        "lon": -57.5813273
+      },
+      "nodes": [
+        7107914602,
+        7107914589,
+        7107914590,
+        7107914585,
+        7107914586,
+        7107902284,
+        7107902278,
+        7107902279,
+        7107902280,
+        7107902281,
+        7107902282,
+        7107902283,
+        7107914587,
+        7107914588,
+        7107914601,
+        7107914600,
+        7107914591,
+        7107914592,
+        7107914594,
+        7107914593,
+        7107902277,
+        7107902276,
+        7107902275,
+        7107914596,
+        7107902274,
+        7107914595,
+        7107914598,
+        7107914597,
+        7107914599,
+        7107914602
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "dermatology",
+        "name": "Centro de atencion ambulatoria",
+        "operator": "IPS",
+        "operator:type": "public",
+        "source": "vero"
+      }
+    },
+    {
+      "type": "way",
+      "id": 772249104,
+      "center": {
+        "lat": 10.4210479,
+        "lon": -66.8249516
+      },
+      "nodes": [
+        7209390977,
+        7209390978,
+        7209390979,
+        2630583740,
+        7209390977
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "building": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Ambulatorio de El Hatillo",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "way",
+      "id": 887517251,
+      "center": {
+        "lat": 10.4720432,
+        "lon": -66.5326256
+      },
+      "nodes": [
+        8251719446,
+        8251719447,
+        8251719448,
+        8251719449,
+        8538315931,
+        8538315932,
+        8261548029,
+        8510381616,
+        8251703998,
+        8251836537,
+        8251836544,
+        8251719451,
+        8251719446
+      ],
+      "tags": {
+        "addr:city": "Guatire",
+        "addr:district": "Municipio Zamora",
+        "addr:postcode": "1221",
+        "addr:state": "Miranda",
+        "addr:street": "Avenida Principal de Valle Arriba",
+        "addr:suburb": "Valle Arriba",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "CDI de Valle Arriba",
+        "operator": "CCGZ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 912825747,
+      "center": {
+        "lat": 10.4770914,
+        "lon": -66.9178218
+      },
+      "nodes": [
+        8479593590,
+        8541832483,
+        8479593589,
+        8541832482,
+        8541832486,
+        8479593588,
+        8541832481,
+        8541832485,
+        8541832484,
+        8479593587,
+        8479593590
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1040",
+        "addr:street": "Av. Calvo Lairet",
+        "air_conditioning": "yes",
+        "amenity": "hospital",
+        "capacity": "150",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics",
+        "image": "https://pbs.twimg.com/media/EW5AewAWkAIfTeA.jpg",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Pediátrico Julio Criollo Vivas",
+        "opening_hours": "Mo-Su 06:00-18:00",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "public",
+        "operator:wikidata": "Q4141111",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1959",
+        "wheelchair": "yes",
+        "wikipedia": "es:Hospital Pediátrico Julio Criollo Vivas"
+      }
+    },
+    {
+      "type": "way",
+      "id": 915650837,
+      "center": {
+        "lat": 10.5241821,
+        "lon": -66.9301218
+      },
+      "nodes": [
+        8505339674,
+        8505339673,
+        8505339672,
+        8505339671,
+        8505339670,
+        8505339669,
+        8505339668,
+        11590218946,
+        8505339667,
+        8505339674
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1030",
+        "addr:street": "Av. Principal de Manicomio",
+        "air_conditioning": "yes",
+        "alt_name": "Hospital de Lídice",
+        "amenity": "hospital",
+        "capacity": "150",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipMUr81k9hjruJNBVeRmYO2ILJB67ysADrrJTkfL=w449-h240-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Jesús Yerena",
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q6047563",
+        "phone": "+58-212-8600646",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1980",
+        "website": "http://www.ivss.gov.ve/Centros-de-Salud-Estado-Distrito-Federal",
+        "wheelchair": "yes",
+        "wikidata": "Q16576063",
+        "wikipedia": "es:Hospital General de Lídice Dr. Jesús Yerena"
+      }
+    },
+    {
+      "type": "way",
+      "id": 915910697,
+      "center": {
+        "lat": 10.519624,
+        "lon": -66.9079217
+      },
+      "nodes": [
+        2360614552,
+        8507499585,
+        8507499586,
+        8507499587,
+        8507499588,
+        8507499589,
+        8507499590,
+        8507499591,
+        8507499592,
+        8507499593,
+        8507499594,
+        8507499595,
+        8507499596,
+        8507499597,
+        8507499598,
+        8507499599,
+        8507499600,
+        8507499601,
+        8507499602,
+        8507499603,
+        8507499604,
+        8507499605,
+        8507499606,
+        8507499607,
+        8507499608,
+        8507499609,
+        8507499610,
+        8507499611,
+        2360614552
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1010",
+        "addr:street": "Cotiza",
+        "amenity": "hospital",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "name": "Hospital Oncológico Dr. Luis Razetti"
+      }
+    },
+    {
+      "type": "way",
+      "id": 919850811,
+      "center": {
+        "lat": 10.4411165,
+        "lon": -66.9264898
+      },
+      "nodes": [
+        8542024459,
+        8542024470,
+        8542024469,
+        8542024468,
+        8542112991,
+        8542024466,
+        8542024465,
+        8542024464,
+        8542024463,
+        8542024462,
+        8542024461,
+        8542024460,
+        8542024459
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1090",
+        "addr:street": "Av. Intercomunal de Coche",
+        "air_conditioning": "yes",
+        "alt_name": "Hospital Dr. Leopoldo Manrique Terrero",
+        "amenity": "hospital",
+        "capacity": "300",
+        "contact:twitter": "https://twitter.com/hospitalcoche",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNCqV2rFSiMFOfoflWSI6RUgzfTXLYndvxpD2Pg=w408-h306-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Periférico de Coche",
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "public",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-6813906",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1954",
+        "wheelchair": "yes",
+        "wikidata": "Q16942042",
+        "wikipedia": "es:Hospital Periférico de Coche"
+      }
+    },
+    {
+      "type": "way",
+      "id": 922995741,
+      "center": {
+        "lat": -25.258414,
+        "lon": -57.5809019
+      },
+      "nodes": [
+        8568164013,
+        8568164014,
+        8568164015,
+        8568164016,
+        8568164013
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "building": "yes",
+        "healthcare": "hospital",
+        "name": "SANATORIO SANTA BARBARA",
+        "source": "TALLER URBANO - GRUPO 8"
+      }
+    },
+    {
+      "type": "way",
+      "id": 922995760,
+      "center": {
+        "lat": -25.2584287,
+        "lon": -57.581031
+      },
+      "nodes": [
+        8568164014,
+        8568164084,
+        8568164085,
+        8568164086,
+        8568164016,
+        8568164013,
+        8568164014
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "building": "yes",
+        "healthcare": "hospital",
+        "name": "SANTA BARBABA",
+        "source": "TALLER URBANO - GRUPO 8"
+      }
+    },
+    {
+      "type": "way",
+      "id": 923586010,
+      "center": {
+        "lat": -25.2887689,
+        "lon": -57.5989302
+      },
+      "nodes": [
+        8573263195,
+        8573263196,
+        8573263197,
+        8573263198,
+        8573263199,
+        8573263200,
+        8573263201,
+        8573263202,
+        8573263195
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Fundacor",
+        "source": "TallerUrbano1_UCA_2021"
+      }
+    },
+    {
+      "type": "way",
+      "id": 923586011,
+      "center": {
+        "lat": -25.2950695,
+        "lon": -57.6073107
+      },
+      "nodes": [
+        8573263203,
+        8573263204,
+        8573263205,
+        8573263206,
+        8573263203
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Clínica de Mastología",
+        "source": "TallerUrbano1_UCA_2021"
+      }
+    },
+    {
+      "type": "way",
+      "id": 923586012,
+      "center": {
+        "lat": -25.2956509,
+        "lon": -57.6074618
+      },
+      "nodes": [
+        8573263207,
+        8573263208,
+        8573263209,
+        8573263210,
+        8573263207
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Clínica de Mastología",
+        "source": "TallerUrbano1_UCA_2021"
+      }
+    },
+    {
+      "type": "way",
+      "id": 923586013,
+      "center": {
+        "lat": -25.2959242,
+        "lon": -57.6075322
+      },
+      "nodes": [
+        8573263211,
+        8573263212,
+        8573263213,
+        8573263214,
+        8573263211
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Clínica de Mastología",
+        "source": "TallerUrbano1_UCA_2021"
+      }
+    },
+    {
+      "type": "way",
+      "id": 923587092,
+      "center": {
+        "lat": -25.2993446,
+        "lon": -57.6082278
+      },
+      "nodes": [
+        8573368822,
+        8573368823,
+        8573368824,
+        8573368825,
+        8573368822
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Clínica IMA",
+        "source": "TallerUrbano1_UCA_2021"
+      }
+    },
+    {
+      "type": "way",
+      "id": 925407912,
+      "center": {
+        "lat": -25.2568958,
+        "lon": -57.5912841
+      },
+      "nodes": [
+        8588324837,
+        8588324838,
+        8588324839,
+        8588324840,
+        8588324837
+      ],
+      "tags": {
+        "addr:city": "Asunción",
+        "addr:street": "Teniente Rogelio Filgueira",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "PUESTO DE SALUD VIRGEN DE FATIMA",
+        "source": "tallerurbano1_uca_2021"
+      }
+    },
+    {
+      "type": "way",
+      "id": 952162029,
+      "center": {
+        "lat": 10.4797137,
+        "lon": -66.5495069
+      },
+      "nodes": [
+        8813098815,
+        8813098814,
+        8813098813,
+        10230753246,
+        1859815193,
+        8813098812,
+        3883734378,
+        3883734379,
+        8813098811,
+        8813098810,
+        8813098809,
+        8813098808,
+        8813098807,
+        9890658062,
+        8813098806,
+        10151682467,
+        8813098805,
+        10151682469,
+        8813098815
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital Viejo de Guatire",
+        "source:geometry": "Maxar (2021)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 956449542,
+      "center": {
+        "lat": 10.4758391,
+        "lon": -66.9174671
+      },
+      "nodes": [
+        8851686383,
+        8851686382,
+        8851686381,
+        8851686380,
+        8851686379,
+        8851686378,
+        8479593591,
+        8851686383
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:full": "Coord. de Epidemiología Regional Dtto. Capital FINAL AV. Roosevelt , AL LADO DEL HOSPITAL PADRE MACHADO, EL CEMENTERIO",
+        "addr:housename": "Edificio Sanitario",
+        "addr:postcode": "1040",
+        "addr:street": "Av. Calvo Lairet",
+        "air_conditioning": "yes",
+        "alt_name": "Sanidad",
+        "amenity": "hospital",
+        "capacity": "50",
+        "emergency": "no",
+        "healthcare": "hospital",
+        "healthcare:speciality": "vaccination",
+        "internet_access": "no",
+        "name": "Unidad Sanitaria del Sur",
+        "opening_hours": "Mo-Fr 06:00-15:00; Jan 01,Apr 19,May 01,Jun 24,Jul 05,Jul 24,Oct 12,Dec 24,Dec 25,Dec 31 off",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "public",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-4152348",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1985",
+        "website": "http://www.mpps.gob.ve/",
+        "wheelchair": "yes",
+        "wikipedia": "es:Distritos Sanitarios de Venezuela"
+      }
+    },
+    {
+      "type": "way",
+      "id": 960902371,
+      "center": {
+        "lat": 10.5285208,
+        "lon": -66.9805499
+      },
+      "nodes": [
+        8889011306,
+        8889011305,
+        8870876677,
+        8889011302,
+        8889011304,
+        8889011301,
+        8889011303,
+        8889011306
+      ],
+      "tags": {
+        "alt_name": "Ambulatorio de El Limón",
+        "amenity": "hospital",
+        "building": "hospital",
+        "name": "Ambulatorio Alfonzo López Porras",
+        "source:geometry": "Maxar (2021)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 988003263,
+      "center": {
+        "lat": 10.5052121,
+        "lon": -66.8943883
+      },
+      "nodes": [
+        2464584365,
+        9132140767,
+        9132140766,
+        9132140765,
+        2464584365
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1050",
+        "addr:street": "Transversal 2 de Guaicaipuro Norte",
+        "amenity": "hospital",
+        "building": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "IVSS Ambulatorio Dr. Dilio Sequera Peraza",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q6047563",
+        "source:geometry": "Maxar (2021)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 988003264,
+      "center": {
+        "lat": 10.50976,
+        "lon": -66.8886255
+      },
+      "nodes": [
+        1773148177,
+        9132140768,
+        9132140769,
+        9132140770,
+        1773148177
+      ],
+      "tags": {
+        "access": "yes",
+        "addr:city": "Caracas",
+        "addr:postcode": "1050",
+        "addr:street": "Real de Simón Rodríguez",
+        "amenity": "hospital",
+        "building": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Módulo de Simón Rodríguez",
+        "opening_hours": "00:01-24:00",
+        "operator:type": "public",
+        "source:geometry": "Maxar (2021)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 988029758,
+      "center": {
+        "lat": 10.5111522,
+        "lon": -66.9144189
+      },
+      "nodes": [
+        9132397921,
+        2304044908,
+        9132397920,
+        9132397919,
+        9132397921
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "building": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "IVSS Especialidades Médicas Horacio Almeida",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q6047563",
+        "source:geometry": "Maxar (2021)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 995651607,
+      "center": {
+        "lat": 10.4779378,
+        "lon": -66.5394163
+      },
+      "nodes": [
+        9193902988,
+        9193902989,
+        9193902990,
+        9193902991,
+        10128457009,
+        9193902988
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "building:levels": "2",
+        "healthcare": "hospital",
+        "height": "12",
+        "name": "Hospital general Eugenio D'Bellard"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1076992745,
+      "center": {
+        "lat": 10.47222,
+        "lon": -66.6171251
+      },
+      "nodes": [
+        9875503994,
+        9875503995,
+        12190041012,
+        12190041011,
+        12190041010,
+        12190041013,
+        12190041014,
+        12190041015,
+        12190041016,
+        12190041017,
+        12190041018,
+        12190041019,
+        12190041020,
+        12190041021,
+        9875503996,
+        12190041022,
+        12190041025,
+        12190041024,
+        12190041023,
+        12190041026,
+        12190041027,
+        12190041028,
+        9875503997,
+        12190041029,
+        12190041030,
+        12190041031,
+        12190041032,
+        12190041033,
+        12190041034,
+        9875503998,
+        12190041002,
+        12190041035,
+        12190041036,
+        12190041037,
+        12190041038,
+        9875503994
+      ],
+      "tags": {
+        "addr:city": "Guarenas",
+        "addr:postcode": "1220",
+        "addr:street": "1.° Avenida",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general;emergency;radiology;thera",
+        "name": "Centro de diagnostico integral Complejo de Salud Argelia Laya"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1089791566,
+      "center": {
+        "lat": -25.3259512,
+        "lon": -57.5982738
+      },
+      "nodes": [
+        9982810229,
+        9982810228,
+        9982810227,
+        9982810226,
+        9982810229
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "building": "yes",
+        "source": "mscs"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1191676745,
+      "center": {
+        "lat": 10.403353,
+        "lon": -66.1619313
+      },
+      "nodes": [
+        11063909486,
+        11063909487,
+        11063909488,
+        11063909489,
+        11063909486
+      ],
+      "tags": {
+        "addr:city": "Tacarigua de Mamporal",
+        "addr:postcode": "1228",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "C.D.I. Maturín"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265642985,
+      "center": {
+        "lat": 10.6230484,
+        "lon": -66.6525317
+      },
+      "nodes": [
+        2748027056,
+        11756617206,
+        11756617207,
+        11756617208,
+        11756617209,
+        11756617210,
+        2748027056
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital de Anare"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1273524845,
+      "center": {
+        "lat": 10.5095805,
+        "lon": -66.9067079
+      },
+      "nodes": [
+        11826223560,
+        12734092926,
+        12734092925,
+        12734092927,
+        11826223561,
+        11826223562,
+        12734092868,
+        11826223563,
+        12734092923,
+        12734092922,
+        12734092924,
+        11826223560
+      ],
+      "tags": {
+        "addr:street": "Esquina porvenir a Esquina Santo Tomás",
+        "amenity": "hospital",
+        "building": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "nephrology",
+        "name": "Centro Nefrológico con + Salud",
+        "operator": "Instituto Venezolano de los Seguros Sociales",
+        "operator:short": "IVSS",
+        "operator:wikidata": "Q6047563"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393758128,
+      "center": {
+        "lat": 10.1495958,
+        "lon": -66.900094
+      },
+      "nodes": [
+        12901421355,
+        12901421356,
+        12901421357,
+        12901421358,
+        12901421355
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Dispensario Local"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1433933707,
+      "center": {
+        "lat": 10.5041122,
+        "lon": -66.8499854
+      },
+      "nodes": [
+        13179440786,
+        13179440787,
+        13179440788,
+        13179440789,
+        13179440786
+      ],
+      "tags": {
+        "alt_name": "Clínica El Ávila",
+        "amenity": "hospital",
+        "building": "yes",
+        "check_date": "2026-04-13",
+        "healthcare": "hospital",
+        "name": "Clínica Ávila"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1449399527,
+      "center": {
+        "lat": 10.354096,
+        "lon": -67.0367107
+      },
+      "nodes": [
+        13294620646,
+        13294620645,
+        13294620644,
+        13294620643,
+        13294620642,
+        13294620641,
+        13294620640,
+        13294620639,
+        13294620638,
+        13294620637,
+        13294620636,
+        13294620646
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Hospital Victorino Santaella"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1528644316,
+      "center": {
+        "lat": 10.4555517,
+        "lon": -66.6250574
+      },
+      "nodes": [
+        13930091023,
+        13930091020,
+        13930091019,
+        13930091016,
+        13930091017,
+        13930091018,
+        13930091021,
+        13930091022,
+        13930091023
+      ],
+      "tags": {
+        "addr:city": "Guarenas",
+        "addr:postcode": "1220",
+        "addr:street": "C. Real San José",
+        "amenity": "hospital",
+        "building": "yes",
+        "building:levels": "1",
+        "healthcare": "hospital",
+        "name": "Centro De Diagnostico Integral San José"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1532773726,
+      "center": {
+        "lat": 10.5981158,
+        "lon": -66.9717148
+      },
+      "nodes": [
+        13968713716,
+        13968713717,
+        13968713718,
+        13968713719,
+        13968713716
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 12428751,
+      "center": {
+        "lat": 10.490469,
+        "lon": -66.8940568
+      },
+      "members": [
+        {
+          "type": "way",
+          "ref": 251308480,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 251308478,
+          "role": "inner"
+        }
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:postcode": "1053",
+        "addr:street": "Av. 21 de noviembre",
+        "air_conditioning": "yes",
+        "amenity": "hospital",
+        "building": "hospital",
+        "building:levels": "7",
+        "capacity": "300",
+        "email": "clinicouniversitarioaldia@hotmail.com",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPLhMyLaKUbeilKdMPrOt5C7yP-92k0lyjBPedz=w408-h306-k-no",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Hospital Universitario de Caracas",
+        "opening_hours": "Mo-Su 06:00-18:00",
+        "operator": "Ministerio del Poder Popular para la Salud",
+        "operator:short": "MPPS",
+        "operator:type": "public",
+        "operator:wikidata": "Q4141111",
+        "phone": "+58-212-6065350",
+        "roof:shape": "flat",
+        "smoking": "no",
+        "source": "albertoq2004@hotmail.com",
+        "start_date": "1954",
+        "type": "multipolygon",
+        "website": "http://www.huc.gov.ve/",
+        "wheelchair": "yes",
+        "wikidata": "Q13605001",
+        "wikipedia": "es:Hospital Universitario de Caracas"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 13415793,
+      "center": {
+        "lat": 10.5076781,
+        "lon": -66.9572242
+      },
+      "members": [
+        {
+          "type": "way",
+          "ref": 1000360385,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 1000360386,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 1000360384,
+          "role": "outer"
+        }
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:country": "VE",
+        "addr:district": "Municipio Libertador",
+        "addr:state": "Distrito Capital",
+        "addr:street": "Avenida El Cuartel",
+        "addr:suburb": "Propatria",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "IVSS Centro Ambulatorio Dr. Julio Iribarren Borges",
+        "operator": "IVSS",
+        "operator:type": "public",
+        "operator:wikidata": "Q9008775",
+        "operator:wikipedia": "es:Instituto Venezolano de los Seguros Sociales",
+        "phone": "+58 212-8700979; +58 212-8704615; +58 212-8704614",
+        "type": "multipolygon",
+        "wheelchair": "no",
+        "wikidata": "Q109746696"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 13436467,
+      "center": {
+        "lat": 10.5161284,
+        "lon": -66.9549088
+      },
+      "members": [
+        {
+          "type": "way",
+          "ref": 1002118013,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 1002118014,
+          "role": "outer"
+        }
+      ],
+      "tags": {
+        "addr:city": "Caracas",
+        "addr:country": "VE",
+        "addr:district": "Municipio Libertador",
+        "addr:state": "Distrito Capital",
+        "addr:street": "Avenida La Laguna",
+        "addr:suburb": "Los Magallanes de Catia",
+        "alt_name": "Hospital de Los Magallanes",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Hospital Dr. José Gregorio Hernández",
+        "old_name": "Hospital del Oeste",
+        "operator": "Ministerio de Salud",
+        "operator:wikidata": "Q4141111",
+        "start_date": "1973",
+        "type": "multipolygon",
+        "wheelchair": "yes",
+        "wikidata": "Q16576048",
+        "wikipedia": "es:Hospital General Dr. José Gregorio Hernández"
+      }
+    }
+  ]
+}

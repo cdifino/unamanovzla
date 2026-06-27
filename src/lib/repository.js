@@ -1,0 +1,260 @@
+import { supabase, IS_DEMO } from './supabaseClient'
+import parroquias from '../data/parroquias_points.json'
+import hospitales from '../data/hospitales.json'
+import { emptyStatus } from '../data/constants'
+
+// ---------------------------------------------------------------------------
+// Catalogo base de ubicaciones (geografia + nombre). El estado dinamico
+// (suministros, rescate, etc.) se guarda en Supabase o, en modo demo, en
+// localStorage.
+// ---------------------------------------------------------------------------
+const BASE = [...parroquias, ...hospitales].map((l) => ({
+  ...l,
+  municipio: l.municipio || null,
+}))
+
+const STATUS_FIELDS = [
+  'status_level',
+  'summary',
+  'supplies_needed',
+  'donation_poc',
+  'rescue_teams',
+  'buildings_searched',
+  'people_aided',
+  'blood_needed',
+  'blood_types',
+  'updated_at',
+  'updated_by',
+]
+
+function mergeStatus(base, status) {
+  return { ...base, ...emptyStatus(), ...(status || {}) }
+}
+
+// ===========================================================================
+// MODO DEMO (sin backend) — datos en el navegador
+// ===========================================================================
+const LS_STATUS = 'mapa_ayuda_status_v1'
+const LS_SUBS = 'mapa_ayuda_subs_v1'
+const LS_ADMIN = 'mapa_ayuda_admin_v1'
+const LS_NEWLOC = 'mapa_ayuda_newloc_v1'
+// Solo para previsualizar el flujo de admin en modo demo. NO es seguridad real.
+const DEMO_ADMIN_PASS = 'admin123'
+
+function lsRead(key, fallback) {
+  try {
+    const raw = localStorage.getItem(key)
+    return raw ? JSON.parse(raw) : fallback
+  } catch {
+    return fallback
+  }
+}
+function lsWrite(key, val) {
+  localStorage.setItem(key, JSON.stringify(val))
+}
+function uid() {
+  return 'sub_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36)
+}
+
+function slugify(s) {
+  return (s || 'punto')
+    .toString()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '') || 'punto'
+}
+
+// Construye un objeto de ubicacion a partir de una propuesta de nuevo punto.
+function locationFromProposal(proposed, patch, existingIds) {
+  let base = slugify((proposed.name || 'punto') + '-' + (proposed.state || ''))
+  let id = base
+  let n = 2
+  while (existingIds.has(id)) id = base + '-' + n++
+  return {
+    id,
+    name: proposed.name,
+    kind: proposed.kind || 'otro',
+    state: proposed.state || '',
+    municipio: proposed.municipio || null,
+    lat: Number(proposed.lat),
+    lng: Number(proposed.lng),
+    ...emptyStatus(),
+    ...(patch || {}),
+    updated_at: new Date().toISOString(),
+  }
+}
+
+const demoRepo = {
+  async getLocations() {
+    const overrides = lsRead(LS_STATUS, {})
+    const extra = lsRead(LS_NEWLOC, [])
+    const all = [...BASE, ...extra]
+    return all.map((b) => mergeStatus(b, overrides[b.id]))
+  },
+  async createLocation(loc) {
+    const extra = lsRead(LS_NEWLOC, [])
+    extra.push(loc)
+    lsWrite(LS_NEWLOC, extra)
+    // Guardamos tambien el estado para que se refleje de inmediato.
+    const overrides = lsRead(LS_STATUS, {})
+    overrides[loc.id] = loc
+    lsWrite(LS_STATUS, overrides)
+    return loc
+  },
+  async updateLocationStatus(id, patch) {
+    const overrides = lsRead(LS_STATUS, {})
+    const next = { ...(overrides[id] || {}), ...patch, updated_at: new Date().toISOString() }
+    overrides[id] = next
+    lsWrite(LS_STATUS, overrides)
+    return next
+  },
+  async createSubmission(payload) {
+    const subs = lsRead(LS_SUBS, [])
+    const sub = {
+      id: uid(),
+      status: 'pending',
+      created_at: new Date().toISOString(),
+      ...payload,
+    }
+    subs.unshift(sub)
+    lsWrite(LS_SUBS, subs)
+    return sub
+  },
+  async getSubmissions(status = 'pending') {
+    const subs = lsRead(LS_SUBS, [])
+    return status ? subs.filter((s) => s.status === status) : subs
+  },
+  async reviewSubmission(id, action, appliedPatch) {
+    const subs = lsRead(LS_SUBS, [])
+    const idx = subs.findIndex((s) => s.id === id)
+    if (idx >= 0) {
+      const sub = subs[idx]
+      subs[idx] = { ...sub, status: action === 'approve' ? 'approved' : 'rejected', reviewed_at: new Date().toISOString() }
+      lsWrite(LS_SUBS, subs)
+      if (action === 'approve') {
+        if (sub.new_location && sub.proposed) {
+          const ids = new Set([...BASE, ...lsRead(LS_NEWLOC, [])].map((l) => l.id))
+          await this.createLocation(locationFromProposal(sub.proposed, appliedPatch, ids))
+        } else if (appliedPatch && sub.location_id) {
+          await this.updateLocationStatus(sub.location_id, appliedPatch)
+        }
+      }
+    }
+    return true
+  },
+  // --- auth demo ---
+  async getSession() {
+    return { isAdmin: lsRead(LS_ADMIN, false) === true, email: 'admin (demo)' }
+  },
+  async signIn(_email, password) {
+    if (password === DEMO_ADMIN_PASS) {
+      lsWrite(LS_ADMIN, true)
+      return { ok: true }
+    }
+    return { ok: false, error: 'Clave incorrecta. En modo demo la clave es: admin123' }
+  },
+  async signOut() {
+    lsWrite(LS_ADMIN, false)
+  },
+}
+
+// ===========================================================================
+// MODO SUPABASE (backend real)
+// ===========================================================================
+const supaRepo = {
+  async getLocations() {
+    const { data, error } = await supabase.from('locations').select('*')
+    if (error) throw error
+    const rows = data || []
+    const byId = Object.fromEntries(rows.map((r) => [r.id, r]))
+    const baseIds = new Set(BASE.map((b) => b.id))
+    // El catalogo base define que se muestra; el estado viene de la BD.
+    const baseLocs = BASE.map((b) => mergeStatus(b, byId[b.id]))
+    // Ubicaciones nuevas creadas en la BD (no presentes en el catalogo base).
+    const extraLocs = rows.filter((r) => !baseIds.has(r.id)).map((r) => mergeStatus(r, r))
+    return [...baseLocs, ...extraLocs]
+  },
+  async createLocation(loc) {
+    const payload = {
+      id: loc.id,
+      name: loc.name,
+      kind: loc.kind,
+      state: loc.state,
+      municipio: loc.municipio,
+      lat: loc.lat,
+      lng: loc.lng,
+    }
+    for (const k of STATUS_FIELDS) if (k in loc) payload[k] = loc[k]
+    const { data, error } = await supabase.from('locations').insert(payload).select().single()
+    if (error) throw error
+    return data
+  },
+  async updateLocationStatus(id, patch) {
+    const payload = {}
+    for (const k of STATUS_FIELDS) if (k in patch) payload[k] = patch[k]
+    payload.updated_at = new Date().toISOString()
+    const { error } = await supabase.from('locations').update(payload).eq('id', id)
+    if (error) throw error
+    return payload
+  },
+  async createSubmission(payload) {
+    const { data, error } = await supabase
+      .from('submissions')
+      .insert({ ...payload, status: 'pending' })
+      .select()
+      .single()
+    if (error) throw error
+    return data
+  },
+  async getSubmissions(status = 'pending') {
+    let q = supabase.from('submissions').select('*').order('created_at', { ascending: false })
+    if (status) q = q.eq('status', status)
+    const { data, error } = await q
+    if (error) throw error
+    return data || []
+  },
+  async reviewSubmission(id, action, appliedPatch) {
+    const { data: sub, error: e1 } = await supabase
+      .from('submissions')
+      .update({ status: action === 'approve' ? 'approved' : 'rejected', reviewed_at: new Date().toISOString() })
+      .eq('id', id)
+      .select()
+      .single()
+    if (e1) throw e1
+    if (action === 'approve') {
+      if (sub?.new_location && sub?.proposed) {
+        const { data: existing } = await supabase.from('locations').select('id')
+        const ids = new Set((existing || []).map((r) => r.id).concat(BASE.map((b) => b.id)))
+        await this.createLocation(locationFromProposal(sub.proposed, appliedPatch, ids))
+      } else if (appliedPatch && sub?.location_id) {
+        await this.updateLocationStatus(sub.location_id, appliedPatch)
+      }
+    }
+    return true
+  },
+  async getSession() {
+    const { data } = await supabase.auth.getUser()
+    const user = data?.user
+    if (!user) return { isAdmin: false, email: null }
+    const { data: admin } = await supabase.from('admins').select('user_id').eq('user_id', user.id).maybeSingle()
+    return { isAdmin: !!admin, email: user.email }
+  },
+  async signIn(email, password) {
+    const { error } = await supabase.auth.signInWithPassword({ email, password })
+    if (error) return { ok: false, error: 'Credenciales incorrectas.' }
+    const session = await this.getSession()
+    if (!session.isAdmin) {
+      await supabase.auth.signOut()
+      return { ok: false, error: 'Esta cuenta no tiene permisos de administrador.' }
+    }
+    return { ok: true }
+  },
+  async signOut() {
+    await supabase.auth.signOut()
+  },
+}
+
+export const repo = IS_DEMO ? demoRepo : supaRepo
+export { IS_DEMO }
