@@ -9,6 +9,7 @@ import SearchBox from './components/SearchBox'
 import NewLocationForm from './components/NewLocationForm'
 import DonateMatcher from './components/DonateMatcher'
 import UpdatesFeed from './components/UpdatesFeed'
+import ResetPassword from './components/ResetPassword'
 import { repo } from './lib/repository'
 import { STATES } from './data/constants'
 import { matchLocation, normalize } from './lib/search'
@@ -30,6 +31,7 @@ export default function App() {
   const [placedPoint, setPlacedPoint] = useState(null)
   const [showDonate, setShowDonate] = useState(false)
   const [showFeed, setShowFeed] = useState(false)
+  const [showReset, setShowReset] = useState(false)
 
   async function loadLocations() {
     const data = await repo.getLocations()
@@ -41,6 +43,11 @@ export default function App() {
   useEffect(() => {
     loadLocations()
     repo.getSession().then(setSession).catch(() => {})
+    // Detecta el regreso desde el correo de recuperacion de clave.
+    const unsub = repo.onAuthEvent((event) => {
+      if (event === 'PASSWORD_RECOVERY') setShowReset(true)
+    })
+    return unsub
   }, [])
 
   const filtered = useMemo(() => {
@@ -202,6 +209,18 @@ export default function App() {
 
       {showQueue && session.isAdmin && (
         <AdminQueue locations={locations} onClose={() => setShowQueue(false)} onApplied={loadLocations} />
+      )}
+
+      {showReset && (
+        <ResetPassword
+          onClose={() => {
+            setShowReset(false)
+            if (typeof window !== 'undefined' && window.history?.replaceState) {
+              window.history.replaceState(null, '', window.location.pathname + window.location.search)
+            }
+          }}
+          onDone={() => repo.getSession().then(setSession).catch(() => {})}
+        />
       )}
     </div>
   )

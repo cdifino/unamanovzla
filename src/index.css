@@ -37,7 +37,8 @@ a { color: var(--accent); }
 .header {
   display: flex;
   align-items: center;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 8px 12px;
   padding: 10px 18px;
   background: linear-gradient(90deg, var(--brand-dark), var(--brand));
   color: #fff;
@@ -347,8 +348,25 @@ a { color: var(--accent); }
 
 .empty-state { text-align: center; color: var(--muted); padding: 30px 10px; }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .panel { width: 100%; }
-  .toolbar { max-width: calc(100% - 24px); }
+  .feed { width: 100%; }
+  .toolbar { left: 8px; right: 8px; max-width: none; top: 8px; }
+  .header { gap: 6px 8px; padding: 8px 10px; }
+  .header__brand { gap: 8px; }
+  .header__title { font-size: 15px; }
   .header__subtitle { display: none; }
+  .header__logo { font-size: 20px; }
+  .header__btn { padding: 6px 9px; font-size: 12px; }
+  .legend { font-size: 11px; padding: 8px 10px; bottom: 10px; left: 8px; }
+  .modal { max-height: 92vh; }
+  .modal__body { padding: 14px 16px; }
+  /* Evita el zoom automatico de iOS al enfocar inputs. */
+  .form input, .form textarea, .form select,
+  .search__input, .donate__input { font-size: 16px; }
+  .feed__filters .chip { font-size: 12px; }
+}
+
+@media (max-width: 380px) {
+  .header__btn { padding: 5px 8px; font-size: 11px; }
 }

@@ -158,6 +158,15 @@ const demoRepo = {
   async signOut() {
     lsWrite(LS_ADMIN, false)
   },
+  async resetPassword() {
+    return { ok: false, error: 'En modo demo no hay recuperacion de clave. La clave es admin123.' }
+  },
+  async updatePassword() {
+    return { ok: false, error: 'No disponible en modo demo.' }
+  },
+  onAuthEvent() {
+    return () => {}
+  },
 }
 
 // ===========================================================================
@@ -253,6 +262,23 @@ const supaRepo = {
   },
   async signOut() {
     await supabase.auth.signOut()
+  },
+  async resetPassword(email) {
+    const redirectTo =
+      typeof window !== 'undefined' ? window.location.origin + window.location.pathname : undefined
+    const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo })
+    if (error) return { ok: false, error: 'No se pudo enviar el correo. Verifica la direccion.' }
+    return { ok: true }
+  },
+  async updatePassword(password) {
+    const { error } = await supabase.auth.updateUser({ password })
+    if (error) return { ok: false, error: error.message || 'No se pudo actualizar la clave.' }
+    return { ok: true }
+  },
+  // Notifica eventos de auth (p.ej. PASSWORD_RECOVERY al volver del correo).
+  onAuthEvent(cb) {
+    const { data } = supabase.auth.onAuthStateChange((event, session) => cb(event, session))
+    return () => data.subscription.unsubscribe()
   },
 }
 
