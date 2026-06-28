@@ -18,11 +18,13 @@ export default function NewLocationForm({ placedPoint, onRemark, onClose, onSent
     submitter_contact: '',
   })
   const [status, setStatus] = useState({ sending: false, ok: false, error: '' })
+  const [hp, setHp] = useState('') // honeypot anti-spam
   const set = (k, v) => setForm((f) => ({ ...f, [k]: v }))
   const isHospital = form.kind === 'hospital'
 
   async function submit(e) {
     e.preventDefault()
+    if (hp.trim()) { setStatus({ sending: false, ok: true, error: '' }); return }
     if (!form.name.trim()) return setStatus({ sending: false, ok: false, error: 'Indica el nombre del lugar.' })
     if (!placedPoint) return setStatus({ sending: false, ok: false, error: 'Marca la ubicacion en el mapa.' })
     setStatus({ sending: true, ok: false, error: '' })
@@ -88,6 +90,11 @@ export default function NewLocationForm({ placedPoint, onRemark, onClose, onSent
       </div>
       <div className="panel__body">
         <form className="form" onSubmit={submit}>
+          {/* Honeypot anti-spam: invisible para humanos. */}
+          <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, overflow: 'hidden' }}>
+            <label>No llenar este campo</label>
+            <input type="text" tabIndex={-1} autoComplete="off" value={hp} onChange={(e) => setHp(e.target.value)} />
+          </div>
           <div className={'notice' + (placedPoint ? ' notice--ok' : '')} style={!placedPoint ? { background: '#eff6ff', color: '#1e40af', border: '1px solid #bfdbfe' } : undefined}>
             {placedPoint
               ? <>📍 Ubicacion marcada: {placedPoint.lat.toFixed(4)}, {placedPoint.lng.toFixed(4)}. <button type="button" className="linkbtn" onClick={onRemark}>Volver a marcar</button></>

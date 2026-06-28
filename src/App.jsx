@@ -10,6 +10,7 @@ import SearchBox from './components/SearchBox'
 import NewLocationForm from './components/NewLocationForm'
 import DonateMatcher from './components/DonateMatcher'
 import UpdatesFeed from './components/UpdatesFeed'
+import Disclaimer from './components/Disclaimer'
 import ResetPassword from './components/ResetPassword'
 import { repo } from './lib/repository'
 import { STATES } from './data/constants'
@@ -117,6 +118,8 @@ export default function App() {
         onToggleFeed={() => setShowFeed((v) => !v)}
         feedOpen={showFeed}
       />
+
+      <Disclaimer />
 
       <div className="main">
         <MapView

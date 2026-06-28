@@ -18,12 +18,18 @@ export default function SubmissionForm({ location, onClose, onSent }) {
     supplies_needed: '',
     donation_poc: '',
   })
+  const [hp, setHp] = useState('') // honeypot anti-spam: debe quedar vacio
   const [status, setStatus] = useState({ sending: false, ok: false, error: '' })
 
   const set = (k, v) => setForm((f) => ({ ...f, [k]: v }))
 
   async function submit(e) {
     e.preventDefault()
+    // Si el honeypot trae texto, es un bot: simulamos exito y descartamos.
+    if (hp.trim()) {
+      setStatus({ sending: false, ok: true, error: '' })
+      return
+    }
     if (!form.message.trim()) {
       setStatus({ sending: false, ok: false, error: 'Por favor describe la actualizacion.' })
       return
@@ -74,6 +80,11 @@ export default function SubmissionForm({ location, onClose, onSent }) {
 
   return (
     <form className="form" onSubmit={submit}>
+      {/* Honeypot anti-spam: invisible para humanos, los bots lo rellenan. */}
+      <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: 'auto', width: 1, height: 1, overflow: 'hidden' }}>
+        <label>No llenar este campo</label>
+        <input type="text" tabIndex={-1} autoComplete="off" value={hp} onChange={(e) => setHp(e.target.value)} />
+      </div>
       <p className="muted" style={{ fontSize: 13 }}>
         Comparte informacion verificada sobre <strong>{location.name}</strong>. Un administrador la
         revisara antes de publicarla.

@@ -31,6 +31,15 @@ function mergeStatus(base, status) {
   return { ...base, ...emptyStatus(), ...(status || {}) }
 }
 
+// Caja geografica de Miranda / Distrito Capital / La Guaira. Sirve de red de
+// seguridad para que ubicaciones erroneas (datos malos de OSM fuera de
+// Venezuela) nunca aparezcan en el mapa, aunque sigan en la base de datos.
+function inRegion(l) {
+  const lat = Number(l.lat), lng = Number(l.lng)
+  return Number.isFinite(lat) && Number.isFinite(lng) &&
+    lat >= 9.5 && lat <= 11.2 && lng >= -67.6 && lng <= -65.5
+}
+
 // ===========================================================================
 // MODO DEMO (sin backend) — datos en el navegador
 // ===========================================================================
@@ -219,7 +228,10 @@ const supaRepo = {
     // El catalogo base define que se muestra; el estado viene de la BD.
     const baseLocs = BASE.map((b) => mergeStatus(b, byId[b.id]))
     // Ubicaciones nuevas creadas en la BD (no presentes en el catalogo base).
-    const extraLocs = rows.filter((r) => !baseIds.has(r.id)).map((r) => mergeStatus(r, r))
+    const extraLocs = rows
+      .filter((r) => !baseIds.has(r.id))
+      .filter(inRegion)
+      .map((r) => mergeStatus(r, r))
     return [...baseLocs, ...extraLocs]
   },
   async createLocation(loc) {
