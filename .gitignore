@@ -7,3 +7,5 @@ dist-ssr
 install.log
 scripts/overpass_raw.json
 .DS_Store
+
+.vite/
