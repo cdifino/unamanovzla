@@ -38,6 +38,7 @@ const LS_STATUS = 'mapa_ayuda_status_v1'
 const LS_SUBS = 'mapa_ayuda_subs_v1'
 const LS_ADMIN = 'mapa_ayuda_admin_v1'
 const LS_NEWLOC = 'mapa_ayuda_newloc_v1'
+const LS_ADMINREQ = 'mapa_ayuda_adminreq_v1'
 // Solo para previsualizar el flujo de admin en modo demo. NO es seguridad real.
 const DEMO_ADMIN_PASS = 'admin123'
 
@@ -146,7 +147,10 @@ const demoRepo = {
   },
   // --- auth demo ---
   async getSession() {
-    return { isAdmin: lsRead(LS_ADMIN, false) === true, email: 'admin (demo)' }
+    const isAdmin = lsRead(LS_ADMIN, false) === true
+    // En demo, el admin logueado tambien es super para poder previsualizar
+    // el panel de gestion de administradores.
+    return { isAdmin, isSuper: isAdmin, pending: false, email: 'admin (demo)' }
   },
   async signIn(_email, password) {
     if (password === DEMO_ADMIN_PASS) {
@@ -157,6 +161,39 @@ const demoRepo = {
   },
   async signOut() {
     lsWrite(LS_ADMIN, false)
+  },
+  async requestAccess({ email, full_name, assigned_label } = {}) {
+    const reqs = lsRead(LS_ADMINREQ, [])
+    reqs.push({
+      user_id: uid(),
+      email: email || '',
+      full_name: full_name || '',
+      assigned_label: assigned_label || '',
+      assigned_location_id: null,
+      status: 'pending',
+      is_super: false,
+      requested_at: new Date().toISOString(),
+    })
+    lsWrite(LS_ADMINREQ, reqs)
+    return { ok: true, pending: true }
+  },
+  async listAdminRequests() {
+    return lsRead(LS_ADMINREQ, [])
+  },
+  async reviewAdmin(userId, action, opts = {}) {
+    const reqs = lsRead(LS_ADMINREQ, [])
+    const idx = reqs.findIndex((r) => r.user_id === userId)
+    if (idx >= 0) {
+      reqs[idx] = {
+        ...reqs[idx],
+        status: action === 'approve' ? 'approved' : 'rejected',
+        assigned_location_id: opts.assigned_location_id ?? reqs[idx].assigned_location_id,
+        assigned_label: opts.assigned_label ?? reqs[idx].assigned_label,
+        reviewed_at: new Date().toISOString(),
+      }
+      lsWrite(LS_ADMINREQ, reqs)
+    }
+    return { ok: true }
   },
   async resetPassword() {
     return { ok: false, error: 'En modo demo no hay recuperacion de clave. La clave es admin123.' }
@@ -246,22 +283,102 @@ const supaRepo = {
   async getSession() {
     const { data } = await supabase.auth.getUser()
     const user = data?.user
-    if (!user) return { isAdmin: false, email: null }
-    const { data: admin } = await supabase.from('admins').select('user_id').eq('user_id', user.id).maybeSingle()
-    return { isAdmin: !!admin, email: user.email }
+    if (!user) return { isAdmin: false, isSuper: false, pending: false, email: null }
+    const { data: admin } = await supabase
+      .from('admins')
+      .select('user_id,status,is_super,assigned_label,assigned_location_id')
+      .eq('user_id', user.id)
+      .maybeSingle()
+    return {
+      isAdmin: admin?.status === 'approved',
+      isSuper: admin?.status === 'approved' && !!admin?.is_super,
+      pending: admin?.status === 'pending',
+      rejected: admin?.status === 'rejected',
+      assignedLabel: admin?.assigned_label || null,
+      assignedLocationId: admin?.assigned_location_id || null,
+      email: user.email,
+      userId: user.id,
+    }
+  },
+  // Crea la fila de solicitud (pending) si el usuario autenticado pidio acceso
+  // al registrarse (marcado en user_metadata) y aun no existe su fila.
+  async _ensurePendingRow() {
+    const { data } = await supabase.auth.getUser()
+    const user = data?.user
+    if (!user) return
+    const meta = user.user_metadata || {}
+    if (!meta.admin_request) return
+    const { data: existing } = await supabase
+      .from('admins')
+      .select('user_id')
+      .eq('user_id', user.id)
+      .maybeSingle()
+    if (existing) return
+    await supabase.from('admins').insert({
+      user_id: user.id,
+      email: user.email,
+      full_name: meta.full_name || null,
+      assigned_label: meta.assigned_label || null,
+      status: 'pending',
+      is_super: false,
+    })
   },
   async signIn(email, password) {
     const { error } = await supabase.auth.signInWithPassword({ email, password })
     if (error) return { ok: false, error: 'Credenciales incorrectas.' }
+    await this._ensurePendingRow()
     const session = await this.getSession()
-    if (!session.isAdmin) {
+    if (session.isAdmin) return { ok: true, session }
+    if (session.pending) {
       await supabase.auth.signOut()
-      return { ok: false, error: 'Esta cuenta no tiene permisos de administrador.' }
+      return { ok: false, pending: true, error: 'Tu solicitud de acceso esta pendiente de aprobacion por un administrador.' }
     }
-    return { ok: true }
+    if (session.rejected) {
+      await supabase.auth.signOut()
+      return { ok: false, error: 'Tu solicitud de acceso fue rechazada.' }
+    }
+    await supabase.auth.signOut()
+    return { ok: false, error: 'Esta cuenta no tiene permisos de administrador.' }
   },
   async signOut() {
     await supabase.auth.signOut()
+  },
+  // Registro self-service: crea la cuenta y la solicitud de admin (pending).
+  async requestAccess({ email, password, full_name, assigned_label }) {
+    const { data, error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: { data: { admin_request: true, full_name: full_name || '', assigned_label: assigned_label || '' } },
+    })
+    if (error) return { ok: false, error: error.message || 'No se pudo crear la cuenta.' }
+    // Si hay sesion inmediata (sin confirmacion de correo), creamos la fila ya.
+    if (data?.session) {
+      await this._ensurePendingRow()
+      return { ok: true, pending: true }
+    }
+    // Requiere confirmar el correo antes de poder iniciar sesion.
+    return { ok: true, needsConfirm: true }
+  },
+  // Lista todas las solicitudes/administradores (solo super-admin via RLS).
+  async listAdminRequests() {
+    const { data, error } = await supabase
+      .from('admins')
+      .select('*')
+      .order('requested_at', { ascending: true })
+    if (error) throw error
+    return data || []
+  },
+  // Aprueba/rechaza una solicitud y asigna (informativo) su centro.
+  async reviewAdmin(userId, action, { assigned_location_id, assigned_label } = {}) {
+    const patch = {
+      status: action === 'approve' ? 'approved' : 'rejected',
+      reviewed_at: new Date().toISOString(),
+    }
+    if (assigned_location_id !== undefined) patch.assigned_location_id = assigned_location_id
+    if (assigned_label !== undefined) patch.assigned_label = assigned_label
+    const { error } = await supabase.from('admins').update(patch).eq('user_id', userId)
+    if (error) return { ok: false, error: error.message }
+    return { ok: true }
   },
   async resetPassword(email) {
     const redirectTo =

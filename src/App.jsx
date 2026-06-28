@@ -5,6 +5,7 @@ import Legend from './components/Legend'
 import LocationPanel from './components/LocationPanel'
 import AdminLogin from './components/AdminLogin'
 import AdminQueue from './components/AdminQueue'
+import AdminManager from './components/AdminManager'
 import SearchBox from './components/SearchBox'
 import NewLocationForm from './components/NewLocationForm'
 import DonateMatcher from './components/DonateMatcher'
@@ -22,6 +23,7 @@ export default function App() {
   const [session, setSession] = useState({ isAdmin: false })
   const [showLogin, setShowLogin] = useState(false)
   const [showQueue, setShowQueue] = useState(false)
+  const [showAdmins, setShowAdmins] = useState(false)
   const [filterState, setFilterState] = useState('all')
   const [filterKind, setFilterKind] = useState('all')
   const [query, setQuery] = useState('')
@@ -109,6 +111,7 @@ export default function App() {
         session={session}
         onAdminClick={handleAdminClick}
         onSignOut={handleSignOut}
+        onManageAdmins={() => setShowAdmins(true)}
         onNewPoint={openNewForm}
         onDonate={() => setShowDonate(true)}
         onToggleFeed={() => setShowFeed((v) => !v)}
@@ -209,6 +212,10 @@ export default function App() {
 
       {showQueue && session.isAdmin && (
         <AdminQueue locations={locations} onClose={() => setShowQueue(false)} onApplied={loadLocations} />
+      )}
+
+      {showAdmins && session.isSuper && (
+        <AdminManager locations={locations} onClose={() => setShowAdmins(false)} />
       )}
 
       {showReset && (

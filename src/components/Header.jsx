@@ -1,6 +1,6 @@
 import { IS_DEMO } from '../lib/repository'
 
-export default function Header({ session, onAdminClick, onSignOut, onNewPoint, onDonate, onToggleFeed, feedOpen }) {
+export default function Header({ session, onAdminClick, onSignOut, onManageAdmins, onNewPoint, onDonate, onToggleFeed, feedOpen }) {
   return (
     <header className="header">
       <div className="header__brand">
@@ -18,6 +18,7 @@ export default function Header({ session, onAdminClick, onSignOut, onNewPoint, o
       {session?.isAdmin ? (
         <>
           <button className="header__btn" onClick={onAdminClick}>Revisar reportes</button>
+          {session.isSuper && <button className="header__btn" onClick={onManageAdmins}>Administradores</button>}
           <button className="header__btn" onClick={onSignOut}>Salir</button>
         </>
       ) : (

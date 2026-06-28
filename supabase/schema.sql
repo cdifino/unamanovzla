@@ -45,10 +45,21 @@ create table if not exists public.submissions (
 
 create index if not exists submissions_status_idx on public.submissions (status, created_at desc);
 
--- Quien es administrador. Agrega aqui el user_id de cada admin (ver README).
+-- Administradores. Las personas se registran y SOLICITAN acceso (status
+-- 'pending'); un super-admin las aprueba y, de forma informativa, les asigna
+-- el centro/hospital que gestionan. Alcance flexible: todo admin aprobado
+-- puede editar cualquier ubicacion.
 create table if not exists public.admins (
-  user_id  uuid primary key references auth.users(id) on delete cascade,
-  email    text
+  user_id              uuid primary key references auth.users(id) on delete cascade,
+  email                text,
+  full_name            text,
+  status               text not null default 'approved' check (status in ('pending','approved','rejected')),
+  is_super             boolean not null default false,
+  assigned_location_id text references public.locations(id) on delete set null,
+  assigned_label       text,
+  requested_at         timestamptz default now(),
+  reviewed_at          timestamptz,
+  reviewed_by          uuid
 );
 
 -- --------------------------- SEGURIDAD (RLS) -------------------------------
@@ -60,7 +71,20 @@ create or replace function public.is_admin() returns boolean
 language sql security definer stable
 set search_path = public
 as $$
-  select exists (select 1 from public.admins where user_id = auth.uid());
+  select exists (
+    select 1 from public.admins
+    where user_id = auth.uid() and status = 'approved'
+  );
+$$;
+
+create or replace function public.is_super() returns boolean
+language sql security definer stable
+set search_path = public
+as $$
+  select exists (
+    select 1 from public.admins
+    where user_id = auth.uid() and status = 'approved' and is_super = true
+  );
 $$;
 
 -- Cualquiera puede LEER las ubicaciones (lectores sin credenciales).
@@ -94,6 +118,28 @@ drop policy if exists admins_self_read on public.admins;
 create policy admins_self_read on public.admins
   for select using (user_id = auth.uid());
 
+-- Cualquier usuario autenticado puede CREAR su propia solicitud (pendiente).
+drop policy if exists admins_request_insert on public.admins;
+create policy admins_request_insert on public.admins
+  for insert to authenticated
+  with check (
+    user_id = auth.uid()
+    and status = 'pending'
+    and is_super = false
+    and assigned_location_id is null
+  );
+
+-- El super-admin ve todas las solicitudes y puede aprobar/rechazar/asignar.
+drop policy if exists admins_super_read on public.admins;
+create policy admins_super_read on public.admins
+  for select using (public.is_super());
+drop policy if exists admins_super_update on public.admins;
+create policy admins_super_update on public.admins
+  for update using (public.is_super()) with check (public.is_super());
+drop policy if exists admins_super_delete on public.admins;
+create policy admins_super_delete on public.admins
+  for delete using (public.is_super());
+
 -- --------------------------- PRIVILEGIOS -----------------------------------
 grant usage on schema public to anon, authenticated;
 grant select on public.locations to anon, authenticated;
@@ -101,3 +147,4 @@ grant insert on public.submissions to anon, authenticated;
 grant select, update on public.submissions to authenticated;
 grant insert, update on public.locations to authenticated;
 grant select on public.admins to authenticated;
+grant insert, update, delete on public.admins to authenticated;
