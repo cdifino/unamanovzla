@@ -59,7 +59,7 @@ con la clave **`admin123`** (solo demo).
 En el panel de Supabase, abre **SQL Editor** y ejecuta, en este orden:
 
 1. `supabase/schema.sql` — tablas, seguridad (RLS) y permisos.
-2. `supabase/seed.sql` — precarga las **302 ubicaciones** (102 parroquias + 200 hospitales).
+2. `supabase/seed.sql` — precarga las **240 ubicaciones** (102 parroquias + 138 hospitales).
 
 > Si actualizas el catálogo de ubicaciones, regenera el seed con `npm run gen:seed`.
 
@@ -125,7 +125,7 @@ mapa-ayuda/
 │     └─ constants.js
 ├─ supabase/
 │  ├─ schema.sql              # tablas + RLS + permisos
-│  └─ seed.sql                # 302 ubicaciones (generado)
+│  └─ seed.sql                # 240 ubicaciones (generado)
 └─ scripts/
    ├─ gen-seed.mjs            # regenera seed.sql
    └─ gen-geojson (npm run gen:geojson)
