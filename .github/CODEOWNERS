@@ -1,0 +1,6 @@
+# CODEOWNERS
+# These owners are the default owners for everything in the repo and are
+# required to approve pull requests before they can be merged to main.
+# See: https://docs.github.com/articles/about-code-owners
+
+* @cdifino @dmonroym @mariasr1308 @mcg-studio
