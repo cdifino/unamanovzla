@@ -1,7 +1,7 @@
 # Mapa de Ayuda — Capturas para promoción
 
 Imágenes para difundir el sitio entre donantes, voluntarios y aliados.
-Sitio en producción: **https://cdifino.github.io/unamanovzla/**
+Sitio en producción: **https://www.unamanovzla.com/**
 
 > Las capturas se generaron con datos de ejemplo (modo demo) para ilustrar las
 > funciones. Para regenerarlas: `node scripts/screenshots.mjs` (con el preview
@@ -23,4 +23,4 @@ Sitio en producción: **https://cdifino.github.io/unamanovzla/**
 > Un mapa colaborativo de Miranda, Distrito Capital y La Guaira para coordinar
 > la ayuda: mirá qué necesita cada hospital y parroquia, y a dónde llevar tus
 > donaciones. ¿Querés donar? El sitio te dice exactamente dónde hace falta.
-> 👉 https://cdifino.github.io/unamanovzla/
+> 👉 https://www.unamanovzla.com/
