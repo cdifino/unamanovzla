@@ -3,11 +3,24 @@ const path = require('path');
 const https = require('https');
 const osmtogeojson = require('osmtogeojson');
 
-const ROOT = 'C:\\Users\\cadifino\\mapa-ayuda';
+const ROOT = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(ROOT, 'src', 'data');
 const SCRIPTS_DIR = path.join(ROOT, 'scripts');
 const OVERPASS = 'https://overpass-api.de/api/interpreter';
 const STATES = ['Distrito Capital', 'Miranda', 'La Guaira'];
+
+// Every state lookup is constrained to the Venezuela country area so that
+// identically-named admin regions in other countries are never matched
+// (e.g. Paraguay's "Distrito Capital" = Asuncion, which previously pulled in
+// ~62 non-Venezuelan hospitals). See issue #3.
+const VE_STATE_RELATIONS = `area["admin_level"="2"]["ISO3166-1"="VE"]->.ve;
+(
+${STATES.map(s => `  relation["boundary"="administrative"]["admin_level"="4"]["name"="${s}"](area.ve);`).join('\n')}
+)`;
+
+// The same three state relations, mapped to areas for use as (area.states).
+const VE_STATE_AREAS = `${VE_STATE_RELATIONS}->.veStateRels;
+.veStateRels map_to_area->.states;`;
 
 function overpass(query, timeoutMs) {
   return new Promise((resolve, reject) => {
@@ -185,11 +198,7 @@ async function main() {
   fs.mkdirSync(SCRIPTS_DIR, { recursive: true });
 
   const queryForAdmin = (level) => `[out:json][timeout:240];
-(
-  area["admin_level"="4"]["name"="Distrito Capital"];
-  area["admin_level"="4"]["name"="Miranda"];
-  area["admin_level"="4"]["name"="La Guaira"];
-)->.states;
+${VE_STATE_AREAS}
 (
   relation["boundary"="administrative"]["admin_level"="${level}"](area.states);
 );
@@ -209,11 +218,7 @@ out geom;`;
   fs.writeFileSync(path.join(SCRIPTS_DIR, 'overpass_raw.json'), JSON.stringify(raw, null, 2));
 
   const stateQuery = `[out:json][timeout:180];
-(
-  relation["boundary"="administrative"]["admin_level"="4"]["name"="Distrito Capital"];
-  relation["boundary"="administrative"]["admin_level"="4"]["name"="Miranda"];
-  relation["boundary"="administrative"]["admin_level"="4"]["name"="La Guaira"];
-);
+${VE_STATE_RELATIONS};
 out geom;`;
   const stateRaw = await overpassRetry(stateQuery, 200000, 'state boundaries');
   fs.writeFileSync(path.join(SCRIPTS_DIR, 'states_raw.json'), JSON.stringify(stateRaw, null, 2));
@@ -222,11 +227,7 @@ out geom;`;
   let municipioFeatures = [];
   try {
     const municipiosQuery = `[out:json][timeout:180];
-(
-  area["admin_level"="4"]["name"="Distrito Capital"];
-  area["admin_level"="4"]["name"="Miranda"];
-  area["admin_level"="4"]["name"="La Guaira"];
-)->.states;
+${VE_STATE_AREAS}
 (
   relation["boundary"="administrative"]["admin_level"="6"](area.states);
 );
@@ -278,11 +279,7 @@ out geom;`;
   fs.writeFileSync(path.join(DATA_DIR, 'parroquias_points.json'), JSON.stringify(points, null, 2));
 
   const hospitalQuery = `[out:json][timeout:180];
-(
-  area["admin_level"="4"]["name"="Distrito Capital"];
-  area["admin_level"="4"]["name"="Miranda"];
-  area["admin_level"="4"]["name"="La Guaira"];
-)->.states;
+${VE_STATE_AREAS}
 (
   node["amenity"="hospital"](area.states);
   way["amenity"="hospital"](area.states);
