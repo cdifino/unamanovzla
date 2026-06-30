@@ -15,7 +15,7 @@ function Field({ label, icon, value }) {
   )
 }
 
-function AdminEdit({ location, onSaved, onCancel }) {
+function AdminEdit({ location, adminName, onSaved, onCancel }) {
   const isHospital = location.kind === 'hospital'
   const isParroquia = location.kind === 'parroquia'
   const [f, setF] = useState({
@@ -36,8 +36,9 @@ function AdminEdit({ location, onSaved, onCancel }) {
     e.preventDefault()
     setSaving(true)
     try {
-      await repo.updateLocationStatus(location.id, f)
-      onSaved(f)
+      const patch = { ...f, updated_by: adminName || 'Anonimo' }
+      await repo.updateLocationStatus(location.id, patch)
+      onSaved(patch)
     } finally {
       setSaving(false)
     }
@@ -90,7 +91,7 @@ function AdminEdit({ location, onSaved, onCancel }) {
   )
 }
 
-export default function LocationPanel({ location, isAdmin, onClose, onUpdated }) {
+export default function LocationPanel({ location, isAdmin, adminName, onClose, onUpdated }) {
   const [mode, setMode] = useState('view')
   const isHospital = location.kind === 'hospital'
   const isParroquia = location.kind === 'parroquia'
@@ -167,6 +168,7 @@ export default function LocationPanel({ location, isAdmin, onClose, onUpdated })
         {mode === 'edit' && isAdmin && (
           <AdminEdit
             location={location}
+            adminName={adminName}
             onCancel={() => setMode('view')}
             onSaved={(patch) => {
               setMode('view')

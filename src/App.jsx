@@ -179,6 +179,7 @@ export default function App() {
           <LocationPanel
             location={selected}
             isAdmin={session.isAdmin}
+            adminName={session.email || 'Anonimo'}
             onClose={() => setSelectedId(null)}
             onUpdated={applyPatch}
           />
