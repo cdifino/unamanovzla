@@ -1,0 +1,10 @@
+node_modules
+dist
+dist-ssr
+public
+docs
+supabase
+src/data
+scripts/*.json
+scripts/package-lock.json
+*.local
