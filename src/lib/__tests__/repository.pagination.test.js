@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 import { fetchAllPages } from '../repository'
 
 describe('fetchAllPages', () => {
@@ -73,53 +73,14 @@ describe('fetchAllPages', () => {
 })
 
 // ---------------------------------------------------------------------------
-// getSubmissions pagination params
+// getSubmissions pagination params — verify the range arithmetic
 // ---------------------------------------------------------------------------
 describe('supaRepo.getSubmissions pagination', () => {
-  let mockRange
-  let mockEq
-  let mockOrder
-  let mockSelect
-  let mockFrom
-
-  beforeEach(() => {
-    // Build a chainable query builder mock whose terminal step is awaitable.
-    mockRange = vi.fn()
-    mockEq = vi.fn()
-    mockOrder = vi.fn()
-    mockSelect = vi.fn()
-    mockFrom = vi.fn()
-
-    // Each method returns the builder itself so methods can be chained.
-    // range() is the terminal step — returns a Promise.
-    const builder = {
-      select: mockSelect,
-      order: mockOrder,
-      range: mockRange,
-      eq: mockEq,
-    }
-    mockSelect.mockReturnValue(builder)
-    mockOrder.mockReturnValue(builder)
-    mockEq.mockReturnValue(builder)
-    // Default: range resolves to empty result.
-    mockRange.mockResolvedValue({ data: [], error: null })
-    mockFrom.mockReturnValue(builder)
-  })
-
-  it('applies the correct range for the first page with default pageSize', async () => {
-    // We need to provide the mock supabase to the module. We do this by
-    // temporarily replacing the exported supabase and re-importing via
-    // a dedicated wrapper that accepts an injectable client.
-    // Instead, we test the observable side-effect: the range arguments
-    // that are calculated from page/pageSize defaults.
+  it('calculates correct range for the first page with default pageSize', () => {
     const pageSize = 200
     const page = 0
-    const expectedFrom = page * pageSize        // 0
-    const expectedTo = (page + 1) * pageSize - 1 // 199
-
-    // Verify the arithmetic the implementation must use.
-    expect(expectedFrom).toBe(0)
-    expect(expectedTo).toBe(199)
+    expect(page * pageSize).toBe(0)
+    expect((page + 1) * pageSize - 1).toBe(199)
   })
 
   it('calculates correct range for page 1', () => {
