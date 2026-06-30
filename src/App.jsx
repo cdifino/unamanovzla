@@ -1,20 +1,24 @@
-import { useEffect, useMemo, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import Header from './components/Header'
 import MapView from './components/MapView'
 import Legend from './components/Legend'
 import LocationPanel from './components/LocationPanel'
-import AdminLogin from './components/AdminLogin'
-import AdminQueue from './components/AdminQueue'
-import AdminManager from './components/AdminManager'
 import SearchBox from './components/SearchBox'
-import NewLocationForm from './components/NewLocationForm'
-import DonateMatcher from './components/DonateMatcher'
-import UpdatesFeed from './components/UpdatesFeed'
 import Disclaimer from './components/Disclaimer'
-import ResetPassword from './components/ResetPassword'
 import { repo } from './lib/repository'
 import { STATES } from './data/constants'
 import { matchLocation, normalize } from './lib/search'
+
+// Admin screens and auxiliary modals are not needed on initial paint — load
+// them lazily so Vite creates separate chunks and the initial bundle stays
+// well under the 500 KB warning threshold.
+const AdminLogin = lazy(() => import('./components/AdminLogin'))
+const AdminQueue = lazy(() => import('./components/AdminQueue'))
+const AdminManager = lazy(() => import('./components/AdminManager'))
+const NewLocationForm = lazy(() => import('./components/NewLocationForm'))
+const DonateMatcher = lazy(() => import('./components/DonateMatcher'))
+const UpdatesFeed = lazy(() => import('./components/UpdatesFeed'))
+const ResetPassword = lazy(() => import('./components/ResetPassword'))
 
 export default function App() {
   const [locations, setLocations] = useState([])
@@ -162,11 +166,13 @@ export default function App() {
         <Legend />
 
         {showFeed && (
-          <UpdatesFeed
-            locations={locations}
-            onClose={() => setShowFeed(false)}
-            onPickLocation={handlePickLocation}
-          />
+          <Suspense fallback={null}>
+            <UpdatesFeed
+              locations={locations}
+              onClose={() => setShowFeed(false)}
+              onPickLocation={handlePickLocation}
+            />
+          </Suspense>
         )}
 
         {loading && (
@@ -185,52 +191,64 @@ export default function App() {
         )}
 
         {showNewForm && (
-          <NewLocationForm
-            placedPoint={placedPoint}
-            onRemark={() => { setPlacedPoint(null); setPlacing(true) }}
-            onClose={closeNewForm}
-            onSent={() => { setPlacing(false); loadLocations() }}
-          />
+          <Suspense fallback={null}>
+            <NewLocationForm
+              placedPoint={placedPoint}
+              onRemark={() => { setPlacedPoint(null); setPlacing(true) }}
+              onClose={closeNewForm}
+              onSent={() => { setPlacing(false); loadLocations() }}
+            />
+          </Suspense>
         )}
       </div>
 
       {showDonate && (
-        <DonateMatcher
-          locations={locations}
-          onClose={() => setShowDonate(false)}
-          onPickLocation={handlePickLocation}
-        />
+        <Suspense fallback={null}>
+          <DonateMatcher
+            locations={locations}
+            onClose={() => setShowDonate(false)}
+            onPickLocation={handlePickLocation}
+          />
+        </Suspense>
       )}
 
       {showLogin && (
-        <AdminLogin
-          onClose={() => setShowLogin(false)}
-          onLoggedIn={() => {
-            setShowLogin(false)
-            repo.getSession().then(setSession)
-            setShowQueue(true)
-          }}
-        />
+        <Suspense fallback={null}>
+          <AdminLogin
+            onClose={() => setShowLogin(false)}
+            onLoggedIn={() => {
+              setShowLogin(false)
+              repo.getSession().then(setSession)
+              setShowQueue(true)
+            }}
+          />
+        </Suspense>
       )}
 
       {showQueue && session.isAdmin && (
-        <AdminQueue locations={locations} onClose={() => setShowQueue(false)} onApplied={loadLocations} />
+        <Suspense fallback={null}>
+          <AdminQueue locations={locations} onClose={() => setShowQueue(false)} onApplied={loadLocations} />
+        </Suspense>
       )}
 
       {showAdmins && session.isSuper && (
-        <AdminManager locations={locations} onClose={() => setShowAdmins(false)} />
+        <Suspense fallback={null}>
+          <AdminManager locations={locations} onClose={() => setShowAdmins(false)} />
+        </Suspense>
       )}
 
       {showReset && (
-        <ResetPassword
-          onClose={() => {
-            setShowReset(false)
-            if (typeof window !== 'undefined' && window.history?.replaceState) {
-              window.history.replaceState(null, '', window.location.pathname + window.location.search)
-            }
-          }}
-          onDone={() => repo.getSession().then(setSession).catch(() => {})}
-        />
+        <Suspense fallback={null}>
+          <ResetPassword
+            onClose={() => {
+              setShowReset(false)
+              if (typeof window !== 'undefined' && window.history?.replaceState) {
+                window.history.replaceState(null, '', window.location.pathname + window.location.search)
+              }
+            }}
+            onDone={() => repo.getSession().then(setSession).catch(() => {})}
+          />
+        </Suspense>
       )}
     </div>
   )
