@@ -220,9 +220,9 @@ const demoRepo = {
 // ===========================================================================
 const supaRepo = {
   async getLocations() {
-    const { data, error } = await supabase.from('locations').select('*')
-    if (error) throw error
-    const rows = data || []
+    const rows = await fetchAllPages(
+      (from, to) => supabase.from('locations').select('*').range(from, to),
+    )
     const byId = Object.fromEntries(rows.map((r) => [r.id, r]))
     const baseIds = new Set(BASE.map((b) => b.id))
     // El catalogo base define que se muestra; el estado viene de la BD.
@@ -266,8 +266,12 @@ const supaRepo = {
     if (error) throw error
     return data
   },
-  async getSubmissions(status = 'pending') {
-    let q = supabase.from('submissions').select('*').order('created_at', { ascending: false })
+  async getSubmissions(status = 'pending', { page = 0, pageSize = 200 } = {}) {
+    let q = supabase
+      .from('submissions')
+      .select('*')
+      .order('created_at', { ascending: false })
+      .range(page * pageSize, (page + 1) * pageSize - 1)
     if (status) q = q.eq('status', status)
     const { data, error } = await q
     if (error) throw error
@@ -413,3 +417,22 @@ const supaRepo = {
 
 export const repo = IS_DEMO ? demoRepo : supaRepo
 export { IS_DEMO }
+
+// ---------------------------------------------------------------------------
+// Pagination helper — exported for testing.
+// Calls buildQuery(from, to) repeatedly until fewer than pageSize rows come
+// back, accumulating every row.  Throws on the first Supabase error.
+// ---------------------------------------------------------------------------
+export async function fetchAllPages(buildQuery, pageSize = 1000) {
+  let allRows = []
+  let from = 0
+  while (true) {
+    const { data, error } = await buildQuery(from, from + pageSize - 1)
+    if (error) throw error
+    const rows = data || []
+    allRows = allRows.concat(rows)
+    if (rows.length < pageSize) break
+    from += pageSize
+  }
+  return allRows
+}
