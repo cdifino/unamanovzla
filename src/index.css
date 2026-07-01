@@ -94,35 +94,6 @@ a { color: var(--accent); }
   -webkit-overflow-scrolling: touch;
 }
 
-/* Aviso de datos comunitarios */
-.disclaimer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 16px;
-  background: #fff7ed;
-  border-bottom: 1px solid #fed7aa;
-  color: #7c2d12;
-  font-size: 13px;
-  line-height: 1.35;
-}
-.disclaimer__icon { flex: none; font-size: 15px; }
-.disclaimer__text { flex: 1; }
-.disclaimer__close {
-  flex: none;
-  border: none;
-  background: transparent;
-  color: #9a3412;
-  font-size: 20px;
-  line-height: 1;
-  cursor: pointer;
-  padding: 0 4px;
-}
-.disclaimer__close:hover { color: #7c2d12; }
-@media (max-width: 680px) {
-  .disclaimer { font-size: 12px; padding: 7px 12px; }
-}
-
 /* Toolbar (search + filters) */
 .toolbar {
   position: absolute;
