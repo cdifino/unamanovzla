@@ -8,6 +8,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "node scripts/e2e.mjs",
     "gen:seed": "node scripts/gen-seed.mjs",
     "gen:geojson": "mapshaper src/data/parroquias.geojson -simplify 6% keep-shapes -clean -o public/parroquias.geojson format=geojson precision=0.00001"
   },
@@ -20,8 +24,12 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "mapshaper": "^0.7.33",
     "puppeteer-core": "^20.9.0",
-    "vite": "^4.5.3"
+    "vite": "^4.5.3",
+    "vitest": "^3.2.6"
   }
 }

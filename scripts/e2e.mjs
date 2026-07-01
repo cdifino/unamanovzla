@@ -1,15 +1,23 @@
 import puppeteer from 'puppeteer-core'
 
-const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe'
-const URL = 'http://localhost:5173/'
+// Resolucion del navegador de forma multiplataforma (sin rutas fijas):
+// 1) Variable de entorno PUPPETEER_EXECUTABLE_PATH o CHROME_PATH, si existe.
+// 2) En su defecto, se usa el canal "chrome" para detectar el Chrome instalado
+//    en Windows, macOS o Linux automaticamente.
+const EXECUTABLE_PATH =
+  process.env.PUPPETEER_EXECUTABLE_PATH || process.env.CHROME_PATH || ''
+const URL = process.env.E2E_URL || 'http://localhost:5173/'
 
-const errors = []
-const browser = await puppeteer.launch({
-  executablePath: CHROME,
+const launchOptions = {
   headless: 'new',
   args: ['--no-sandbox', '--window-size=1400,900'],
   defaultViewport: { width: 1400, height: 900 },
-})
+}
+if (EXECUTABLE_PATH) launchOptions.executablePath = EXECUTABLE_PATH
+else launchOptions.channel = 'chrome'
+
+const errors = []
+const browser = await puppeteer.launch(launchOptions)
 const page = await browser.newPage()
 page.on('console', (m) => { if (m.type() === 'error') errors.push('console: ' + m.text()) })
 page.on('pageerror', (e) => errors.push('pageerror: ' + e.message))
@@ -50,7 +58,6 @@ if (opened) {
   // Fill + submit
   if (hasForm) {
     await page.type('.panel textarea', 'Prueba automatizada: edificio afectado, se requieren brigadas.')
-    const sup = await page.$$('.panel textarea')
     const submit = await page.$$('.panel button[type=submit]')
     if (submit[0]) { await submit[0].click() }
     await new Promise((r) => setTimeout(r, 800))

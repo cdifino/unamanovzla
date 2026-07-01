@@ -84,6 +84,30 @@ Reinicia `npm run dev`. El badge "MODO DEMO" desaparece cuando hay backend conec
 
 ---
 
+## ✅ Calidad (lint y pruebas)
+
+```bash
+npm run lint       # ESLint sobre src/ y scripts/
+npm test           # pruebas unitarias con Vitest (una sola corrida)
+npm run test:watch # Vitest en modo interactivo
+```
+
+Las pruebas cubren las funciones puras de `src/lib/search.js`. El flujo de
+GitHub Actions ejecuta `lint` y `test` como compuerta antes de construir y
+publicar el sitio.
+
+Prueba end-to-end opcional (requiere Chrome instalado y `npm run dev` corriendo):
+
+```bash
+npm run e2e
+```
+
+> El script detecta Chrome automáticamente (Windows/macOS/Linux). Si hace falta,
+> indica la ruta con `PUPPETEER_EXECUTABLE_PATH` o `CHROME_PATH`, y la URL con
+> `E2E_URL`.
+
+---
+
 ## ☁️ Despliegue (sitio estático)
 
 Compatible con **Netlify**, **Vercel**, **Cloudflare Pages**, GitHub Pages, etc.
