@@ -121,9 +121,6 @@ export default function NewLocationForm({ placedPoint, onRemark, onClose, onSent
   const [status, setStatus] = useState({ sending: false, ok: false, error: '' })
   const [hp, setHp] = useState('') // honeypot anti-spam
 
-  // Foto (captura local con vista previa).
-  const [photo, setPhoto] = useState(null) // { url, name }
-
   const set = (k, v) => setForm((f) => ({ ...f, [k]: v }))
   const setBreakdown = (key, v) => setForm((f) => ({ ...f, breakdown: { ...f.breakdown, [key]: v } }))
   const selectedCard = TYPE_CARDS.find((c) => c.id === form.typeId) || TYPE_CARDS[0]
@@ -194,11 +191,6 @@ export default function NewLocationForm({ placedPoint, onRemark, onClose, onSent
       ...f,
       supportTypes: f.supportTypes.includes(chip) ? f.supportTypes.filter((s) => s !== chip) : [...f.supportTypes, chip],
     }))
-  }
-
-  function onPhoto(e) {
-    const file = e.target.files?.[0]
-    if (file) setPhoto({ url: URL.createObjectURL(file), name: file.name })
   }
 
   function next() {
@@ -278,14 +270,12 @@ export default function NewLocationForm({ placedPoint, onRemark, onClose, onSent
     const reporterName = form.isOnSiteContact === 'no' ? form.submitter_name.trim() : ''
     const reporterContact = form.isOnSiteContact === 'no' ? form.submitter_contact.trim() : ''
 
-    const mediaNote = photo ? ' (incluye foto)' : ''
     const message =
       `[${selectedCard.label} · ${modeLabel}] ` +
       (form.summary.trim() || `Propuesta de nuevo punto: ${form.name.trim()}`) +
       (suppliesText ? ` — Necesita: ${suppliesText}` : '') +
       (form.supportTypes.length ? ` — Apoyo: ${form.supportTypes.join(', ')}` : '') +
-      ` — Entrega: ${donationPoc}` +
-      mediaNote
+      ` — Entrega: ${donationPoc}`
 
     try {
       await repo.createSubmission({
@@ -616,21 +606,6 @@ export default function NewLocationForm({ placedPoint, onRemark, onClose, onSent
               <div className="more-section">
                 <label className="wizard__flabel">Resumen de la situación</label>
                 <textarea value={form.summary} onChange={(e) => set('summary', e.target.value)} placeholder="Describe qué está pasando en este punto…" />
-
-                <div className="media-actions">
-                  <label className="media-btn">
-                    <Icon name="camera" size={18} /> {photo ? 'Cambiar foto' : 'Agregar foto'}
-                    <input type="file" accept="image/*" capture="environment" onChange={onPhoto} hidden />
-                  </label>
-                  {photo && (
-                    <div className="media-preview">
-                      <img src={photo.url || "/placeholder.svg"} alt="Vista previa" className="photo-thumb" />
-                      <button type="button" className="iconbtn" onClick={() => setPhoto(null)} aria-label="Eliminar foto">
-                        <Icon name="trash" size={16} />
-                      </button>
-                    </div>
-                  )}
-                </div>
 
                 <label className="wizard__flabel">¿Eres la persona de contacto en el lugar?</label>
                 <div className="seg-toggle" role="group" aria-label="¿Eres la persona de contacto?">
