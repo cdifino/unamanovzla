@@ -22,6 +22,35 @@ function FlyTo({ focus }) {
   return null
 }
 
+// Leaflet mide el tamano del contenedor una sola vez al inicializarse. En la
+// primera carga (sobre todo en movil) el mapa puede montarse antes de que el
+// layout/CSS tenga su altura final, con lo que Leaflet fija una altura ~0 y solo
+// pide una franja de tiles: el mapa aparece en blanco hasta recargar la pagina.
+// Este componente recalcula el tamano tras montar y se auto-corrige ante
+// cualquier cambio de tamano del contenedor (CSS/fuentes tardias, barra de
+// direcciones del movil, o volver al mapa desde una vista de pagina completa).
+function InvalidateSize() {
+  const map = useMap()
+  useEffect(() => {
+    const recalc = () => map.invalidateSize({ animate: false })
+    recalc()
+    const raf = requestAnimationFrame(recalc)
+    const onLoad = () => recalc()
+    window.addEventListener('load', onLoad)
+    let ro
+    if (typeof ResizeObserver !== 'undefined') {
+      ro = new ResizeObserver(recalc)
+      ro.observe(map.getContainer())
+    }
+    return () => {
+      cancelAnimationFrame(raf)
+      window.removeEventListener('load', onLoad)
+      if (ro) ro.disconnect()
+    }
+  }, [map])
+  return null
+}
+
 // Captura clics en el mapa cuando se esta ubicando un nuevo punto.
 function ClickCapture({ active, onPick }) {
   const map = useMap()
@@ -105,6 +134,7 @@ export default function MapView({ locations, version, focus, placing, placedPoin
   return (
     <MapContainer className="map" center={REGION_CENTER} zoom={10} scrollWheelZoom zoomControl={false}>
       <ZoomControl position="bottomright" />
+      <InvalidateSize />
       <FlyTo focus={focus} />
       <ClickCapture active={!!placing} onPick={onMapClick} />
       <TileLayer
