@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react'
 import { repo } from '../lib/repository'
 import { STATUS_LEVELS, STATUS_ORDER, UPDATE_TYPES, KIND_META } from '../data/constants'
 
-const kindIcon = (k) => (KIND_META[k] || KIND_META.otro).icon
-
 const FIELD_LABELS = {
   summary: 'Resumen de la situacion',
   rescue_teams: 'Equipos de rescate / quien ayuda',
@@ -31,8 +29,16 @@ export default function AdminQueue({ locations = [], onClose, onApplied }) {
     const init = {}
     for (const s of data) {
       const current = byId[s.location_id]
+      // Prioridad: urgencia sugerida por quien reporta > estado actual > 'alto'.
+      const suggested = s.proposed?.status_level
+      const defaultLevel =
+        suggested && suggested in STATUS_LEVELS && suggested !== 'sin_datos'
+          ? suggested
+          : current?.status_level && current.status_level !== 'sin_datos'
+            ? current.status_level
+            : 'alto'
       init[s.id] = {
-        status_level: current?.status_level && current.status_level !== 'sin_datos' ? current.status_level : 'alto',
+        status_level: defaultLevel,
         blood_needed: !!s.proposed?.blood_needed,
         ...Object.fromEntries(
           Object.entries(s.proposed || {}).filter(([k]) => k in FIELD_LABELS),
@@ -74,7 +80,7 @@ export default function AdminQueue({ locations = [], onClose, onApplied }) {
         <div className="modal__body">
           {subs === null && <div className="empty-state">Cargando…</div>}
           {subs && subs.length === 0 && (
-            <div className="empty-state">🎉 No hay reportes pendientes.</div>
+            <div className="empty-state">No hay reportes pendientes.</div>
           )}
           {subs && subs.map((s) => {
             const e = edits[s.id] || {}
@@ -101,9 +107,7 @@ export default function AdminQueue({ locations = [], onClose, onApplied }) {
             return (
               <div className="sub-card" key={s.id}>
                 <div className="sub-card__head">
-                  <span className="sub-card__loc">
-                    {kindIcon(s.kind)} {s.location_name}
-                  </span>
+                  <span className="sub-card__loc">{s.location_name}</span>
                   {s.new_location
                     ? <span className="sub-card__type" style={{ background: '#dbeafe', color: '#1e40af' }}>Nuevo punto</span>
                     : <span className="sub-card__type">{typeLabel(s.update_type)}</span>}
@@ -117,7 +121,7 @@ export default function AdminQueue({ locations = [], onClose, onApplied }) {
                   </div>
                 )}
                 <div className="sub-card__meta">
-                  👤 Reportado por <strong>{s.submitter_name || 'Anonimo'}</strong>
+                  Reportado por <strong>{s.submitter_name || 'Anonimo'}</strong>
                   {s.submitter_contact ? ` · ${s.submitter_contact}` : ''}
                   {' · '}{new Date(s.created_at).toLocaleString('es-VE')}
                 </div>
@@ -181,7 +185,7 @@ export default function AdminQueue({ locations = [], onClose, onApplied }) {
 
                 <div className="sub-card__actions">
                   <button className="btn btn--sm btn--ok" disabled={busyId === s.id} onClick={() => review(s, 'approve')}>
-                    ✓ Aprobar y publicar
+                    Aprobar y publicar
                   </button>
                   <button className="btn btn--sm btn--reject" disabled={busyId === s.id} onClick={() => review(s, 'reject')}>
                     Rechazar

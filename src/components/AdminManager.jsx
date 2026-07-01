@@ -79,12 +79,12 @@ export default function AdminManager({ locations = [], onClose }) {
             return (
               <div className="sub-card" key={a.user_id}>
                 <div className="sub-card__head">
-                  <span className="sub-card__loc">👤 {a.full_name || a.email || 'Sin nombre'}</span>
+                  <span className="sub-card__loc">{a.full_name || a.email || 'Sin nombre'}</span>
                   <span className="sub-card__type" style={{ background: st.bg, color: st.color }}>{st.label}</span>
                 </div>
                 <div className="sub-card__meta">
                   {a.email}
-                  {a.is_super ? ' · ⭐ Super-admin' : ''}
+                  {a.is_super ? ' · Super-admin' : ''}
                   {a.requested_at ? ` · solicitó ${new Date(a.requested_at).toLocaleString('es-VE')}` : ''}
                 </div>
                 {a.assigned_label && (
@@ -120,7 +120,7 @@ export default function AdminManager({ locations = [], onClose }) {
                     <div className="sub-card__actions">
                       {a.status !== 'approved' && (
                         <button className="btn btn--sm btn--ok" disabled={busyId === a.user_id} onClick={() => review(a, 'approve')}>
-                          ✓ Aprobar
+                          Aprobar
                         </button>
                       )}
                       {a.status === 'approved' && (

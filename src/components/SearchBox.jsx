@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { buildKeywords, matchLocation, normalize } from '../lib/search'
+import Icon from './Icons'
 
 export default function SearchBox({ value, onChange, locations, onPickLocation }) {
   const [open, setOpen] = useState(false)
@@ -53,7 +54,7 @@ export default function SearchBox({ value, onChange, locations, onPickLocation }
   return (
     <div className="search" ref={boxRef}>
       <div className="search__inputwrap">
-        <span className="search__icon" aria-hidden>🔎</span>
+        <span className="search__icon" aria-hidden><Icon name="search" size={16} /></span>
         <input
           className="search__input"
           type="text"
@@ -80,7 +81,7 @@ export default function SearchBox({ value, onChange, locations, onPickLocation }
               <div className="search__grouptitle">Lugares</div>
               {placeMatches.map((l) => (
                 <button key={l.id} className="search__item" onMouseDown={(e) => e.preventDefault()} onClick={() => pickPlace(l)}>
-                  <span>{l.kind === 'hospital' ? '🏥' : '📍'}</span>
+                  <span aria-hidden style={{ display: 'inline-flex', color: 'var(--ve-blue)' }}><Icon name={l.kind === 'hospital' ? 'hospital' : 'pin'} size={15} /></span>
                   <span className="search__itemname">{l.name}</span>
                   <span className="search__itemmeta">{l.municipio ? l.municipio + ' · ' : ''}{l.state}</span>
                 </button>

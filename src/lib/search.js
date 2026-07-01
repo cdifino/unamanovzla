@@ -68,6 +68,70 @@ export function parseDonationItems(text) {
   )]
 }
 
+// Distancia aproximada en km entre dos coordenadas (formula de Haversine).
+export function haversineKm(a, b) {
+  if (!a || !b) return null
+  const R = 6371
+  const dLat = ((b.lat - a.lat) * Math.PI) / 180
+  const dLng = ((b.lng - a.lng) * Math.PI) / 180
+  const lat1 = (a.lat * Math.PI) / 180
+  const lat2 = (b.lat * Math.PI) / 180
+  const h =
+    Math.sin(dLat / 2) ** 2 +
+    Math.sin(dLng / 2) ** 2 * Math.cos(lat1) * Math.cos(lat2)
+  return Math.round(2 * R * Math.asin(Math.sqrt(h)))
+}
+
+const ORDER = { critico: 0, alto: 1, medio: 2, estable: 3, sin_datos: 4 }
+
+// Construye el texto de necesidades de un punto (incluye sangre).
+function needsTextFor(l) {
+  const bloodText = l.blood_needed ? 'sangre donacion de sangre ' + (l.blood_types || '') : ''
+  return normalize([l.supplies_needed, bloodText].filter(Boolean).join(' '))
+}
+
+// Versión basada en chips (vocabulario del formulario de reporte). Intersecta
+// las opciones seleccionadas por el donante con las necesidades registradas.
+// Ordena por urgencia (gravedad) y luego por cercanía si hay ubicación.
+// `selected` es un arreglo de etiquetas (ej: ['Agua', 'Medicinas']).
+// `otherText` cubre la opción "Otro". `origin` es {lat,lng} opcional.
+export function matchDonationChips(locations, selected, otherText, origin) {
+  const terms = []
+  for (const s of selected) {
+    if (normalize(s) === 'otro') {
+      if (otherText && otherText.trim()) terms.push({ label: otherText.trim(), n: normalize(otherText) })
+    } else {
+      terms.push({ label: s, n: normalize(s) })
+    }
+  }
+  if (!terms.length) return []
+
+  const results = []
+  for (const l of locations) {
+    const needText = needsTextFor(l)
+    if (!needText.trim()) continue
+    const matched = []
+    for (const tm of terms) {
+      const words = tm.n.split(/[^a-z0-9+áéíóúñ]+/i).filter((w) => w.length >= 3)
+      if (needText.includes(tm.n) || words.some((w) => needText.includes(w))) matched.push(tm.label)
+    }
+    if (!matched.length) continue
+    const distance =
+      origin && Number.isFinite(l.lat) && Number.isFinite(l.lng)
+        ? haversineKm(origin, { lat: l.lat, lng: l.lng })
+        : null
+    results.push({ location: l, matched, distance })
+  }
+
+  results.sort((a, b) => {
+    const u = (ORDER[a.location.status_level] ?? 9) - (ORDER[b.location.status_level] ?? 9)
+    if (u !== 0) return u
+    if (a.distance != null && b.distance != null) return a.distance - b.distance
+    return b.matched.length - a.matched.length
+  })
+  return results
+}
+
 // Dado lo que la persona puede donar, sugiere lugares que lo necesitan.
 // Regla: sin necesidades registradas = no se sugiere (no hay match posible).
 export function matchDonations(locations, items) {
