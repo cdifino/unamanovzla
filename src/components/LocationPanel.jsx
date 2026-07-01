@@ -31,6 +31,17 @@ function VerificationBadge({ value }) {
   )
 }
 
+// Solo enlazamos sitios web con esquema http(s). Un valor sin esquema se asume
+// https; cualquier otro esquema (javascript:, data:, etc.) se muestra como texto.
+function safeWebsiteHref(raw) {
+  if (!raw) return null
+  const v = String(raw).trim()
+  if (!v) return null
+  if (/^https?:\/\//i.test(v)) return v
+  if (/^[a-z][a-z0-9+.-]*:/i.test(v)) return null
+  return 'https://' + v
+}
+
 function ContactSection({ location }) {
   const { t } = useI18n()
   const rows = [
@@ -38,7 +49,7 @@ function ContactSection({ location }) {
     { key: 'phone', icon: 'bell', value: location.contact_phone, href: location.contact_phone ? `tel:${location.contact_phone}` : null },
     { key: 'whatsapp', icon: 'whatsapp', value: location.contact_whatsapp, href: location.contact_whatsapp ? `https://wa.me/${location.contact_whatsapp.replace(/[^0-9]/g, '')}` : null },
     { key: 'email', icon: 'info', value: location.contact_email, href: location.contact_email ? `mailto:${location.contact_email}` : null },
-    { key: 'website', icon: 'globe', value: location.website, href: location.website || null },
+    { key: 'website', icon: 'globe', value: location.website, href: safeWebsiteHref(location.website) },
   ].filter((r) => r.value && r.value.trim())
 
   if (rows.length === 0) return null
