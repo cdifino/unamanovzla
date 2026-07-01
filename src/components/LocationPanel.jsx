@@ -1,25 +1,73 @@
 import { useState } from 'react'
 import { repo } from '../lib/repository'
-import { STATUS_LEVELS, STATUS_ORDER, KIND_META } from '../data/constants'
+import { STATUS_LEVELS, STATUS_ORDER, KIND_META, VERIFICATION } from '../data/constants'
+import { useI18n } from '../lib/i18n'
 import SubmissionForm from './SubmissionForm'
+import LocationTimeline from './LocationTimeline'
+import Icon from './Icons'
 
 function Field({ label, icon, value }) {
+  const { t } = useI18n()
   const empty = !value || (typeof value === 'string' && !value.trim())
   return (
     <div className="field">
       <div className="field__label">{icon && <span>{icon}</span>} {label}</div>
       <div className={'field__value' + (empty ? ' field__value--empty' : '')}>
-        {empty ? 'Sin informacion aun' : value}
+        {empty ? t('profile.noInfo') : value}
       </div>
     </div>
   )
 }
 
-function AdminEdit({ location, adminName, onSaved, onCancel }) {
+function VerificationBadge({ value }) {
+  const { t } = useI18n()
+  const v = VERIFICATION[value] || VERIFICATION.sin_actualizar
+  const key = value && VERIFICATION[value] ? value : 'sin_actualizar'
+  return (
+    <span className="verif-badge" style={{ color: v.color, borderColor: v.color }}>
+      <Icon name={key === 'verificado' ? 'check' : key === 'pendiente' ? 'clock' : 'info'} size={13} />
+      {t('verif.' + key)}
+    </span>
+  )
+}
+
+function ContactSection({ location }) {
+  const { t } = useI18n()
+  const rows = [
+    { key: 'address', icon: 'pin', value: location.address, href: null },
+    { key: 'phone', icon: 'bell', value: location.contact_phone, href: location.contact_phone ? `tel:${location.contact_phone}` : null },
+    { key: 'whatsapp', icon: 'whatsapp', value: location.contact_whatsapp, href: location.contact_whatsapp ? `https://wa.me/${location.contact_whatsapp.replace(/[^0-9]/g, '')}` : null },
+    { key: 'email', icon: 'info', value: location.contact_email, href: location.contact_email ? `mailto:${location.contact_email}` : null },
+    { key: 'website', icon: 'globe', value: location.website, href: location.website || null },
+  ].filter((r) => r.value && r.value.trim())
+
+  if (rows.length === 0) return null
+  return (
+    <div className="contact">
+      <div className="section-title">{t('profile.contact')}</div>
+      <ul className="contact__list">
+        {rows.map((r) => (
+          <li key={r.key} className="contact__row">
+            <Icon name={r.icon} size={15} />
+            {r.href ? (
+              <a href={r.href} target="_blank" rel="noopener noreferrer">{r.value}</a>
+            ) : (
+              <span>{r.value}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+function AdminEdit({ location, onSaved, onCancel }) {
+  const { t } = useI18n()
   const isHospital = location.kind === 'hospital'
   const isParroquia = location.kind === 'parroquia'
   const [f, setF] = useState({
     status_level: location.status_level || 'sin_datos',
+    verification: location.verification || 'sin_actualizar',
     summary: location.summary || '',
     supplies_needed: location.supplies_needed || '',
     donation_poc: location.donation_poc || '',
@@ -28,6 +76,11 @@ function AdminEdit({ location, adminName, onSaved, onCancel }) {
     people_aided: location.people_aided || '',
     blood_needed: !!location.blood_needed,
     blood_types: location.blood_types || '',
+    address: location.address || '',
+    contact_phone: location.contact_phone || '',
+    contact_whatsapp: location.contact_whatsapp || '',
+    contact_email: location.contact_email || '',
+    website: location.website || '',
   })
   const [saving, setSaving] = useState(false)
   const set = (k, v) => setF((p) => ({ ...p, [k]: v }))
@@ -36,9 +89,8 @@ function AdminEdit({ location, adminName, onSaved, onCancel }) {
     e.preventDefault()
     setSaving(true)
     try {
-      const patch = { ...f, updated_by: adminName || 'Anonimo' }
-      await repo.updateLocationStatus(location.id, patch)
-      onSaved(patch)
+      await repo.updateLocationStatus(location.id, f)
+      onSaved(f)
     } finally {
       setSaving(false)
     }
@@ -47,51 +99,71 @@ function AdminEdit({ location, adminName, onSaved, onCancel }) {
   return (
     <form className="form" onSubmit={save}>
       <div className="notice" style={{ background: '#eef2ff', color: '#3730a3' }}>
-        Edicion directa de administrador. Los cambios se publican de inmediato.
+        {t('profile.adminNotice')}
       </div>
-      <label>Nivel de gravedad</label>
+      <label>{t('profile.severity')}</label>
       <select value={f.status_level} onChange={(e) => set('status_level', e.target.value)}>
         {STATUS_ORDER.map((k) => (
           <option key={k} value={k}>{STATUS_LEVELS[k].label}</option>
         ))}
       </select>
-      <label>Resumen de la situacion</label>
+      <label>{t('profile.verification')}</label>
+      <select value={f.verification} onChange={(e) => set('verification', e.target.value)}>
+        {Object.keys(VERIFICATION).map((k) => (
+          <option key={k} value={k}>{t('verif.' + k)}</option>
+        ))}
+      </select>
+      <label>{t('profile.situation')}</label>
       <textarea value={f.summary} onChange={(e) => set('summary', e.target.value)} />
       {isParroquia && (
         <>
-          <label>Equipos de rescate / quien ayuda</label>
+          <label>{t('profile.rescue')}</label>
           <textarea value={f.rescue_teams} onChange={(e) => set('rescue_teams', e.target.value)} />
-          <label>Edificaciones en busqueda de personas</label>
+          <label>{t('profile.buildings')}</label>
           <textarea value={f.buildings_searched} onChange={(e) => set('buildings_searched', e.target.value)} />
         </>
       )}
       {isHospital && (
         <>
-          <label>Personas siendo atendidas</label>
+          <label>{t('profile.peopleAided')}</label>
           <input value={f.people_aided} onChange={(e) => set('people_aided', e.target.value)} />
           <label style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             <input type="checkbox" style={{ width: 'auto' }} checked={f.blood_needed} onChange={(e) => set('blood_needed', e.target.checked)} />
-            Se necesitan donaciones de sangre
+            {t('profile.bloodNeeded')}
           </label>
-          <label>Tipos de sangre necesarios</label>
+          <label>{t('profile.bloodTypes')}</label>
           <input value={f.blood_types} onChange={(e) => set('blood_types', e.target.value)} />
         </>
       )}
-      <label>Suministros necesarios</label>
+      <label>{t('profile.supplies')}</label>
       <textarea value={f.supplies_needed} onChange={(e) => set('supplies_needed', e.target.value)} />
-      <label>Punto de entrega de donaciones</label>
+      <label>{t('profile.donationPoc')}</label>
       <input value={f.donation_poc} onChange={(e) => set('donation_poc', e.target.value)} />
+
+      <div className="section-title" style={{ marginTop: 12 }}>{t('profile.contact')}</div>
+      <label>{t('profile.address')}</label>
+      <input value={f.address} onChange={(e) => set('address', e.target.value)} />
+      <label>{t('profile.phone')}</label>
+      <input value={f.contact_phone} onChange={(e) => set('contact_phone', e.target.value)} />
+      <label>{t('profile.whatsapp')}</label>
+      <input value={f.contact_whatsapp} onChange={(e) => set('contact_whatsapp', e.target.value)} />
+      <label>{t('profile.email')}</label>
+      <input value={f.contact_email} onChange={(e) => set('contact_email', e.target.value)} />
+      <label>{t('profile.website')}</label>
+      <input value={f.website} onChange={(e) => set('website', e.target.value)} />
+
       <div style={{ display: 'flex', gap: 8, marginTop: 14 }}>
-        <button type="button" className="btn btn--ghost" onClick={onCancel}>Cancelar</button>
+        <button type="button" className="btn btn--ghost" onClick={onCancel}>{t('profile.cancel')}</button>
         <button type="submit" className="btn btn--primary" disabled={saving}>
-          {saving ? 'Guardando…' : 'Publicar cambios'}
+          {saving ? t('common.loading') : t('profile.publishChanges')}
         </button>
       </div>
     </form>
   )
 }
 
-export default function LocationPanel({ location, isAdmin, adminName, onClose, onUpdated }) {
+export default function LocationPanel({ location, isAdmin, onClose, onUpdated }) {
+  const { t, lang } = useI18n()
   const [mode, setMode] = useState('view')
   const isHospital = location.kind === 'hospital'
   const isParroquia = location.kind === 'parroquia'
@@ -101,7 +173,7 @@ export default function LocationPanel({ location, isAdmin, adminName, onClose, o
   return (
     <aside className="panel">
       <div className="panel__head">
-        <button className="panel__close" onClick={onClose} aria-label="Cerrar">×</button>
+        <button className="panel__close" onClick={onClose} aria-label={t('common.close')}>×</button>
         <span className={'panel__kind panel__kind--' + location.kind}>
           {kindLabel}
         </span>
@@ -109,7 +181,10 @@ export default function LocationPanel({ location, isAdmin, adminName, onClose, o
         <div className="panel__sub">
           {location.municipio ? location.municipio + ' · ' : ''}{location.state}
         </div>
-        <span className="status-pill" style={{ background: level.color }}>{level.label}</span>
+        <div className="panel__badges">
+          <span className="status-pill" style={{ background: level.color }}>{level.label}</span>
+          <VerificationBadge value={location.verification} />
+        </div>
       </div>
 
       <div className="panel__body">
@@ -117,45 +192,55 @@ export default function LocationPanel({ location, isAdmin, adminName, onClose, o
           <>
             {location.updated_at && (
               <div className="updated">
-                Actualizado: {new Date(location.updated_at).toLocaleString('es-VE')}
-                {location.updated_by ? ` · por ${location.updated_by}` : ''}
+                {t('profile.updatedAt')}: {new Date(location.updated_at).toLocaleString(lang === 'en' ? 'en-US' : 'es-VE')}
+                {location.updated_by ? ` · ${location.updated_by}` : ''}
               </div>
             )}
 
-            <Field label="Situacion" icon="📋" value={location.summary} />
+            {location.description?.trim() && (
+              <p className="panel__desc">{location.description}</p>
+            )}
+
+            <Field label={t('profile.situation')} icon={<Icon name="clipboard" size={14} />} value={location.summary} />
 
             {isHospital && (
               <>
-                <Field label="Personas atendidas por el desastre" icon="🧑‍⚕️" value={location.people_aided} />
+                <Field label={t('profile.peopleAided')} icon={<Icon name="medical" size={14} />} value={location.people_aided} />
                 {location.blood_needed && (
                   <div className="alert-blood">
-                    🩸 Se necesitan donaciones de sangre{location.blood_types ? `: ${location.blood_types}` : ''}
+                    <Icon name="blood" size={15} /> {t('profile.bloodNeeded')}{location.blood_types ? `: ${location.blood_types}` : ''}
                   </div>
                 )}
               </>
             )}
             {isParroquia && (
               <>
-                <Field label="Equipos de rescate / quien ayuda" icon="🚒" value={location.rescue_teams} />
-                <Field label="Edificaciones en busqueda de personas" icon="🏚️" value={location.buildings_searched} />
+                <Field label={t('profile.rescue')} icon={<Icon name="rescue" size={14} />} value={location.rescue_teams} />
+                <Field label={t('profile.buildings')} icon={<Icon name="building" size={14} />} value={location.buildings_searched} />
               </>
             )}
 
-            <Field label="Suministros necesarios" icon="📦" value={location.supplies_needed} />
+            <Field label={t('profile.supplies')} icon={<Icon name="box" size={14} />} value={location.supplies_needed} />
 
-            <div className="section-title">¿Donde enviar donaciones?</div>
+            <div className="section-title">{t('profile.donations')}</div>
             <div className="poc-box">
-              {location.donation_poc?.trim()
-                ? location.donation_poc
-                : 'Aun no se ha registrado un punto de entrega para esta ubicacion.'}
+              {location.donation_poc?.trim() ? location.donation_poc : t('profile.noDonationPoc')}
             </div>
 
+            <ContactSection location={location} />
+
+            <LocationTimeline
+              locationId={location.id}
+              isAdmin={isAdmin}
+              onPosted={() => onUpdated && onUpdated(location.id, { verification: 'verificado' })}
+            />
+
             <button className="btn btn--primary btn--block" style={{ marginTop: 16 }} onClick={() => setMode('submit')}>
-              ✍️ Enviar una actualizacion
+              <Icon name="edit" size={15} /> {t('profile.sendUpdate')}
             </button>
             {isAdmin && (
               <button className="btn btn--ghost btn--block" style={{ marginTop: 8 }} onClick={() => setMode('edit')}>
-                🛠️ Editar y publicar (admin)
+                <Icon name="tool" size={15} /> {t('profile.adminEdit')}
               </button>
             )}
           </>
@@ -168,7 +253,6 @@ export default function LocationPanel({ location, isAdmin, adminName, onClose, o
         {mode === 'edit' && isAdmin && (
           <AdminEdit
             location={location}
-            adminName={adminName}
             onCancel={() => setMode('view')}
             onSaved={(patch) => {
               setMode('view')

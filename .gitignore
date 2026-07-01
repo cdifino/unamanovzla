@@ -9,3 +9,4 @@ scripts/overpass_raw.json
 .DS_Store
 
 .vite/
+.vercel

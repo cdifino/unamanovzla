@@ -15,14 +15,22 @@ const BASE = [...parroquias, ...hospitales].map((l) => ({
 
 const STATUS_FIELDS = [
   'status_level',
+  'verification',
   'summary',
   'supplies_needed',
   'donation_poc',
+  'donation_instructions',
   'rescue_teams',
   'buildings_searched',
   'people_aided',
   'blood_needed',
   'blood_types',
+  'description',
+  'address',
+  'contact_phone',
+  'contact_whatsapp',
+  'contact_email',
+  'website',
   'updated_at',
   'updated_by',
 ]
@@ -48,6 +56,7 @@ const LS_SUBS = 'mapa_ayuda_subs_v1'
 const LS_ADMIN = 'mapa_ayuda_admin_v1'
 const LS_NEWLOC = 'mapa_ayuda_newloc_v1'
 const LS_ADMINREQ = 'mapa_ayuda_adminreq_v1'
+const LS_UPDATES = 'mapa_ayuda_updates_v1'
 // Solo para previsualizar el flujo de admin en modo demo. NO es seguridad real.
 const DEMO_ADMIN_PASS = 'admin123'
 
@@ -131,6 +140,35 @@ const demoRepo = {
     subs.unshift(sub)
     lsWrite(LS_SUBS, subs)
     return sub
+  },
+  // --- bitacora de actualizaciones por ubicacion (timeline) ---
+  async getLocationUpdates(locationId) {
+    const all = lsRead(LS_UPDATES, {})
+    return (all[locationId] || []).slice().sort((a, b) => (a.created_at < b.created_at ? 1 : -1))
+  },
+  async createLocationUpdate(locationId, payload) {
+    const all = lsRead(LS_UPDATES, {})
+    const entry = {
+      id: uid(),
+      location_id: locationId,
+      kind: payload.kind || 'estado',
+      body: payload.body || '',
+      photo_url: payload.photo_url || null,
+      author: payload.author || '',
+      status: 'published',
+      created_at: new Date().toISOString(),
+    }
+    all[locationId] = [entry, ...(all[locationId] || [])]
+    lsWrite(LS_UPDATES, all)
+    // Marcamos la ubicacion como verificada y actualizada al recibir un post.
+    await this.updateLocationStatus(locationId, { verification: 'verificado', updated_by: entry.author })
+    return entry
+  },
+  async deleteLocationUpdate(locationId, id) {
+    const all = lsRead(LS_UPDATES, {})
+    all[locationId] = (all[locationId] || []).filter((u) => u.id !== id)
+    lsWrite(LS_UPDATES, all)
+    return true
   },
   async getSubmissions(status = 'pending') {
     const subs = lsRead(LS_SUBS, [])
@@ -272,6 +310,40 @@ const supaRepo = {
     const { data, error } = await q
     if (error) throw error
     return data || []
+  },
+  // --- bitacora de actualizaciones por ubicacion (timeline) ---
+  async getLocationUpdates(locationId) {
+    const { data, error } = await supabase
+      .from('location_updates')
+      .select('*')
+      .eq('location_id', locationId)
+      .eq('status', 'published')
+      .order('created_at', { ascending: false })
+    if (error) throw error
+    return data || []
+  },
+  async createLocationUpdate(locationId, payload) {
+    const { data, error } = await supabase
+      .from('location_updates')
+      .insert({
+        location_id: locationId,
+        kind: payload.kind || 'estado',
+        body: payload.body || '',
+        photo_url: payload.photo_url || null,
+        author: payload.author || '',
+        status: 'published',
+      })
+      .select()
+      .single()
+    if (error) throw error
+    // Al publicar una actualizacion, el punto pasa a verificado.
+    await this.updateLocationStatus(locationId, { verification: 'verificado', updated_by: payload.author || '' })
+    return data
+  },
+  async deleteLocationUpdate(locationId, id) {
+    const { error } = await supabase.from('location_updates').delete().eq('id', id)
+    if (error) throw error
+    return true
   },
   async reviewSubmission(id, action, appliedPatch) {
     const { data: sub, error: e1 } = await supabase

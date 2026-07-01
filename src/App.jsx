@@ -10,13 +10,19 @@ import SearchBox from './components/SearchBox'
 import NewLocationForm from './components/NewLocationForm'
 import DonateMatcher from './components/DonateMatcher'
 import UpdatesFeed from './components/UpdatesFeed'
-import Disclaimer from './components/Disclaimer'
 import ResetPassword from './components/ResetPassword'
+import IntroCard from './components/IntroCard'
+import MapStats from './components/MapStats'
+import DirectoryPage from './components/DirectoryPage'
+import AboutPage from './components/AboutPage'
+import Icon from './components/Icons'
+import { useI18n } from './lib/i18n'
 import { repo } from './lib/repository'
 import { STATES } from './data/constants'
 import { matchLocation, normalize } from './lib/search'
 
 export default function App() {
+  const { t } = useI18n()
   const [locations, setLocations] = useState([])
   const [version, setVersion] = useState(0)
   const [loading, setLoading] = useState(true)
@@ -27,14 +33,20 @@ export default function App() {
   const [showAdmins, setShowAdmins] = useState(false)
   const [filterState, setFilterState] = useState('all')
   const [filterKind, setFilterKind] = useState('all')
+  const [filtersOpen, setFiltersOpen] = useState(false)
   const [query, setQuery] = useState('')
   const [focus, setFocus] = useState(null)
-  const [showNewForm, setShowNewForm] = useState(false)
-  const [placing, setPlacing] = useState(false)
   const [placedPoint, setPlacedPoint] = useState(null)
-  const [showDonate, setShowDonate] = useState(false)
-  const [showFeed, setShowFeed] = useState(false)
   const [showReset, setShowReset] = useState(false)
+
+  // Vista activa: map | directory | donate | updates | report | about
+  const [view, setView] = useState('map')
+
+  const placing = view === 'report' && !placedPoint
+  const showNewForm = view === 'report'
+  // El mapa permanece montado (conserva el estado de Leaflet) salvo en las
+  // vistas de pagina completa, que se renderizan en su lugar.
+  const showMap = view !== 'directory' && view !== 'about'
 
   async function loadLocations() {
     const data = await repo.getLocations()
@@ -46,7 +58,6 @@ export default function App() {
   useEffect(() => {
     loadLocations()
     repo.getSession().then(setSession).catch(() => {})
-    // Detecta el regreso desde el correo de recuperacion de clave.
     const unsub = repo.onAuthEvent((event) => {
       if (event === 'PASSWORD_RECOVERY') setShowReset(true)
     })
@@ -70,20 +81,26 @@ export default function App() {
     }
   }
 
-  function openNewForm() {
-    setSelectedId(null)
-    setPlacedPoint(null)
-    setPlacing(true)
-    setShowNewForm(true)
+  function navigate(next) {
+    if (next === 'report') {
+      setSelectedId(null)
+      setPlacedPoint(null)
+    }
+    setView(next)
   }
-  function closeNewForm() {
-    setShowNewForm(false)
-    setPlacing(false)
+
+  function pickFromDirectory(l) {
+    setView('map')
+    handlePickLocation(l)
+  }
+
+  function closeReport() {
     setPlacedPoint(null)
+    setView('map')
   }
   function handleMapClick(pt) {
+    if (view !== 'report') return
     setPlacedPoint(pt)
-    setPlacing(false)
   }
 
   const selected = useMemo(
@@ -109,97 +126,135 @@ export default function App() {
   return (
     <div className="app">
       <Header
+        view={view}
+        onNavigate={navigate}
         session={session}
         onAdminClick={handleAdminClick}
         onSignOut={handleSignOut}
         onManageAdmins={() => setShowAdmins(true)}
-        onNewPoint={openNewForm}
-        onDonate={() => setShowDonate(true)}
-        onToggleFeed={() => setShowFeed((v) => !v)}
-        feedOpen={showFeed}
       />
 
-      <Disclaimer />
-
       <div className="main">
-        <MapView
-          locations={filtered}
-          version={version}
-          focus={focus}
-          placing={placing}
-          placedPoint={placedPoint}
-          onMapClick={handleMapClick}
-          onSelect={(l) => setSelectedId(l.id)}
-        />
+        <div className="map-wrap" style={{ display: showMap ? 'block' : 'none' }}>
+          <MapView
+            locations={filtered}
+            version={version}
+            focus={focus}
+            placing={placing}
+            placedPoint={placedPoint}
+            onMapClick={handleMapClick}
+            onSelect={(l) => setSelectedId(l.id)}
+          />
 
-        <div className="toolbar">
-          <SearchBox value={query} onChange={setQuery} locations={locations} onPickLocation={handlePickLocation} />
-          <div className="filters">
-            <button className={'chip' + (filterState === 'all' ? ' chip--active' : '')} onClick={() => setFilterState('all')}>
-              Todos los estados
+          <div className="toolbar">
+            <SearchBox value={query} onChange={setQuery} locations={locations} onPickLocation={handlePickLocation} />
+            <button
+              type="button"
+              className={'filters__toggle' + (filtersOpen ? ' filters__toggle--open' : '')}
+              onClick={() => setFiltersOpen((o) => !o)}
+              aria-expanded={filtersOpen}
+            >
+              <Icon name="list" size={16} />
+              <span>Filtros</span>
+              {(filterState !== 'all' || filterKind !== 'all') && (
+                <span className="filters__count">{(filterState !== 'all' ? 1 : 0) + (filterKind !== 'all' ? 1 : 0)}</span>
+              )}
+              <Icon name="chevron" size={16} className="filters__toggle-caret" />
             </button>
-            {STATES.map((s) => (
-              <button key={s} className={'chip' + (filterState === s ? ' chip--active' : '')} onClick={() => setFilterState(s)}>
-                {s}
-              </button>
-            ))}
-            <span style={{ width: 8 }} />
-            <button className={'chip' + (filterKind === 'all' ? ' chip--active' : '')} onClick={() => setFilterKind('all')}>
-              Todo
-            </button>
-            <button className={'chip' + (filterKind === 'parroquia' ? ' chip--active' : '')} onClick={() => setFilterKind('parroquia')}>
-              Parroquias
-            </button>
-            <button className={'chip' + (filterKind === 'hospital' ? ' chip--active' : '')} onClick={() => setFilterKind('hospital')}>
-              Hospitales
-            </button>
-            <button className={'chip' + (filterKind === 'otro' ? ' chip--active' : '')} onClick={() => setFilterKind('otro')}>
-              Otros puntos
-            </button>
+            <div className={'filters' + (filtersOpen ? ' filters--open' : '')}>
+              <div className="filters__group">
+                <span className="filters__label">Lugar</span>
+                <div className="filters__chips">
+                  <button className={'chip' + (filterState === 'all' ? ' chip--active' : '')} onClick={() => setFilterState('all')}>
+                    Todos los estados
+                  </button>
+                  {STATES.map((s) => (
+                    <button key={s} className={'chip' + (filterState === s ? ' chip--active' : '')} onClick={() => setFilterState(s)}>
+                      {s}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div className="filters__group">
+                <span className="filters__label">Tipo de punto de ayuda</span>
+                <div className="filters__chips">
+                  <button className={'chip' + (filterKind === 'all' ? ' chip--active' : '')} onClick={() => setFilterKind('all')}>
+                    Todo
+                  </button>
+                  <button className={'chip' + (filterKind === 'parroquia' ? ' chip--active' : '')} onClick={() => setFilterKind('parroquia')}>
+                    Parroquias
+                  </button>
+                  <button className={'chip' + (filterKind === 'hospital' ? ' chip--active' : '')} onClick={() => setFilterKind('hospital')}>
+                    Hospitales
+                  </button>
+                  <button className={'chip' + (filterKind === 'otro' ? ' chip--active' : '')} onClick={() => setFilterKind('otro')}>
+                    Otros puntos
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
+
+          {view === 'map' && <IntroCard />}
+          {view === 'map' && <MapStats locations={locations} />}
+
+          <Legend />
+
+          {loading && (
+            <div className="legend" style={{ bottom: 'auto', top: 70, left: '50%', transform: 'translateX(-50%)' }}>
+              Cargando ubicaciones…
+            </div>
+          )}
+
+          {view === 'map' && !selected && (
+            <button className="fab-report" onClick={() => navigate('report')}>
+              <Icon name="plus" size={20} />
+              <span>{t('map.report')}</span>
+            </button>
+          )}
+
+          {selected && !showNewForm && (
+            <LocationPanel
+              location={selected}
+              isAdmin={session.isAdmin}
+              onClose={() => setSelectedId(null)}
+              onUpdated={applyPatch}
+            />
+          )}
+
+          {showNewForm && (
+            <NewLocationForm
+              placedPoint={placedPoint}
+              onRemark={() => setPlacedPoint(null)}
+              onClose={closeReport}
+              onSetPoint={(pt) => { setPlacedPoint(pt); setFocus({ lat: pt.lat, lng: pt.lng, ts: Date.now() }) }}
+              onSent={() => { setPlacedPoint(null); loadLocations() }}
+            />
+          )}
         </div>
 
-        <Legend />
+        {view === 'directory' && (
+          <DirectoryPage locations={locations} onPick={pickFromDirectory} />
+        )}
 
-        {showFeed && (
+        {view === 'about' && (
+          <AboutPage onReport={() => navigate('report')} />
+        )}
+
+        {view === 'updates' && (
           <UpdatesFeed
             locations={locations}
-            onClose={() => setShowFeed(false)}
-            onPickLocation={handlePickLocation}
-          />
-        )}
-
-        {loading && (
-          <div className="legend" style={{ bottom: 'auto', top: 70, left: '50%', transform: 'translateX(-50%)' }}>
-            Cargando ubicaciones…
-          </div>
-        )}
-
-        {selected && !showNewForm && (
-          <LocationPanel
-            location={selected}
-            isAdmin={session.isAdmin}
-            adminName={session.email || 'Anonimo'}
-            onClose={() => setSelectedId(null)}
-            onUpdated={applyPatch}
-          />
-        )}
-
-        {showNewForm && (
-          <NewLocationForm
-            placedPoint={placedPoint}
-            onRemark={() => { setPlacedPoint(null); setPlacing(true) }}
-            onClose={closeNewForm}
-            onSent={() => { setPlacing(false); loadLocations() }}
+            onClose={() => setView('map')}
+            onPickLocation={(l) => { setView('map'); handlePickLocation(l) }}
           />
         )}
       </div>
 
-      {showDonate && (
+      {view === 'donate' && (
         <DonateMatcher
           locations={locations}
-          onClose={() => setShowDonate(false)}
-          onPickLocation={handlePickLocation}
+          onClose={() => setView('map')}
+          onPickLocation={(l) => { setView('map'); handlePickLocation(l) }}
         />
       )}
 

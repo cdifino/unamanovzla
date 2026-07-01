@@ -10,9 +10,6 @@ function levelColor(level) {
 function kindColor(kind) {
   return (KIND_META[kind] || KIND_META.otro).color
 }
-function kindIcon(kind) {
-  return (KIND_META[kind] || {}).icon || ''
-}
 
 // Centra el mapa cuando el usuario elige un lugar desde el buscador.
 function FlyTo({ focus }) {
@@ -148,7 +145,7 @@ export default function MapView({ locations, version, focus, placing, placedPoin
             }}
           >
             <Tooltip pane="tooltipPane" direction="top" offset={[0, -6]} sticky>
-              {kindIcon(l.kind)} {l.name}
+              {l.name}
             </Tooltip>
           </CircleMarker>
         ))}
