@@ -20,6 +20,7 @@ import { useI18n } from './lib/i18n'
 import { repo } from './lib/repository'
 import { STATES } from './data/constants'
 import { matchLocation, normalize } from './lib/search'
+import { hasPointData } from './lib/points'
 
 export default function App() {
   const { t } = useI18n()
@@ -33,6 +34,9 @@ export default function App() {
   const [showAdmins, setShowAdmins] = useState(false)
   const [filterState, setFilterState] = useState('all')
   const [filterKind, setFilterKind] = useState('all')
+  // Los puntos "Sin datos" se ocultan del mapa por defecto para reducir el
+  // ruido visual. Un admin puede mostrarlos para completarlos.
+  const [showEmpty, setShowEmpty] = useState(false)
   const [filtersOpen, setFiltersOpen] = useState(false)
   const [query, setQuery] = useState('')
   const [focus, setFocus] = useState(null)
@@ -66,13 +70,16 @@ export default function App() {
 
   const filtered = useMemo(() => {
     const nq = normalize(query)
+    // Solo un admin puede optar por ver los puntos vacios ("Sin datos").
+    const includeEmpty = showEmpty && session.isAdmin
     return locations.filter(
       (l) =>
         (filterState === 'all' || l.state === filterState) &&
         (filterKind === 'all' || l.kind === filterKind) &&
+        (includeEmpty || hasPointData(l)) &&
         matchLocation(l, nq),
     )
-  }, [locations, filterState, filterKind, query])
+  }, [locations, filterState, filterKind, query, showEmpty, session.isAdmin])
 
   function handlePickLocation(l) {
     setSelectedId(l.id)
@@ -192,13 +199,27 @@ export default function App() {
                   </button>
                 </div>
               </div>
+              {session.isAdmin && (
+                <div className="filters__group">
+                  <span className="filters__label">Administración</span>
+                  <div className="filters__chips">
+                    <button
+                      className={'chip' + (showEmpty ? ' chip--active' : '')}
+                      onClick={() => setShowEmpty((v) => !v)}
+                      aria-pressed={showEmpty}
+                    >
+                      Mostrar puntos sin datos
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
           {view === 'map' && <IntroCard />}
           {view === 'map' && <MapStats locations={locations} />}
 
-          <Legend />
+          <Legend showEmpty={showEmpty && session.isAdmin} />
 
           {loading && (
             <div className="legend" style={{ bottom: 'auto', top: 70, left: '50%', transform: 'translateX(-50%)' }}>

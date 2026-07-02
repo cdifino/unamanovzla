@@ -5,12 +5,15 @@ import Icon from './Icons'
 
 // Leyenda colapsable anclada a una esquina del mapa. Colapsada por defecto en
 // mobile para no tapar el mapa ni la barra de controles.
-export default function Legend() {
+export default function Legend({ showEmpty = false }) {
   const { t } = useI18n()
   const [open, setOpen] = useState(() => {
     if (typeof window === 'undefined') return false
     return window.innerWidth > 720
   })
+
+  // "Sin datos" solo se muestra en la leyenda cuando esos puntos son visibles.
+  const levels = showEmpty ? STATUS_ORDER : STATUS_ORDER.filter((k) => k !== 'sin_datos')
 
   return (
     <div className={'legend' + (open ? ' legend--open' : '')}>
@@ -27,7 +30,7 @@ export default function Legend() {
       {open && (
         <div className="legend__panel">
           <h4>{t('legend.title')}</h4>
-          {STATUS_ORDER.map((k) => (
+          {levels.map((k) => (
             <div className="legend__row" key={k}>
               <span className="swatch" style={{ background: STATUS_LEVELS[k].color }} />
               {STATUS_LEVELS[k].label}
